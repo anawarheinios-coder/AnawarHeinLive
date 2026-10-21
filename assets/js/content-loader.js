@@ -1,0 +1,4 @@
+
+function readCommittedContent(defaults){const base={...defaults,...(window.ANAWAR_CONTENT||{})};const records=Array.isArray(base.items)?base.items:[];const sources={anawar:window.ANAWAR_HEIN_CONTENT,tv:window.ANAWAR_TV_CONTENT,highlights:window.ANAWAR_HIGHLIGHTS_CONTENT};const categories=Object.keys(sources).filter(c=>sources[c]&&Array.isArray(sources[c].items));const items=[...records.filter(i=>!categories.includes(i.category)),...categories.flatMap(c=>sources[c].items.map(i=>({...i,category:c})))];return {...base,...(window.ANAWAR_BANNERS||{}),items}}
+
+function applyDemoSchedule(config){const now=Date.now();return {...config,items:(config.items||[]).map(item=>{if(!item.demo||!Number.isFinite(item.demoOffsetMinutes))return item;const start=now+item.demoOffsetMinutes*60000;return {...item,startAt:new Date(start).toISOString(),endAt:new Date(start+(item.demoDurationMinutes||120)*60000).toISOString()}})}}
