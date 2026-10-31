@@ -246,21 +246,27 @@ window.ANAWAR_CONTENT = {
       "league": "EPL",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-10-31T15:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-09.m3u8",
-          "kind": "video"
+          "url": "https://pull.niur.live/live/stream-414317_lhd.m3u8?txSecret=04b78eb25092cc637890519cb1e770d7&txTime=6ae654de",
+          "kind": "embed"
+        },
+        {
+          "label": "HD2",
+          "url": "https://pull.niues.live/live/stream-9912110_lhd.m3u8?auth_key=1793461911-0-0-3f553fd76be11c4c609f8bcaefb719dc",
+          "kind": "embed"
         }
       ],
-      "url": "https://example.com/replace-stream-09.m3u8",
-      "kind": "video"
+      "url": "https://pull.niur.live/live/stream-414317_lhd.m3u8?txSecret=04b78eb25092cc637890519cb1e770d7&txTime=6ae654de",
+      "kind": "embed"
     },
     {
       "id": "big5-20261031-10",
@@ -271,21 +277,22 @@ window.ANAWAR_CONTENT = {
       "league": "EPL",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-10-31T15:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-10.m3u8",
-          "kind": "video"
+          "url": "https://live05.miekgo.app/live/02456966.m3u8",
+          "kind": "embed"
         }
       ],
-      "url": "https://example.com/replace-stream-10.m3u8",
-      "kind": "video"
+      "url": "https://live05.miekgo.app/live/02456966.m3u8",
+      "kind": "embed"
     },
     {
       "id": "big5-20261031-11",
@@ -296,21 +303,22 @@ window.ANAWAR_CONTENT = {
       "league": "EPL",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-10-31T15:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-11.m3u8",
-          "kind": "video"
+          "url": "https://live05.miekgo.app/live/33982309.m3u8",
+          "kind": "embed"
         }
       ],
-      "url": "https://example.com/replace-stream-11.m3u8",
-      "kind": "video"
+      "url": "https://live05.miekgo.app/live/33982309.m3u8",
+      "kind": "embed"
     },
     {
       "id": "big5-20261031-12",
@@ -321,21 +329,22 @@ window.ANAWAR_CONTENT = {
       "league": "EPL",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/306.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-10-31T15:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-12.m3u8",
-          "kind": "video"
+          "url": "https://live05.miekgo.app/live/07428422.m3u8",
+          "kind": "embed"
         }
       ],
-      "url": "https://example.com/replace-stream-12.m3u8",
-      "kind": "video"
+      "url": "https://live05.miekgo.app/live/07428422.m3u8",
+      "kind": "embed"
     },
     {
       "id": "big5-20261031-13",
@@ -346,20 +355,31 @@ window.ANAWAR_CONTENT = {
       "league": "EPL",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-10-31T15:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-13.m3u8",
+          "url": "https://live05.miekgo.app/live/08552895.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD2",
+          "url": "https://pull.niues.live/live/stream-9912144_lhd.m3u8?auth_key=1793461863-0-0-a7d80a19ff95fd8d28f194e55ec25803",
+          "kind": "video"
+        },
+        {
+          "label": "HD3",
+          "url": "https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=e77deb022f0953b5924047849f6f42d8&txTime=6ae654c2",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-13.m3u8",
+      "url": "https://live05.miekgo.app/live/08552895.m3u8",
       "kind": "video"
     },
     {
