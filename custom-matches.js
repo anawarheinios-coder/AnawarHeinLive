@@ -442,21 +442,37 @@ window.ANAWAR_CONTENT = {
       "league": "EPL",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-10-31T17:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-16.m3u8",
-          "kind": "video"
+          "url": "https://live05.miekgo.app/live/08552895.m3u8",
+          "kind": "embed"
+        },
+        {
+          "label": "HD2",
+          "url": "https://live05.miekgo.app/live/78905744.m3u8",
+          "kind": "embed"
+        },
+        {
+          "label": "HD3",
+          "url": "https://live2.domaincdn.cc/livecdn/channel-1.m3u8?auth_key=3000001793466595-0-0-cf461f7e04f95aac7b8b68463e1a6ea3",
+          "kind": "embed"
+        },
+        {
+          "label": "HD4",
+          "url": "https://live2.domaincdn.cc/livecdn/channel-24.m3u8?auth_key=3000001793466615-0-0-9f928809ea640f7d45401422ead1d224",
+          "kind": "embed"
         }
       ],
-      "url": "https://example.com/replace-stream-16.m3u8",
-      "kind": "video"
+      "url": "https://live05.miekgo.app/live/08552895.m3u8",
+      "kind": "embed"
     },
     {
       "id": "big5-20261031-17",
@@ -467,21 +483,27 @@ window.ANAWAR_CONTENT = {
       "league": "LaLiga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-10-31T17:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-17.m3u8",
-          "kind": "video"
+          "url": "https://live05.miekgo.app/live/87547578.m3u8",
+          "kind": "embed"
+        },
+        {
+          "label": "HD2",
+          "url": "https://live2.domaincdn.cc/livecdn/channel-11.m3u8?auth_key=3000001793466536-0-0-aa821e474b83b8199a614ff1abbf4025",
+          "kind": "embed"
         }
       ],
-      "url": "https://example.com/replace-stream-17.m3u8",
-      "kind": "video"
+      "url": "https://live05.miekgo.app/live/87547578.m3u8",
+      "kind": "embed"
     },
     {
       "id": "big5-20261031-18",
@@ -492,21 +514,37 @@ window.ANAWAR_CONTENT = {
       "league": "Bundesliga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-10-31T17:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-18.m3u8",
-          "kind": "video"
+          "url": "https://live05.miekgo.app/live/99121525.m3u8",
+          "kind": "embed"
+        },
+        {
+          "label": "Server 2",
+          "url": "https://live05.miekgo.app/live/14830711.m3u8",
+          "kind": "embed"
+        },
+        {
+          "label": "Server 3",
+          "url": "https://live2.domaincdn.cc/livecdn/channel-15.m3u8?auth_key=3000001793466753-0-0-3379c8e50ee5740594ea099fc805d0e8",
+          "kind": "embed"
+        },
+        {
+          "label": "Server 4",
+          "url": "https://live2.domaincdn.cc/livecdn/channel-16.m3u8?auth_key=3000001793466773-0-0-0e5b283f3269d4d13c8ae7fd264a8186",
+          "kind": "embed"
         }
       ],
-      "url": "https://example.com/replace-stream-18.m3u8",
-      "kind": "video"
+      "url": "https://live05.miekgo.app/live/99121525.m3u8",
+      "kind": "embed"
     },
     {
       "id": "big5-20261031-19",
