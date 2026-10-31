@@ -101,11 +101,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://live2.domaincdn.cc/livecdn/channel-17.m3u8?auth_key=3000001793454366-0-0-9720dbc337bbb0630e62331191fc3601",
+          "url": "https://live05.miekgo.app/live/99121525.m3u8",
           "kind": "embed"
         }
       ],
-      "url": "https://live2.domaincdn.cc/livecdn/channel-17.m3u8?auth_key=3000001793454366-0-0-9720dbc337bbb0630e62331191fc3601",
+      "url": "https://live05.miekgo.app/live/99121525.m3u8",
       "kind": "embed"
     },
     {
