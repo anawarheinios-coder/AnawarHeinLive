@@ -142,20 +142,21 @@ window.ANAWAR_CONTENT = {
       "league": "Bundesliga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3307.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-10-31T14:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-05.m3u8",
+          "url": "https://live05.miekgo.app/live/59444581.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-05.m3u8",
+      "url": "https://live05.miekgo.app/live/59444581.m3u8",
       "kind": "video"
     },
     {
@@ -167,20 +168,21 @@ window.ANAWAR_CONTENT = {
       "league": "Bundesliga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3841.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-10-31T14:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-06.m3u8",
+          "url": "https://live05.miekgo.app/live/87547578.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-06.m3u8",
+      "url": "https://live05.miekgo.app/live/87547578.m3u8",
       "kind": "video"
     },
     {
@@ -192,20 +194,21 @@ window.ANAWAR_CONTENT = {
       "league": "Bundesliga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/133.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-10-31T14:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-07.m3u8",
+          "url": "https://live05.miekgo.app/live/75748097.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-07.m3u8",
+      "url": "https://live05.miekgo.app/live/75748097.m3u8",
       "kind": "video"
     },
     {
@@ -217,20 +220,21 @@ window.ANAWAR_CONTENT = {
       "league": "Bundesliga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-10-31T14:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-08.m3u8",
+          "url": "https://live05.miekgo.app/live/07808742.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-08.m3u8",
+      "url": "https://live05.miekgo.app/live/07808742.m3u8",
       "kind": "video"
     },
     {
