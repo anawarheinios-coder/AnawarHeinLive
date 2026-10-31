@@ -416,20 +416,21 @@ window.ANAWAR_CONTENT = {
       "league": "Serie A",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/118.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-10-31T17:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-15.m3u8",
+          "url": "https://live05.miekgo.app/live/18812304.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-15.m3u8",
+      "url": "https://live05.miekgo.app/live/18812304.m3u8",
       "kind": "video"
     },
     {
