@@ -1,244 +1,72 @@
-window.ARYONE_FOOTBALL_MATCHES = [
-  {
-    id: "big5-20261031-01",
-    home: "Chelsea",
-    away: "Manchester United",
-    league: "EPL",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
-    kickoff: "2026-10-31T19:00:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-01.m3u8"
-  },
-  {
-    id: "big5-20261031-02",
-    home: "Levante",
-    away: "Atlético Madrid",
-    league: "LaLiga",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
-    kickoff: "2026-10-31T19:30:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-02.m3u8"
-  },
-  {
-    id: "big5-20261031-03",
-    home: "Bologna",
-    away: "Monza",
-    league: "Serie A",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/107.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/4007.png",
-    kickoff: "2026-10-31T20:30:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-03.m3u8"
-  },
-  {
-    id: "big5-20261031-04",
-    home: "Bayer Leverkusen",
-    away: "VfB Stuttgart",
-    league: "Bundesliga",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/131.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
-    kickoff: "2026-10-31T21:00:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-04.m3u8"
-  },
-  {
-    id: "big5-20261031-05",
-    home: "Borussia Mönchengladbach",
-    away: "SC Paderborn 07",
-    league: "Bundesliga",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/268.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/3307.png",
-    kickoff: "2026-10-31T21:00:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-05.m3u8"
-  },
-  {
-    id: "big5-20261031-06",
-    home: "FC Augsburg",
-    away: "SC Freiburg",
-    league: "Bundesliga",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/3841.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/126.png",
-    kickoff: "2026-10-31T21:00:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-06.m3u8"
-  },
-  {
-    id: "big5-20261031-07",
-    home: "Schalke 04",
-    away: "RB Leipzig",
-    league: "Bundesliga",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/133.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
-    kickoff: "2026-10-31T21:00:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-07.m3u8"
-  },
-  {
-    id: "big5-20261031-08",
-    home: "Werder Bremen",
-    away: "TSG Hoffenheim",
-    league: "Bundesliga",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png",
-    kickoff: "2026-10-31T21:00:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-08.m3u8"
-  },
-  {
-    id: "big5-20261031-09",
-    home: "AFC Bournemouth",
-    away: "Leeds United",
-    league: "EPL",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
-    kickoff: "2026-10-31T21:30:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-09.m3u8"
-  },
-  {
-    id: "big5-20261031-10",
-    home: "Brentford",
-    away: "Nottingham Forest",
-    league: "EPL",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/337.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
-    kickoff: "2026-10-31T21:30:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-10.m3u8"
-  },
-  {
-    id: "big5-20261031-11",
-    home: "Coventry City",
-    away: "Sunderland",
-    league: "EPL",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
-    kickoff: "2026-10-31T21:30:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-11.m3u8"
-  },
-  {
-    id: "big5-20261031-12",
-    home: "Hull City",
-    away: "Ipswich Town",
-    league: "EPL",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/306.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/373.png",
-    kickoff: "2026-10-31T21:30:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-12.m3u8"
-  },
-  {
-    id: "big5-20261031-13",
-    home: "Manchester City",
-    away: "Brighton & Hove Albion",
-    league: "EPL",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/331.png",
-    kickoff: "2026-10-31T21:30:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-13.m3u8"
-  },
-  {
-    id: "big5-20261031-14",
-    home: "Rayo Vallecano",
-    away: "Celta Vigo",
-    league: "LaLiga",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/85.png",
-    kickoff: "2026-10-31T21:45:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-14.m3u8"
-  },
-  {
-    id: "big5-20261031-15",
-    home: "Udinese",
-    away: "AS Roma",
-    league: "Serie A",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/118.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
-    kickoff: "2026-10-31T23:30:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-15.m3u8"
-  },
-  {
-    id: "big5-20261031-16",
-    home: "Tottenham Hotspur",
-    away: "Crystal Palace",
-    league: "EPL",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/367.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
-    kickoff: "2026-11-01T00:00:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-16.m3u8"
-  },
-  {
-    id: "big5-20261031-17",
-    home: "Real Betis",
-    away: "Málaga",
-    league: "LaLiga",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/99.png",
-    kickoff: "2026-11-01T00:00:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-17.m3u8"
-  },
-  {
-    id: "big5-20261031-18",
-    home: "Bayern Munich",
-    away: "Borussia Dortmund",
-    league: "Bundesliga",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/124.png",
-    kickoff: "2026-11-01T00:00:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-18.m3u8"
-  },
-  {
-    id: "big5-20261031-19",
-    home: "Troyes",
-    away: "Le Mans",
-    league: "Ligue 1",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/170.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png",
-    kickoff: "2026-11-01T02:15:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-19.m3u8"
-  },
-  {
-    id: "big5-20261031-20",
-    home: "AC Milan",
-    away: "Inter Milan",
-    league: "Serie A",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/103.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
-    kickoff: "2026-11-01T02:15:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-20.m3u8"
-  },
-  {
-    id: "big5-20261031-21",
-    home: "Aston Villa",
-    away: "Fulham",
-    league: "EPL",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/370.png",
-    kickoff: "2026-11-01T02:30:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-21.m3u8"
-  },
-  {
-    id: "big5-20261031-22",
-    home: "Barcelona",
-    away: "Alavés",
-    league: "LaLiga",
-    homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
-    awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
-    kickoff: "2026-11-01T02:30:00+06:30",
-    status: "auto",
-    url: "https://example.com/replace-stream-22.m3u8"
-  }
-];
+window.ANAWAR_HEIN_CONTENT = {
+  items: [
+    ["Chelsea", "Manchester United", "EPL", "2026-10-31T19:00:00+06:30", "363", "360", "https://example.com/stream-01.m3u8"],
+
+    ["Levante", "Atlético Madrid", "LaLiga", "2026-10-31T19:30:00+06:30", "1538", "1068", "https://example.com/stream-02.m3u8"],
+
+    ["Bologna", "Monza", "Serie A", "2026-10-31T20:30:00+06:30", "107", "4007", "https://example.com/stream-03.m3u8"],
+
+    ["Bayer Leverkusen", "VfB Stuttgart", "Bundesliga", "2026-10-31T21:00:00+06:30", "131", "134", "https://example.com/stream-04.m3u8"],
+
+    ["Borussia Mönchengladbach", "SC Paderborn 07", "Bundesliga", "2026-10-31T21:00:00+06:30", "268", "3307", "https://example.com/stream-05.m3u8"],
+
+    ["FC Augsburg", "SC Freiburg", "Bundesliga", "2026-10-31T21:00:00+06:30", "3841", "126", "https://example.com/stream-06.m3u8"],
+
+    ["Schalke 04", "RB Leipzig", "Bundesliga", "2026-10-31T21:00:00+06:30", "133", "11420", "https://example.com/stream-07.m3u8"],
+
+    ["Werder Bremen", "TSG Hoffenheim", "Bundesliga", "2026-10-31T21:00:00+06:30", "137", "7911", "https://example.com/stream-08.m3u8"],
+
+    ["AFC Bournemouth", "Leeds United", "EPL", "2026-10-31T21:30:00+06:30", "349", "357", "https://example.com/stream-09.m3u8"],
+
+    ["Brentford", "Nottingham Forest", "EPL", "2026-10-31T21:30:00+06:30", "337", "393", "https://example.com/stream-10.m3u8"],
+
+    ["Coventry City", "Sunderland", "EPL", "2026-10-31T21:30:00+06:30", "388", "366", "https://example.com/stream-11.m3u8"],
+
+    ["Hull City", "Ipswich Town", "EPL", "2026-10-31T21:30:00+06:30", "306", "373", "https://example.com/stream-12.m3u8"],
+
+    ["Manchester City", "Brighton & Hove Albion", "EPL", "2026-10-31T21:30:00+06:30", "382", "331", "https://example.com/stream-13.m3u8"],
+
+    ["Rayo Vallecano", "Celta Vigo", "LaLiga", "2026-10-31T21:45:00+06:30", "101", "85", "https://example.com/stream-14.m3u8"],
+
+    ["Udinese", "AS Roma", "Serie A", "2026-10-31T23:30:00+06:30", "118", "104", "https://example.com/stream-15.m3u8"],
+
+    ["Tottenham Hotspur", "Crystal Palace", "EPL", "2026-11-01T00:00:00+06:30", "367", "384", "https://example.com/stream-16.m3u8"],
+
+    ["Real Betis", "Málaga", "LaLiga", "2026-11-01T00:00:00+06:30", "244", "99", "https://example.com/stream-17.m3u8"],
+
+    ["Bayern Munich", "Borussia Dortmund", "Bundesliga", "2026-11-01T00:00:00+06:30", "132", "124", "https://example.com/stream-18.m3u8"],
+
+    ["Troyes", "Le Mans", "Ligue 1", "2026-11-01T02:15:00+06:30", "170", "2697", "https://example.com/stream-19.m3u8"],
+
+    ["AC Milan", "Inter Milan", "Serie A", "2026-11-01T02:15:00+06:30", "103", "110", "https://example.com/stream-20.m3u8"],
+
+    ["Aston Villa", "Fulham", "EPL", "2026-11-01T02:30:00+06:30", "362", "370", "https://example.com/stream-21.m3u8"],
+
+    ["Barcelona", "Alavés", "LaLiga", "2026-11-01T02:30:00+06:30", "83", "96", "https://example.com/stream-22.m3u8"]
+  ].map(function (match, index) {
+    return {
+      id: "anawar-20261031-" + String(index + 1).padStart(2, "0"),
+      category: "anawar",
+      title: match[0] + " vs " + match[1],
+      home: match[0],
+      away: match[1],
+      league: match[2],
+      startAt: match[3],
+      timeZone: "Asia/Yangon",
+      statusMode: "auto",
+      homeLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/" + match[4] + ".png",
+      awayLogo: "https://a.espncdn.com/i/teamlogos/soccer/500/" + match[5] + ".png",
+      homeScore: "",
+      awayScore: "",
+      kind: "video",
+      url: match[6],
+      streams: [
+        {
+          label: "Server 1",
+          kind: "video",
+          url: match[6]
+        }
+      ]
+    };
+  })
+};
