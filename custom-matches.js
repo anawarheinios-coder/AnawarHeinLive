@@ -16,8 +16,44 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
-      "url": "https://example.com/replace-stream-01.m3u8",
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://live2.domaincdn.cc/livecdn/channel-1.m3u8?auth_key=3000001793448500-0-0-88eb6bd6041552d8d8a33be9c2e82521",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://live2.domaincdn.cc/livecdn/channel-5.m3u8?auth_key=3000001793448506-0-0-623f84bdc35902c9530849bfef0647e0",
+          "kind": "video"
+        },
+        {
+          "label": "HD-3",
+          "url": "https://live2.domaincdn.cc/livecdn/channel-15.m3u8?auth_key=3000001793448519-0-0-6e1d65452958282d2a68242144a5e37d",
+          "kind": "video"
+        },
+        {
+          "label": "HD-4",
+          "url": "https://live2.domaincdn.cc/livecdn/channel-16.m3u8?auth_key=3000001793448531-0-0-3d5f34cb67041165629e9c20ad084e11",
+          "kind": "video"
+        },
+        {
+          "label": "HD-5",
+          "url": "https://live05.miekgo.app/live/08552895.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-6",
+          "url": "https://live05.miekgo.app/live/33982309.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-7",
+          "url": "https://live05.miekgo.app/live/07428422.m3u8",
+          "kind": "video"
+        }
+      ],
+      "url": "https://live2.domaincdn.cc/livecdn/channel-1.m3u8?auth_key=3000001793448500-0-0-88eb6bd6041552d8d8a33be9c2e82521",
       "kind": "video"
     },
     {
@@ -35,7 +71,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-02.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-02.m3u8",
       "kind": "video"
     },
@@ -54,7 +96,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-03.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-03.m3u8",
       "kind": "video"
     },
@@ -73,7 +121,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-04.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-04.m3u8",
       "kind": "video"
     },
@@ -92,7 +146,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-05.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-05.m3u8",
       "kind": "video"
     },
@@ -111,7 +171,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-06.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-06.m3u8",
       "kind": "video"
     },
@@ -130,7 +196,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-07.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-07.m3u8",
       "kind": "video"
     },
@@ -149,7 +221,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-08.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-08.m3u8",
       "kind": "video"
     },
@@ -168,7 +246,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-09.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-09.m3u8",
       "kind": "video"
     },
@@ -187,7 +271,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-10.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-10.m3u8",
       "kind": "video"
     },
@@ -206,7 +296,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-11.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-11.m3u8",
       "kind": "video"
     },
@@ -225,7 +321,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-12.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-12.m3u8",
       "kind": "video"
     },
@@ -244,7 +346,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-13.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-13.m3u8",
       "kind": "video"
     },
@@ -263,7 +371,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-14.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-14.m3u8",
       "kind": "video"
     },
@@ -282,7 +396,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-15.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-15.m3u8",
       "kind": "video"
     },
@@ -301,7 +421,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-16.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-16.m3u8",
       "kind": "video"
     },
@@ -320,7 +446,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-17.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-17.m3u8",
       "kind": "video"
     },
@@ -339,7 +471,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-18.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-18.m3u8",
       "kind": "video"
     },
@@ -358,7 +496,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-19.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-19.m3u8",
       "kind": "video"
     },
@@ -377,7 +521,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-20.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-20.m3u8",
       "kind": "video"
     },
@@ -396,7 +546,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-21.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-21.m3u8",
       "kind": "video"
     },
@@ -415,7 +571,13 @@ window.ANAWAR_CONTENT = {
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
-      "streams": [],
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-22.m3u8",
+          "kind": "video"
+        }
+      ],
       "url": "https://example.com/replace-stream-22.m3u8",
       "kind": "video"
     }
