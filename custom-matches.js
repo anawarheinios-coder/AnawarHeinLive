@@ -249,21 +249,22 @@ window.ANAWAR_CONTENT = {
       "league": "Bundesliga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-01T16:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-10.m3u8",
-          "kind": "video"
+          "url": "https://live05.miekgo.app/live/33860426.m3u8",
+          "kind": "embed"
         }
       ],
-      "url": "https://example.com/replace-stream-10.m3u8",
-      "kind": "video"
+      "url": "https://live05.miekgo.app/live/33860426.m3u8",
+      "kind": "embed"
     },
     {
       "id": "anawar-20261101-11",
@@ -274,21 +275,32 @@ window.ANAWAR_CONTENT = {
       "league": "EPL",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-01T16:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-11.m3u8",
-          "kind": "video"
+          "url": "https://live1.quickscoreboardz.com/live/channel2/playlist.m3u8?wsSecret=3d2c25941267d9f6b79e60b7604e2639&wsABSTime=1793592601",
+          "kind": "embed"
+        },
+        {
+          "label": "HD2",
+          "url": "https://live2.domaincdn.cc/livecdn/channel-15.m3u8?auth_key=3000001793549479-0-0-14fc1888382732ecdd9982ae23d9d143",
+          "kind": "embed"
+        },
+        {
+          "label": "HD3",
+          "url": "https://live05.miekgo.app/live/08552895.m3u8",
+          "kind": "embed"
         }
       ],
-      "url": "https://example.com/replace-stream-11.m3u8",
-      "kind": "video"
+      "url": "https://live1.quickscoreboardz.com/live/channel2/playlist.m3u8?wsSecret=3d2c25941267d9f6b79e60b7604e2639&wsABSTime=1793592601",
+      "kind": "embed"
     },
     {
       "id": "anawar-20261101-12",
