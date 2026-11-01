@@ -62,21 +62,22 @@ window.ANAWAR_CONTENT = {
       "league": "Ligue 1",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-01T14:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-03.m3u8",
-          "kind": "video"
+          "url": "https://live05.miekgo.app/live/97885009.m3u8",
+          "kind": "embed"
         }
       ],
-      "url": "https://example.com/replace-stream-03.m3u8",
-      "kind": "video"
+      "url": "https://live05.miekgo.app/live/97885009.m3u8",
+      "kind": "embed"
     },
     {
       "id": "anawar-20261101-04",
@@ -87,21 +88,22 @@ window.ANAWAR_CONTENT = {
       "league": "Serie A",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4057.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/239.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-01T14:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-04.m3u8",
-          "kind": "video"
+          "url": "https://live05.miekgo.app/live/16226575.m3u8",
+          "kind": "embed"
         }
       ],
-      "url": "https://example.com/replace-stream-04.m3u8",
-      "kind": "video"
+      "url": "https://live05.miekgo.app/live/16226575.m3u8",
+      "kind": "embed"
     },
     {
       "id": "anawar-20261101-05",
@@ -112,21 +114,22 @@ window.ANAWAR_CONTENT = {
       "league": "Serie A",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-01T14:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-05.m3u8",
-          "kind": "video"
+          "url": "https://live05.miekgo.app/live/07808742.m3u8",
+          "kind": "embed"
         }
       ],
-      "url": "https://example.com/replace-stream-05.m3u8",
-      "kind": "video"
+      "url": "https://live05.miekgo.app/live/07808742.m3u8",
+      "kind": "embed"
     },
     {
       "id": "anawar-20261101-06",
