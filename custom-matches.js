@@ -286,12 +286,12 @@ window.ANAWAR_CONTENT = {
         {
           "label": "HD",
           "url": "https://live1.quickscoreboardz.com/live/channel2/playlist.m3u8?wsSecret=3d2c25941267d9f6b79e60b7604e2639&wsABSTime=1793592601",
-          "kind": "embed"
+          "kind": "video"
         },
         {
           "label": "HD2",
           "url": "https://live2.domaincdn.cc/livecdn/channel-15.m3u8?auth_key=3000001793549479-0-0-14fc1888382732ecdd9982ae23d9d143",
-          "kind": "embed"
+          "kind": "video"
         },
         {
           "label": "HD3",
@@ -300,7 +300,7 @@ window.ANAWAR_CONTENT = {
         }
       ],
       "url": "https://live1.quickscoreboardz.com/live/channel2/playlist.m3u8?wsSecret=3d2c25941267d9f6b79e60b7604e2639&wsABSTime=1793592601",
-      "kind": "embed"
+      "kind": "video"
     },
     {
       "id": "anawar-20261101-12",
