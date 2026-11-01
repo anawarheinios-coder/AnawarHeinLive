@@ -329,31 +329,6 @@ window.ANAWAR_CONTENT = {
       "kind": "embed"
     },
     {
-      "id": "anawar-20261101-14",
-      "category": "football",
-      "title": "Marseille vs Toulouse",
-      "home": "Marseille",
-      "away": "Toulouse",
-      "league": "Ligue 1",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-01T19:45:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/replace-stream-14.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/replace-stream-14.m3u8",
-      "kind": "video"
-    },
-    {
       "id": "anawar-20261101-15",
       "category": "football",
       "title": "Juventus vs Napoli",
@@ -362,46 +337,22 @@ window.ANAWAR_CONTENT = {
       "league": "Serie A",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-01T19:45:00.000Z",
       "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/replace-stream-15.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/replace-stream-15.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "anawar-20261101-16",
-      "category": "football",
-      "title": "Athletic Club vs Real Sociedad",
-      "home": "Athletic Club",
-      "away": "Real Sociedad",
-      "league": "LaLiga",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/89.png",
       "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-01T20:00:00.000Z",
-      "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-16.m3u8",
-          "kind": "video"
+          "url": "https://live05.miekgo.app/live/08552895.m3u8",
+          "kind": "embed"
         }
       ],
-      "url": "https://example.com/replace-stream-16.m3u8",
-      "kind": "video"
+      "url": "https://live05.miekgo.app/live/08552895.m3u8",
+      "kind": "embed"
     },
     {
       "id": "anawar-20261102-17",
