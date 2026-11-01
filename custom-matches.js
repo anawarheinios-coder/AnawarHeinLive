@@ -36,21 +36,22 @@ window.ANAWAR_CONTENT = {
       "league": "LaLiga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-01T13:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-02.m3u8",
-          "kind": "video"
+          "url": "https://live05.miekgo.app/live/33860426.m3u8",
+          "kind": "embed"
         }
       ],
-      "url": "https://example.com/replace-stream-02.m3u8",
-      "kind": "video"
+      "url": "https://live05.miekgo.app/live/33860426.m3u8",
+      "kind": "embed"
     },
     {
       "id": "anawar-20261101-03",
