@@ -99,6 +99,16 @@ window.ANAWAR_CONTENT = {
           "label": "HD-2",
           "url": "https://live05.miekgo.app/live/87547578.m3u8",
           "kind": "video"
+        },
+        {
+          "label": "HD-3",
+          "url": "https://pull.niur.live/live/stream-291277_lhd.m3u8?txSecret=70f2b8d73611f7790bb11b376c1a456b&txTime=6aea90ea",
+          "kind": "video"
+        },
+        {
+          "label": "HD-4",
+          "url": "https://pull.niur.live/live/stream-610518_lhd.m3u8?txSecret=e927069f9540a9ed693a16df0dacb36b&txTime=6aea912e",
+          "kind": "video"
         }
       ],
       "url": "https://live05.miekgo.app/live/97885009.m3u8",
@@ -129,6 +139,16 @@ window.ANAWAR_CONTENT = {
         {
           "label": "HD-2",
           "url": "https://live05.miekgo.app/live/02456966.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-3",
+          "url": "https://pull.niues.live/live/stream-304148_lhd.m3u8?auth_key=1793739332-0-0-b13e5135c9bdf1e89993918b31a4d54b",
+          "kind": "video"
+        },
+        {
+          "label": "HD-4",
+          "url": "https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1793739348-0-0-a3115eb92ec2d7a551a1440099fa793d",
           "kind": "video"
         }
       ],
@@ -181,6 +201,11 @@ window.ANAWAR_CONTENT = {
         {
           "label": "HD",
           "url": "https://live05.miekgo.app/live/99121525.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://pull.niur.live/live/stream-602019_lhd.m3u8?txSecret=d50f01aadcc6de6591ccc5497e672e7f&txTime=6aea91a7",
           "kind": "video"
         }
       ],
@@ -239,6 +264,16 @@ window.ANAWAR_CONTENT = {
           "label": "HD-2",
           "url": "https://live05.miekgo.app/live/08552895.m3u8",
           "kind": "video"
+        },
+        {
+          "label": "HD-3",
+          "url": "https://pull.niues.live/live/stream-991140_lhd.m3u8?auth_key=1793739252-0-0-b5deb366a56cd6a5ff9fa20ac33654a5",
+          "kind": "video"
+        },
+        {
+          "label": "HD-4",
+          "url": "https://pull.niues.live/live/stream-9912142_lhd.m3u8?auth_key=1793739273-0-0-9cb92698ea8ae8103b53703a15457efc",
+          "kind": "video"
         }
       ],
       "url": "https://live05.miekgo.app/live/08552895.m3u8",
@@ -264,6 +299,11 @@ window.ANAWAR_CONTENT = {
         {
           "label": "HD",
           "url": "https://live05.miekgo.app/live/07808742.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://pull.niur.live/live/stream-9912136_lhd.m3u8?txSecret=16f53eaab09366ac3494272066329eda&txTime=6aea9163",
           "kind": "video"
         }
       ],
