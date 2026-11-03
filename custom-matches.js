@@ -2,369 +2,16 @@
 window.ANAWAR_CONTENT = {
   "items": [
     {
-      "id": "anawar-20261101-01",
+      "id": "ucl-20261103-01",
       "category": "football",
-      "title": "Como vs Venezia",
-      "home": "Como",
-      "away": "Venezia",
-      "league": "Serie A",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17530.png",
-      "poster": "",
-      "startAt": "2026-11-01T11:30:00.000Z",
-      "endAt": "",
+      "title": "Galatasaray vs VfB Stuttgart",
+      "home": "Galatasaray",
+      "away": "VfB Stuttgart",
+      "league": "UEFA Champions League",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
       "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.miekgo.app/live/97885009.m3u8",
-          "kind": "embed"
-        }
-      ],
-      "url": "https://live05.miekgo.app/live/97885009.m3u8",
-      "kind": "embed"
-    },
-    {
-      "id": "anawar-20261101-02",
-      "category": "football",
-      "title": "Getafe vs Sevilla",
-      "home": "Getafe",
-      "away": "Sevilla",
-      "league": "LaLiga",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
-      "poster": "",
-      "startAt": "2026-11-01T13:00:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.miekgo.app/live/33860426.m3u8",
-          "kind": "embed"
-        }
-      ],
-      "url": "https://live05.miekgo.app/live/33860426.m3u8",
-      "kind": "embed"
-    },
-    {
-      "id": "anawar-20261101-03",
-      "category": "football",
-      "title": "Strasbourg vs Auxerre",
-      "home": "Strasbourg",
-      "away": "Auxerre",
-      "league": "Ligue 1",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png",
-      "poster": "",
-      "startAt": "2026-11-01T14:00:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.miekgo.app/live/97885009.m3u8",
-          "kind": "embed"
-        }
-      ],
-      "url": "https://live05.miekgo.app/live/97885009.m3u8",
-      "kind": "embed"
-    },
-    {
-      "id": "anawar-20261101-04",
-      "category": "football",
-      "title": "Frosinone vs Torino",
-      "home": "Frosinone",
-      "away": "Torino",
-      "league": "Serie A",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4057.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/239.png",
-      "poster": "",
-      "startAt": "2026-11-01T14:00:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.miekgo.app/live/16226575.m3u8",
-          "kind": "embed"
-        }
-      ],
-      "url": "https://live05.miekgo.app/live/16226575.m3u8",
-      "kind": "embed"
-    },
-    {
-      "id": "anawar-20261101-05",
-      "category": "football",
-      "title": "Lazio vs Cagliari",
-      "home": "Lazio",
-      "away": "Cagliari",
-      "league": "Serie A",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png",
-      "poster": "",
-      "startAt": "2026-11-01T14:00:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.miekgo.app/live/07808742.m3u8",
-          "kind": "embed"
-        }
-      ],
-      "url": "https://live05.miekgo.app/live/07808742.m3u8",
-      "kind": "embed"
-    },
-    {
-      "id": "anawar-20261101-06",
-      "category": "football",
-      "title": "Union Berlin vs FC Cologne",
-      "home": "Union Berlin",
-      "away": "FC Cologne",
-      "league": "Bundesliga",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/122.png",
-      "poster": "",
-      "startAt": "2026-11-01T14:30:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.miekgo.app/live/18812304.m3u8",
-          "kind": "embed"
-        }
-      ],
-      "url": "https://live05.miekgo.app/live/18812304.m3u8",
-      "kind": "embed"
-    },
-    {
-      "id": "anawar-20261101-07",
-      "category": "football",
-      "title": "Racing Santander vs Real Madrid",
-      "home": "Racing Santander",
-      "away": "Real Madrid",
-      "league": "LaLiga",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png",
-      "poster": "",
-      "startAt": "2026-11-01T15:15:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.miekgo.app/live/33982309.m3u8",
-          "kind": "embed"
-        },
-        {
-          "label": "HD-2",
-          "url": "https://live05.miekgo.app/live/78905744.m3u8",
-          "kind": "embed"
-        }
-      ],
-      "url": "https://live05.miekgo.app/live/33982309.m3u8",
-      "kind": "embed"
-    },
-    {
-      "id": "anawar-20261101-08",
-      "category": "football",
-      "title": "Lyon vs Angers",
-      "home": "Lyon",
-      "away": "Angers",
-      "league": "Ligue 1",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png",
-      "poster": "",
-      "startAt": "2026-11-01T16:15:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.miekgo.app/live/02456966.m3u8",
-          "kind": "embed"
-        }
-      ],
-      "url": "https://live05.miekgo.app/live/02456966.m3u8",
-      "kind": "embed"
-    },
-    {
-      "id": "anawar-20261101-09",
-      "category": "football",
-      "title": "Paris FC vs Monaco",
-      "home": "Paris FC",
-      "away": "Monaco",
-      "league": "Ligue 1",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png",
-      "poster": "",
-      "startAt": "2026-11-01T16:15:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.miekgo.app/live/49572724.m3u8",
-          "kind": "embed"
-        }
-      ],
-      "url": "https://live05.miekgo.app/live/49572724.m3u8",
-      "kind": "embed"
-    },
-    {
-      "id": "anawar-20261101-10",
-      "category": "football",
-      "title": "Eintracht Frankfurt vs Hamburger SV",
-      "home": "Eintracht Frankfurt",
-      "away": "Hamburger SV",
-      "league": "Bundesliga",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png",
-      "poster": "",
-      "startAt": "2026-11-01T16:30:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.miekgo.app/live/33860426.m3u8",
-          "kind": "embed"
-        }
-      ],
-      "url": "https://live05.miekgo.app/live/33860426.m3u8",
-      "kind": "embed"
-    },
-    {
-      "id": "anawar-20261101-11",
-      "category": "football",
-      "title": "Liverpool vs Arsenal",
-      "home": "Liverpool",
-      "away": "Arsenal",
-      "league": "EPL",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
-      "poster": "",
-      "startAt": "2026-11-01T16:30:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.miekgo.app/live/08552895.m3u8",
-          "kind": "embed"
-        },
-        {
-          "label": "HD2",
-          "url": "https://live05.miekgo.app/live/14830711.m3u8",
-          "kind": "embed"
-        },
-        {
-          "label": "HD-3",
-          "url": "https://live05.miekgo.app/live/07428422.m3u8",
-          "kind": "embed"
-        }
-      ],
-      "url": "https://live05.miekgo.app/live/08552895.m3u8",
-      "kind": "embed"
-    },
-    {
-      "id": "anawar-20261101-13",
-      "category": "football",
-      "title": "Elche vs Valencia",
-      "home": "Elche",
-      "away": "Valencia",
-      "league": "LaLiga",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png",
-      "poster": "",
-      "startAt": "2026-11-01T17:30:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.miekgo.app/live/78905744.m3u8",
-          "kind": "embed"
-        }
-      ],
-      "url": "https://live05.miekgo.app/live/78905744.m3u8",
-      "kind": "embed"
-    },
-    {
-      "id": "anawar-20261101-15",
-      "category": "football",
-      "title": "Juventus vs Napoli",
-      "home": "Juventus",
-      "away": "Napoli",
-      "league": "Serie A",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png",
-      "poster": "",
-      "startAt": "2026-11-01T19:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.miekgo.app/live/08552895.m3u8",
-          "kind": "embed"
-        }
-      ],
-      "url": "https://live05.miekgo.app/live/08552895.m3u8",
-      "kind": "embed"
-    },
-    {
-      "id": "anawar-20261102-17",
-      "category": "football",
-      "title": "Sassuolo vs Fiorentina",
-      "home": "Sassuolo",
-      "away": "Fiorentina",
-      "league": "Serie A",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-02T17:30:00.000Z",
+      "startAt": "2026-11-03T17:45:00.000Z",
       "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
@@ -372,24 +19,24 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-17.m3u8",
+          "url": "https://example.com/replace-stream-01.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-17.m3u8",
+      "url": "https://example.com/replace-stream-01.m3u8",
       "kind": "video"
     },
     {
-      "id": "anawar-20261102-18",
+      "id": "ucl-20261103-02",
       "category": "football",
-      "title": "Lorient vs Brest",
-      "home": "Lorient",
-      "away": "Brest",
-      "league": "Ligue 1",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
+      "title": "Shakhtar Donetsk vs Sporting CP",
+      "home": "Shakhtar Donetsk",
+      "away": "Sporting CP",
+      "league": "UEFA Champions League",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/493.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png",
       "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-02T19:45:00.000Z",
+      "startAt": "2026-11-03T17:45:00.000Z",
       "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
@@ -397,24 +44,24 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-18.m3u8",
+          "url": "https://example.com/replace-stream-02.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-18.m3u8",
+      "url": "https://example.com/replace-stream-02.m3u8",
       "kind": "video"
     },
     {
-      "id": "anawar-20261102-19",
+      "id": "ucl-20261103-03",
       "category": "football",
-      "title": "Atalanta vs Parma",
-      "home": "Atalanta",
-      "away": "Parma",
-      "league": "Serie A",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png",
+      "title": "Atlético Madrid vs Bayern Munich",
+      "home": "Atlético Madrid",
+      "away": "Bayern Munich",
+      "league": "UEFA Champions League",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
       "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-02T19:45:00.000Z",
+      "startAt": "2026-11-03T20:00:00.000Z",
       "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
@@ -422,24 +69,24 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-19.m3u8",
+          "url": "https://example.com/replace-stream-03.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-19.m3u8",
+      "url": "https://example.com/replace-stream-03.m3u8",
       "kind": "video"
     },
     {
-      "id": "anawar-20261102-20",
+      "id": "ucl-20261103-04",
       "category": "football",
-      "title": "Newcastle United vs Everton",
-      "home": "Newcastle United",
-      "away": "Everton",
-      "league": "EPL",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png",
+      "title": "Barcelona vs Aston Villa",
+      "home": "Barcelona",
+      "away": "Aston Villa",
+      "league": "UEFA Champions League",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
       "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-02T20:00:00.000Z",
+      "startAt": "2026-11-03T20:00:00.000Z",
       "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
@@ -447,24 +94,24 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-20.m3u8",
+          "url": "https://example.com/replace-stream-04.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-20.m3u8",
+      "url": "https://example.com/replace-stream-04.m3u8",
       "kind": "video"
     },
     {
-      "id": "anawar-20261102-21",
+      "id": "ucl-20261103-05",
       "category": "football",
-      "title": "Deportivo La Coruña vs Osasuna",
-      "home": "Deportivo La Coruña",
-      "away": "Osasuna",
-      "league": "LaLiga",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png",
+      "title": "Bodø/Glimt vs Lille",
+      "home": "Bodø/Glimt",
+      "away": "Lille",
+      "league": "UEFA Champions League",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2980.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
       "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-02T20:00:00.000Z",
+      "startAt": "2026-11-03T20:00:00.000Z",
       "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
@@ -472,11 +119,111 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-21.m3u8",
+          "url": "https://example.com/replace-stream-05.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-21.m3u8",
+      "url": "https://example.com/replace-stream-05.m3u8",
+      "kind": "video"
+    },
+    {
+      "id": "ucl-20261103-06",
+      "category": "football",
+      "title": "Feyenoord vs Inter Milan",
+      "home": "Feyenoord",
+      "away": "Inter Milan",
+      "league": "UEFA Champions League",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/142.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
+      "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-03T20:00:00.000Z",
+      "endAt": "",
+      "statusMode": "auto",
+      "homeScore": "",
+      "awayScore": "",
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-06.m3u8",
+          "kind": "video"
+        }
+      ],
+      "url": "https://example.com/replace-stream-06.m3u8",
+      "kind": "video"
+    },
+    {
+      "id": "ucl-20261103-07",
+      "category": "football",
+      "title": "LASK vs Slovan Bratislava",
+      "home": "LASK",
+      "away": "Slovan Bratislava",
+      "league": "UEFA Champions League",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4411.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/521.png",
+      "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-03T20:00:00.000Z",
+      "endAt": "",
+      "statusMode": "auto",
+      "homeScore": "",
+      "awayScore": "",
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-07.m3u8",
+          "kind": "video"
+        }
+      ],
+      "url": "https://example.com/replace-stream-07.m3u8",
+      "kind": "video"
+    },
+    {
+      "id": "ucl-20261103-08",
+      "category": "football",
+      "title": "Manchester United vs AS Roma",
+      "home": "Manchester United",
+      "away": "AS Roma",
+      "league": "UEFA Champions League",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
+      "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-03T20:00:00.000Z",
+      "endAt": "",
+      "statusMode": "auto",
+      "homeScore": "",
+      "awayScore": "",
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-08.m3u8",
+          "kind": "video"
+        }
+      ],
+      "url": "https://example.com/replace-stream-08.m3u8",
+      "kind": "video"
+    },
+    {
+      "id": "ucl-20261103-09",
+      "category": "football",
+      "title": "Villarreal vs Paris Saint-Germain",
+      "home": "Villarreal",
+      "away": "Paris Saint-Germain",
+      "league": "UEFA Champions League",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
+      "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-03T20:00:00.000Z",
+      "endAt": "",
+      "statusMode": "auto",
+      "homeScore": "",
+      "awayScore": "",
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/replace-stream-09.m3u8",
+          "kind": "video"
+        }
+      ],
+      "url": "https://example.com/replace-stream-09.m3u8",
       "kind": "video"
     }
   ]
