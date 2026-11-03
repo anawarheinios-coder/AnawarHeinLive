@@ -82,20 +82,26 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Champions League",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-03T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-03.m3u8",
+          "url": "https://live05.miekgo.app/live/97885009.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://live05.miekgo.app/live/87547578.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-03.m3u8",
+      "url": "https://live05.miekgo.app/live/97885009.m3u8",
       "kind": "video"
     },
     {
@@ -107,20 +113,26 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Champions League",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-03T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-04.m3u8",
+          "url": "https://live05.miekgo.app/live/07428422.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://live05.miekgo.app/live/02456966.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-04.m3u8",
+      "url": "https://live05.miekgo.app/live/07428422.m3u8",
       "kind": "video"
     },
     {
@@ -132,20 +144,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Champions League",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2980.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-03T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-05.m3u8",
+          "url": "https://live05.miekgo.app/live/18812304.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-05.m3u8",
+      "url": "https://live05.miekgo.app/live/18812304.m3u8",
       "kind": "video"
     },
     {
@@ -157,20 +170,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Champions League",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/142.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-03T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-06.m3u8",
+          "url": "https://live05.miekgo.app/live/99121525.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-06.m3u8",
+      "url": "https://live05.miekgo.app/live/99121525.m3u8",
       "kind": "video"
     },
     {
@@ -182,20 +196,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Champions League",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4411.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/521.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-03T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-07.m3u8",
+          "url": "https://live05.miekgo.app/live/33860426.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-07.m3u8",
+      "url": "https://live05.miekgo.app/live/33860426.m3u8",
       "kind": "video"
     },
     {
@@ -207,20 +222,26 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Champions League",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-03T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-08.m3u8",
+          "url": "https://live05.miekgo.app/live/08552895.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://live05.miekgo.app/live/08552895.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-08.m3u8",
+      "url": "https://live05.miekgo.app/live/08552895.m3u8",
       "kind": "video"
     },
     {
@@ -232,20 +253,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Champions League",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-03T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-09.m3u8",
+          "url": "https://live05.miekgo.app/live/07808742.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-09.m3u8",
+      "url": "https://live05.miekgo.app/live/07808742.m3u8",
       "kind": "video"
     }
   ]
