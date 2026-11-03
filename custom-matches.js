@@ -25,12 +25,12 @@ window.ANAWAR_CONTENT = {
         },
         {
           "label": "HD-2",
-          "url": "https://live2.domaincdn.cc/livecdn/channel-9.m3u8?auth_key=3000001793727090-0-0-e67cc7b0ee48a9e721ea155030868c18",
+          "url": "https://pull.niur.live/live/stream-9912116_lhd.m3u8?txSecret=e3e786206e1bdd2d5b64c227a9ba8475&txTime=6aea7104",
           "kind": "video"
         },
         {
           "label": "FHD",
-          "url": "https://live2.domaincdn.cc/livecdn/channel-1.m3u8?auth_key=3000001793727012-0-0-f6b6a35ce9bb8c86990c1d860394cfe6",
+          "url": "https://pull.niues.live/live/stream-9912091_lhd.m3u8?auth_key=1793731306-0-0-e2f4c43df6765912b654523410241b2e",
           "kind": "video"
         }
       ],
@@ -61,12 +61,12 @@ window.ANAWAR_CONTENT = {
         },
         {
           "label": "FHD",
-          "url": "https://live2.domaincdn.cc/livecdn/channel-15.m3u8?auth_key=3000001793727162-0-0-003905d9cf15cdc93fc05cbd34188169",
+          "url": "https://pull.niur.live/live/stream-9912127_lhd.m3u8?txSecret=455091fa71469fe742ee69ecabfd1014&txTime=6aea716c",
           "kind": "video"
         },
         {
           "label": "HD-2",
-          "url": "https://live2.domaincdn.cc/livecdn/channel-4.m3u8?auth_key=3000001793727193-0-0-9dc04c81b70d4d98f22368aedba116bc",
+          "url": "https://pull.niur.live/live/stream-459401_lhd.m3u8?txSecret=0ef3c27db54da9ac7f3ee27303706675&txTime=6aea7180",
           "kind": "video"
         }
       ],
