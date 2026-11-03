@@ -726,6 +726,703 @@ window.addEventListener('hashchange',()=>{
   closePlayer();
   render();
   window.scrollTo(0,0);
+
+  /* VIDEO.JS PLAYER UPGRADE */
+(function () {
+  if (window.__anawarVhsUpgrade) return;
+  window.__anawarVhsUpgrade = true;
+
+  let sdkPromise;
+  let instance = null;
+  let cleanup = null;
+  let requestId = 0;
+  let retryTimer = null;
+
+  const modal = document.getElementById("modal");
+  const host = document.getElementById("player");
+  const panel = document.querySelector(".below-player");
+  const oldClose = closePlayer;
+  const byId = id => document.getElementById(id);
+
+  function message(text) {
+    const target = panel.querySelector(".stream-message");
+    if (target) target.textContent = text;
+  }
+
+  function loadSDK() {
+    if (sdkPromise) return sdkPromise;
+
+    sdkPromise = new Promise((resolve, reject) => {
+      const css = document.createElement("link");
+      css.rel = "stylesheet";
+      css.href =
+        "https://cdn.jsdelivr.net/npm/video.js@8.23.4/dist/video-js.min.css";
+      document.head.append(css);
+
+      if (window.videojs) {
+        resolve();
+        return;
+      }
+
+      const script = document.createElement("script");
+      script.src =
+        "https://cdn.jsdelivr.net/npm/video.js@8.23.4/dist/video.min.js";
+
+      const timeout = setTimeout(() => {
+        script.remove();
+        reject(
+          Error("Player download timed out. Press Retry stream.")
+        );
+      }, 15000);
+
+      script.onload = () => {
+        clearTimeout(timeout);
+
+        if (window.videojs) resolve();
+        else reject(Error("Video.js did not load. Press Retry stream."));
+      };
+
+      script.onerror = () => {
+        clearTimeout(timeout);
+        script.remove();
+
+        reject(
+          Error("Cannot download Video.js. Check your connection.")
+        );
+      };
+
+      document.head.append(script);
+    }).catch(error => {
+      sdkPromise = null;
+      throw error;
+    });
+
+    return sdkPromise;
+  }
+
+  const style = document.createElement("style");
+
+  style.textContent = `
+    #player > .video-js {
+      width: 100%;
+      height: 100%;
+      min-height: 0;
+      background: #000;
+    }
+
+    #player .video-js .vjs-tech {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    #player .video-js .vjs-big-play-button {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-color: #fff;
+      background: #a51b25cc;
+    }
+
+    #player .video-js .vjs-control-bar {
+      z-index: 8;
+      background: #100d12e6;
+    }
+
+    #player .video-js button {
+      font-family: inherit;
+    }
+
+    #player .video-js .vjs-icon-placeholder {
+      font-family: VideoJS;
+    }
+
+    #player .video-js .vjs-control-text {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+
+    #player .video-js .vjs-play-progress {
+      background: #da291c;
+    }
+
+    #player .video-js .vjs-slider {
+      background: #ffffff40;
+    }
+
+    #player .player-sponsor {
+      z-index: 5;
+    }
+  `;
+
+  document.head.append(style);
+
+  function teardown() {
+    clearTimeout(retryTimer);
+    retryTimer = null;
+
+    if (cleanup) {
+      cleanup();
+      cleanup = null;
+    }
+
+    if (playerCleanup) {
+      playerCleanup();
+      playerCleanup = null;
+    }
+
+    const video = host.querySelector("video");
+
+    if (video) AnawarPlayer.closeMini(video);
+
+    if (instance) {
+      instance.dispose();
+      instance = null;
+    }
+
+    if (activeHls) {
+      activeHls.destroy();
+      activeHls = null;
+    }
+
+    host.querySelectorAll("iframe").forEach(frame => {
+      frame.remove();
+    });
+
+    host.replaceChildren();
+  }
+
+  function addSponsor(container) {
+    if (bannerDismissed) return;
+
+    const image = imageURL(cfg.playerImage || "");
+    if (!image && !cfg.playerTitle) return;
+
+    const wrapper = document.createElement("div");
+    wrapper.className = "player-sponsor";
+
+    const link = document.createElement("a");
+    link.className = "mini-ad";
+    link.href = url(cfg.playerUrl) || "https://example.com";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+
+    if (image) {
+      const img = document.createElement("img");
+      img.src = image;
+      img.alt = "Player sponsor";
+      link.append(img);
+    } else {
+      link.textContent = cfg.playerTitle;
+    }
+
+    const close = document.createElement("button");
+    close.type = "button";
+    close.className = "sponsor-dismiss";
+    close.textContent = "×";
+    close.setAttribute("aria-label", "Close player banner");
+
+    close.onclick = event => {
+      event.preventDefault();
+      event.stopPropagation();
+      bannerDismissed = true;
+      wrapper.remove();
+    };
+
+    wrapper.append(link, close);
+    container.append(wrapper);
+  }
+
+  closePlayer = function () {
+    ++requestId;
+    teardown();
+
+    if (document.fullscreenElement === modal) {
+      document.exitFullscreen().catch(() => {});
+    }
+
+    currentPlayerIndex = null;
+    bannerDismissed = false;
+
+    if (modal.open) modal.close();
+
+    panel.replaceChildren();
+  };
+
+  byId("close").onclick = closePlayer;
+
+  modal.removeEventListener("cancel", oldClose);
+
+  modal.addEventListener("cancel", event => {
+    event.preventDefault();
+    closePlayer();
+  });
+
+  modal.addEventListener("close", () => {
+    if (host.childNodes.length) closePlayer();
+  });
+
+  openContent = async function (
+    index,
+    serverIndex = 0,
+    resume = null
+  ) {
+    const item = cfg.items[index];
+    if (!item) return;
+
+    const streams =
+      item.streams && item.streams.length
+        ? item.streams
+        : [
+            {
+              label: "Server 1",
+              url: item.url,
+              kind: item.kind || "video"
+            }
+          ];
+
+    if (!streams[serverIndex]) serverIndex = 0;
+
+    const source = streams[serverIndex];
+    const ticket = ++requestId;
+
+    teardown();
+
+    if (currentPlayerIndex !== index) {
+      bannerDismissed = false;
+    }
+
+    currentPlayerIndex = index;
+
+    byId("player-title").textContent = item.title;
+    panel.replaceChildren();
+
+    const servers = document.createElement("div");
+    servers.className = "filters";
+
+    streams.forEach((stream, position) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className =
+        "chip" + (position === serverIndex ? " active" : "");
+
+      button.textContent =
+        stream.label || "Server " + (position + 1);
+
+      button.onclick = () => {
+        openContent(
+          index,
+          position,
+          AnawarPlayer.playbackState(
+            host.querySelector("video")
+          )
+        );
+      };
+
+      servers.append(button);
+    });
+
+    const retry = document.createElement("button");
+    retry.type = "button";
+    retry.className = "chip";
+    retry.textContent = "Retry stream";
+
+    retry.onclick = () => {
+      openContent(
+        index,
+        serverIndex,
+        AnawarPlayer.playbackState(
+          host.querySelector("video")
+        )
+      );
+    };
+
+    servers.append(retry);
+
+    const status = document.createElement("p");
+    status.className = "stream-message";
+    status.setAttribute("role", "status");
+    status.style.marginTop = "12px";
+    status.textContent = "Loading player…";
+
+    panel.append(servers, status);
+
+    if (!modal.open) modal.showModal();
+
+    if (!url(source.url)) {
+      message("Add a valid video URL in your admin.");
+      return;
+    }
+
+    if (source.kind === "embed") {
+      const frame = document.createElement("iframe");
+      frame.src = url(source.url);
+      frame.title = item.title;
+
+      frame.setAttribute(
+        "allow",
+        "autoplay; fullscreen; picture-in-picture"
+      );
+
+      frame.setAttribute("allowfullscreen", "");
+
+      frame.setAttribute(
+        "sandbox",
+        "allow-scripts allow-same-origin allow-presentation"
+      );
+
+      frame.style.cssText =
+        "width:100%;height:100%;border:0";
+
+      host.append(frame);
+      addSponsor(host);
+
+      cleanup = AnawarPlayer.mount({
+        modal,
+        player: host,
+        video: null,
+        hls: null,
+        streams,
+        serverIndex,
+        source,
+        title: item.title,
+        onSourceChange: (next, state) =>
+          openContent(index, next, state)
+      });
+
+      message(
+        "Use the embedded player controls or choose another server."
+      );
+
+      return;
+    }
+
+    try {
+      await loadSDK();
+
+      if (ticket !== requestId || !modal.open) return;
+
+      const element = document.createElement("video-js");
+      element.className = "video-js vjs-default-skin";
+      host.append(element);
+
+      const safari =
+        window.videojs.browser.IS_SAFARI ||
+        window.videojs.browser.IS_IOS;
+
+      const player = window.videojs(element, {
+        controls: true,
+        autoplay: false,
+        preload: "auto",
+        playsinline: true,
+        fluid: false,
+        fill: true,
+        responsive: true,
+        liveui: true,
+        loop: !!item.demo,
+
+        html5: {
+          vhs: {
+            overrideNative: !safari,
+            enableLowInitialPlaylist: true,
+            maxPlaylistRetries: 3
+          },
+          nativeAudioTracks: !!safari,
+          nativeVideoTracks: !!safari
+        }
+      });
+
+      instance = player;
+
+      const video = player.tech(true).el();
+      video.setAttribute("playsinline", "");
+
+      if (resume) {
+        video.volume = resume.volume;
+        video.muted = resume.muted;
+      }
+
+      addSponsor(player.el());
+
+      const removeTools = AnawarPlayer.mount({
+        modal,
+        player: host,
+        video,
+        hls: null,
+        streams,
+        serverIndex,
+        source,
+        title: item.title,
+        onSourceChange: (next, state) =>
+          openContent(index, next, state)
+      });
+
+      const quality = byId("player-resolution");
+
+      let selectedQuality = "auto";
+      let recoveryCount = 0;
+      let disposed = false;
+      let qualitySignature = "";
+
+      function representations() {
+        try {
+          return (
+            player.tech(true).vhs?.representations() || []
+          );
+        } catch {
+          return [];
+        }
+      }
+
+      function refreshQuality() {
+        if (disposed || !quality) return;
+
+        const reps = representations();
+
+        const signature = JSON.stringify([
+          reps.map(rep => [
+            rep.id,
+            rep.height,
+            rep.bandwidth
+          ]),
+          video.videoHeight
+        ]);
+
+        if (
+          signature === qualitySignature &&
+          !quality.value.startsWith("source:")
+        ) {
+          return;
+        }
+
+        qualitySignature = signature;
+        quality.replaceChildren();
+        quality.disabled = false;
+
+        function add(value, text, group = quality) {
+          const option = document.createElement("option");
+          option.value = value;
+          option.textContent = text;
+          group.append(option);
+        }
+
+        if (reps.length > 1) {
+          add("auto", "Auto (adaptive)");
+
+          reps.forEach((rep, position) => {
+            add(
+              "quality:" + position,
+              rep.height
+                ? rep.height + "p"
+                : Math.round(rep.bandwidth / 1000) + " kbps"
+            );
+          });
+        } else {
+          add(
+            "auto",
+            safari && /\.m3u8(?:[?#]|$)/i.test(source.url)
+              ? "Auto (Safari)"
+              : video.videoHeight
+                ? video.videoHeight + "p (source)"
+                : "Auto / source quality"
+          );
+        }
+
+        if (streams.length > 1) {
+          const group = document.createElement("optgroup");
+          group.label = "Stream servers";
+
+          streams.forEach((stream, position) => {
+            add(
+              "server:" + position,
+              stream.label || "Server " + (position + 1),
+              group
+            );
+          });
+
+          quality.append(group);
+        }
+
+        quality.value = [...quality.options].some(
+          option => option.value === selectedQuality
+        )
+          ? selectedQuality
+          : "auto";
+
+        quality.disabled =
+          reps.length <= 1 && streams.length <= 1;
+      }
+
+      quality.onchange = () => {
+        if (quality.value.startsWith("server:")) {
+          openContent(
+            index,
+            Number(quality.value.slice(7)),
+            AnawarPlayer.playbackState(video)
+          );
+          return;
+        }
+
+        selectedQuality = quality.value;
+
+        const reps = representations();
+
+        if (selectedQuality === "auto") {
+          reps.forEach(rep => rep.enabled(true));
+        } else {
+          const selected = Number(
+            selectedQuality.slice(8)
+          );
+
+          reps.forEach((rep, position) => {
+            rep.enabled(position === selected);
+          });
+        }
+
+        message(
+          selectedQuality === "auto"
+            ? "Adaptive quality enabled."
+            : "Selected " +
+              quality.selectedOptions[0].textContent +
+              "."
+        );
+      };
+
+      video.addEventListener(
+        "loadedmetadata",
+        refreshQuality
+      );
+
+      video.addEventListener("resize", refreshQuality);
+      player.on("loadedmetadata", refreshQuality);
+
+      const qualityTimer = setInterval(
+        refreshQuality,
+        2000
+      );
+
+      cleanup = () => {
+        disposed = true;
+        clearInterval(qualityTimer);
+
+        video.removeEventListener(
+          "loadedmetadata",
+          refreshQuality
+        );
+
+        video.removeEventListener(
+          "resize",
+          refreshQuality
+        );
+
+        removeTools();
+      };
+
+      refreshQuality();
+
+      const type = /\.m3u8(?:[?#]|$)/i.test(source.url)
+        ? "application/x-mpegURL"
+        : /\.mpd(?:[?#]|$)/i.test(source.url)
+          ? "application/dash+xml"
+          : /\.webm(?:[?#]|$)/i.test(source.url)
+            ? "video/webm"
+            : "video/mp4";
+
+      const mediaSource = {
+        src: url(source.url),
+        type
+      };
+
+      function play() {
+        const attempt = player.play();
+
+        if (attempt && attempt.catch) {
+          attempt.catch(() => {
+            if (ticket === requestId) {
+              message("Press the play button to start.");
+            }
+          });
+        }
+      }
+
+      player.one("loadedmetadata", () => {
+        if (resume) {
+          AnawarPlayer.restore(video, resume);
+        } else {
+          play();
+        }
+      });
+
+      player.on("playing", () => {
+        clearTimeout(retryTimer);
+
+        message(
+          "Video.js playback · Choose another server if needed."
+        );
+      });
+
+      player.on("waiting", () => {
+        message("Buffering…");
+      });
+
+      player.on("error", () => {
+        if (ticket !== requestId) return;
+
+        const error = player.error();
+
+        if (error?.code === 2 && recoveryCount < 2) {
+          recoveryCount++;
+
+          message(
+            "Connection interrupted. Reconnecting (" +
+            recoveryCount +
+            "/2)…"
+          );
+
+          retryTimer = setTimeout(() => {
+            if (ticket !== requestId) return;
+
+            const state =
+              AnawarPlayer.playbackState(video);
+
+            player.error(null);
+            player.src(mediaSource);
+
+            player.one("loadedmetadata", () => {
+              AnawarPlayer.restore(video, state);
+            });
+
+            if (!state?.paused) play();
+          }, 1500 * recoveryCount);
+        } else {
+          message(
+            error?.code === 3
+              ? "This stream could not be decoded. Try another server."
+              : "Stream unavailable. The link may be expired, blocked by the source, or missing CORS access. Try another server."
+          );
+        }
+      });
+
+      player.src(mediaSource);
+
+      if (!resume || !resume.paused) play();
+    } catch (error) {
+      if (ticket === requestId) {
+        message(
+          error.message ||
+          "Unable to start this player. Try another server."
+        );
+      }
+    }
+  };
+})();
 });
 
 boot();
