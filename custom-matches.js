@@ -10,21 +10,32 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Champions League",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/432.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-03T17:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-01.m3u8",
-          "kind": "video"
+          "url": "https://live05.miekgo.app/live/07428422.m3u8",
+          "kind": "embed"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://live2.domaincdn.cc/livecdn/channel-9.m3u8?auth_key=3000001793727090-0-0-e67cc7b0ee48a9e721ea155030868c18",
+          "kind": "embed"
+        },
+        {
+          "label": "FHD",
+          "url": "https://live2.domaincdn.cc/livecdn/channel-1.m3u8?auth_key=3000001793727012-0-0-f6b6a35ce9bb8c86990c1d860394cfe6",
+          "kind": "embed"
         }
       ],
-      "url": "https://example.com/replace-stream-01.m3u8",
-      "kind": "video"
+      "url": "https://live05.miekgo.app/live/07428422.m3u8",
+      "kind": "embed"
     },
     {
       "id": "ucl-20261103-02",
@@ -35,21 +46,32 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Champions League",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/493.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-03T17:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-02.m3u8",
-          "kind": "video"
+          "url": "https://live05.miekgo.app/live/87547578.m3u8",
+          "kind": "embed"
+        },
+        {
+          "label": "FHD",
+          "url": "https://live2.domaincdn.cc/livecdn/channel-15.m3u8?auth_key=3000001793727162-0-0-003905d9cf15cdc93fc05cbd34188169",
+          "kind": "embed"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://live2.domaincdn.cc/livecdn/channel-4.m3u8?auth_key=3000001793727193-0-0-9dc04c81b70d4d98f22368aedba116bc",
+          "kind": "embed"
         }
       ],
-      "url": "https://example.com/replace-stream-02.m3u8",
-      "kind": "video"
+      "url": "https://live05.miekgo.app/live/87547578.m3u8",
+      "kind": "embed"
     },
     {
       "id": "ucl-20261103-03",
