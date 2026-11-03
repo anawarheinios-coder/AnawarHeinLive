@@ -1,23 +1,1507 @@
+/* ANAWAR LIVE — COMPLETE PUBLIC APP */
 
-const defaults={bannerTitle:'Your brand. Every matchday.',bannerSubtitle:'Connect with football fans. Advertise with Anawar Live.',bannerUrl:'https://example.com',bannerImage:'',playerTitle:'YOUR BRAND HERE ↗',playerUrl:'https://example.com',playerImage:'',theme:'dark',items:[]};let cfg={...defaults},canAdmin=false,configVersion=null,loadError='',portable=false;const pages=[['football','◉','Football Live'],['anawar','◈','Anawar Hein Live'],['tv','▣','Tv Channel'],['highlights','▷','Highlights'],['settings','⚙','Settings'],['admin','▤','Admin Panel']];let filter='All matches';const $=x=>document.getElementById(x);function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}function url(s){if(typeof s!=='string'||!s.trim())return '';try{const u=new URL(s,location.href);return ['https:','http:'].includes(u.protocol)?u.href:''}catch{return ''}}function imageURL(s){return typeof s==='string'&&/^data:image\/png;base64,[A-Za-z0-9+/=]+$/.test(s)?s:url(s)}function ad(){document.body.classList.toggle('light',(localStorage.getItem('anawar-theme')||'dark')==='light');$('topad').href=url(cfg.bannerUrl)||'https://example.com';$('topad').innerHTML=cfg.bannerImage&&imageURL(cfg.bannerImage)?`<img src="${esc(imageURL(cfg.bannerImage))}" alt="Sponsor banner"><span class="cta">Visit sponsor ↗</span>`:`<div><div class="sponsor">ADVERTISEMENT • PARTNER WITH US</div><strong>${esc(cfg.bannerTitle)}</strong><p>${esc(cfg.bannerSubtitle)}</p></div><span class="cta">Explore more ↗</span>`}function heading(title,sub){return `<div class="titlebar"><div><h1>${title}</h1><p class="sub">${sub}</p></div><span class="pill">✦ &nbsp; THE HOME OF FOOTBALL</span></div>`}
-function logo(src,name){return src&&imageURL(src)?`<img class="team-logo" src="${esc(imageURL(src))}" alt="${esc(name)} logo">`:`<div class="crest">${esc((name||'?').slice(0,3).toUpperCase())}</div>`}
-function contentCards(category){return cfg.items.filter(x=>x.category===category&&(!['football','anawar'].includes(category)||filter==='All matches'||x.league===filter)).sort((a,b)=>(Date.parse(a.startAt)||0)-(Date.parse(b.startAt)||0)).map(x=>{const i=cfg.items.indexOf(x);return category==='tv'?`<button class="tv-tile" data-item="${i}"><span class="tv-logo-well">${x.poster&&imageURL(x.poster)?`<img src="${esc(imageURL(x.poster))}" alt="${esc(x.title)} logo">`:'<span class="tv-letter">'+esc(x.title.slice(0,2).toUpperCase())+'</span>'}</span><strong>${esc(x.title)}</strong><span class="tv-watch">▶ &nbsp; Watch Live</span></button>`:['football','anawar'].includes(category)?`<button class="card match" data-item="${i}"><div class="league"><span>◈ &nbsp; ${esc(x.league||(category==='anawar'?'Anawar Hein Live':'Football Live'))}</span><span class="watch" data-state="${i}">${esc(matchState(x))}</span></div><div class="teams"><div class="team">${logo(x.homeLogo,x.home)}${esc(x.home||'Home team')}</div><div class="score">${x.homeScore!==undefined&&x.homeScore!==''&&x.awayScore!==undefined&&x.awayScore!==''?esc(x.homeScore)+' – '+esc(x.awayScore):'VS'}</div><div class="team">${logo(x.awayLogo,x.away)}${esc(x.away||'Away team')}</div></div><p class="match-date">${esc(matchDate(x))}</p><div class="matchfoot"><span>${esc(x.title)}</span><span class="watch">Watch match ↗</span></div></button>`:`<button class="card channel" data-item="${i}">${x.poster&&imageURL(x.poster)?`<img class="content-poster" src="${esc(imageURL(x.poster))}" alt="${esc(x.title)}">`:'<span class="play" style="margin:auto">▶</span>'}<b>${esc(x.title)}</b><small>${category==='highlights'?'Watch highlight':'Watch channel'}</small></button>`}).join('')}
-function render(){ad();let page=location.hash.slice(1)||(location.pathname==='/admin'?'admin':'football');if(page==='admin'&&location.pathname!=='/admin')page='football';if(!pages.some(p=>p[0]===page))page='football';$('nav').innerHTML=pages.filter(p=>p[0]!=='admin'||location.pathname==='/admin').map(p=>`<a href="#${p[0]}" class="${p[0]===page?'active':''}"><i>${p[1]}</i>${p[2]}</a>`).join('');$('crumb').textContent=pages.find(p=>p[0]===page)[2];let h='';if(['football','anawar'].includes(page)){const leagues=[...new Set(cfg.items.filter(x=>x.category===page&&x.league).map(x=>x.league))];if(!leagues.includes(filter)&&filter!=='All matches')filter='All matches';h=heading(page==='anawar'?'Anawar Hein Live':'Football Live','Your matches. Every kick-off, in one place.')+`<section class="hero"><span class="hero-info">${page==='anawar'?'ANAWAR HEIN LIVE':'ANAWAR LIVE • FOOTBALL'}</span><div><span class="live"><span class="dot"></span>YOUR MATCHDAY, UPGRADED</span><h2>${page==='anawar'?'Anawar Hein.<br>Every match, live.':'Big games.<br>Unmissable moments.'}</h2><p>Your home for live football.</p><button class="cta" id="hero-watch">▶ &nbsp; View matches</button></div></section><div class="sectionhead"><h2>Match centre</h2><div class="filters">${['All matches',...leagues].map(t=>`<button class="chip ${filter===t?'active':''}" data-filter="${esc(t)}">${esc(t)}</button>`).join('')}</div></div><div class="grid" id="matches">${contentCards(page)}</div>${!cfg.items.some(x=>x.category===page)?'<div class="card empty"><h2>No matches scheduled yet</h2><p>Upcoming matches will appear here.</p></div>':''}`}
-else if(page==='tv'){const channels=cfg.items.filter(x=>x.category==='tv');h=`<section class="tv-hero"><div><span class="tv-badge"><span class="dot"></span>Live TV Streaming</span><h1>Your channels.<br><em>One place to watch.</em></h1><p>Explore your favourite TV channels. Choose a channel, select a server and start watching.</p></div><div class="tv-hero-art" aria-hidden="true"><svg viewBox="0 0 160 160" fill="none"><path d="M56 28 80 47 107 22" stroke="white" stroke-width="7" stroke-linecap="round"/><rect x="22" y="47" width="118" height="88" rx="20" fill="white"/><rect x="34" y="59" width="80" height="62" rx="12" fill="#00b98d"/><path d="m64 75 24 15-24 15V75Z" fill="white"/><circle cx="127" cy="76" r="5" fill="#00b98d"/><circle cx="127" cy="96" r="5" fill="#00b98d"/></svg></div></section><div class="sectionhead tv-section"><div><h2>TV Channels</h2><p class="sub">Select a channel to start watching its live stream</p></div><span class="tv-badge">${channels.length} channels</span></div><div class="tv-toolbar"><input id="search" class="tv-search" type="search" placeholder="Search channels…" aria-label="Search content"><span class="hint">All channels</span></div><div id="listing" class="tv-grid">${contentCards('tv')}</div><div id="tv-no-results" class="empty" hidden>No channels match your search.</div>${!channels.length?'<div class="card empty"><h2>Your channel directory is ready</h2><p>Channels will appear here once they are published.</p></div>':''}`}
-else if(page==='settings'){h=heading('Settings','Make Anawar Live your own.')+`<div class="card form"><h2>Appearance</h2><p class="help">Your display preference is saved on this device.</p><select id="appearance" aria-label="Appearance"><option value="dark">United dark</option><option value="light">Away kit light</option></select></div>`}else if(page==='admin'){h=heading('Admin Panel','One place for your streams, channels, highlights and banners.')+`${!canAdmin&&!portable?'<div class="notice">Sign in as the website owner to manage your content. <a href="/signin-with-chatgpt?return_to=/admin" target="_top">Sign in with ChatGPT ↗</a></div>':''}<div class="filters" style="margin-bottom:20px"><button type="button" class="chip active" id="visual-tab">Visual editor</button><button type="button" class="chip" id="code-tab">Code / JSON</button></div><div class="card form hidden" id="code-panel"><h2>Edit with code</h2><p class="help">Paste your full JSON configuration below, or import config.json from GitHub. Apply loads it into the visual editor. Publish saves it to the hosted website; Export downloads config.json for your GitHub repository.</p><textarea id="code-editor" aria-label="Configuration JSON" style="min-height:380px;font-family:monospace"></textarea><label for="import-json">Import JSON file</label><input type="file" id="import-json" accept="application/json,.json"><div style="margin-top:20px"><button class="cta" id="apply-code">Apply JSON to editor</button></div><div id="code-status" role="status"></div></div><form id="settings-form" class="card form"><h2>Content & advertising</h2><p class="help">${portable?'GitHub mode: export config.json, then commit it to your repository to update the website.':'Publish your changes to update all pages for every visitor.'}</p><h3>Page banner</h3><p class="help">Shown on all five pages. Clicking opens your external link in a new tab.</p>${field('bannerTitle','Banner headline')}${field('bannerSubtitle','Banner description')}${field('bannerImage','Banner image URL (optional)')}${uploadField('bannerImage','Upload page banner (PNG supported)','image/png,image/jpeg,image/webp,image/gif')}${field('bannerUrl','Banner destination URL','url')}<h3>Video player banner</h3>${field('playerTitle','Small banner text')}${field('playerImage','Small banner image URL (optional)')}${uploadField('playerImage','Upload player banner (PNG supported)','image/png,image/jpeg,image/webp,image/gif')}${field('playerUrl','Small banner destination URL','url')}<h3>Your matches, broadcasts & highlights</h3><p class="help">Add a direct video URL, upload a video (up to 25 MB), or paste an iframe embed code. For larger videos, use a hosted stream URL. Use content you are authorized to broadcast.</p><p class="help">Only you can publish content. Add any number of matches and highlights, and one dedicated Anawar Hein Live broadcast.</p><div class="filters" style="margin:18px 0">${['football','anawar','tv','highlights'].map(c=>`<button type="button" class="chip add-category" data-category="${c}">＋ ${({football:'Match',anawar:'Anawar Hein Live',tv:'TV channel',highlights:'Highlight'})[c]}</button>`).join('')}</div><div id="content-fields">${cfg.items.map((x,i)=>itemFields(x,i)).join('')}</div><div style="margin-top:24px"><button class="cta" type="submit">${portable?'Save draft':'Publish changes'}</button> <button type="button" class="chip" id="export">Export config.json</button></div><div id="saved" role="status"></div></form>`}else{const names={anawar:['Anawar Hein Live','Your dedicated home for Anawar Hein broadcasts.'],tv:['Tv Channel','Find your channel. Settle into the action.'],highlights:['Highlights','Relive the goals, the drama and the best moments.']};h=heading(...names[page])+`<div class="sectionhead"><h2>${page==='tv'?'Channel directory':page==='highlights'?'Latest videos':'Broadcasts'}</h2><input class="search" id="search" placeholder="Search ${page==='tv'?'channels':'videos'}…" aria-label="Search content"></div><div class="grid" id="listing">${contentCards(page)}</div>`+(!cfg.items.some(x=>x.category===page)?`<div class="card empty"><div class="play" style="margin:0 auto 20px">${page==='tv'?'▣':'▶'}</div><h2>${page==='tv'?'Your channels, all together':'Ready for the next big moment'}</h2><p>New ${page==='tv'?'channels':'videos'} will appear here. Check back soon.</p></div>`:'')} $('app').innerHTML=((cfg.items.some(i=>i.demo&&(i.category===page||page==='settings')))?'<div class="demo-notice"><strong>DEMO PREVIEW</strong> Sample fixtures, channel names and videos are illustrative.</div>':'')+h;bind(page)}
-function field(n,label,type='text'){return `<label for="${n}">${label}</label><input id="${n}" name="${n}" type="${type}" value="${esc(cfg[n])}" ${n.endsWith('Url')?'required':''}>`}function uploadField(target,label,accept){return `<label>${label}</label><input type="file" data-upload="${target}" accept="${accept}" ${portable||!canAdmin?'disabled':''}><p class="help upload-status"></p>`}function itemFields(x,i){return `<div class="item-row" style="border-top:1px solid var(--line);margin-top:16px;padding-top:12px"><label>Title</label><input data-key="title" value="${esc(x.title)}" required><label>Category</label><select data-key="category">${['football','anawar','tv','highlights'].map(c=>`<option value="${c}" ${x.category===c?'selected':''}>${({football:'Football Live',anawar:'Anawar Hein Live',tv:'Tv Channel',highlights:'Highlights'})[c]}</option>`).join('')}</select><div class="match-only" ${x.category!=='football'?'hidden':''}><label>Home team</label><input data-key="home" value="${esc(x.home||'')}" placeholder="Home team"><label>Home team PNG logo URL</label><input data-key="homeLogo" value="${esc(x.homeLogo||'')}">${uploadField('homeLogo','Upload home team logo (PNG)','image/png')}<label>Away team</label><input data-key="away" value="${esc(x.away||'')}" placeholder="Away team"><label>Away team PNG logo URL</label><input data-key="awayLogo" value="${esc(x.awayLogo||'')}">${uploadField('awayLogo','Upload away team logo (PNG)','image/png')}<label>League / competition (optional)</label><input data-key="league" value="${esc(x.league||'')}" placeholder="Your competition name"></div><div class="schedule-only" ${!['football','anawar'].includes(x.category)?'hidden':''}><label>Schedule time zone</label><select data-key="timeZone">${['Asia/Yangon','Asia/Bangkok','UTC'].map(z=>`<option value="${z}" ${(x.timeZone||'Asia/Yangon')===z?'selected':''}>${z}</option>`).join('')}</select><label>Start date and time</label><input type="datetime-local" data-schedule="startAt" value="${esc(localDateTime(x.startAt,x.timeZone))}"><label>End date and time (optional)</label><input type="datetime-local" data-schedule="endAt" value="${esc(localDateTime(x.endAt,x.timeZone))}"><label>Match / broadcast status</label><select data-key="statusMode">${['auto','ended','postponed','cancelled'].map(v=>`<option value="${v}" ${(x.statusMode||'auto')===v?'selected':''}>${({auto:'Automatic by schedule',ended:'Ended',postponed:'Postponed',cancelled:'Cancelled'})[v]}</option>`).join('')}</select><p class="help">Automatic: Upcoming before the start, LIVE at the start, then Ended at the end. If no end is set, LIVE lasts 3 hours. Times use the selected time zone.</p></div><div class="poster-only" ${!['highlights','tv'].includes(x.category)?'hidden':''}><label>Cover image URL (optional)</label><input data-key="poster" value="${esc(x.poster||'')}">${uploadField('poster','Upload cover image (PNG)','image/png')}</div><label>Source type</label><select data-key="kind"><option value="video" ${x.kind!=='embed'?'selected':''}>Direct video / uploaded file</option><option value="embed" ${x.kind==='embed'?'selected':''}>Embedded player</option></select><label>Video URL or embed URL</label><input data-key="url" value="${esc(x.url)}" required><label>Paste iframe embed code (optional)</label><textarea class="embed-code" placeholder='<iframe src="https://your-provider.com/embed/video"></iframe>' style="min-height:80px"></textarea><button type="button" class="chip parse-embed">Use embed code</button>${uploadField('item','Upload video','video/mp4,video/webm')}<button class="textbutton remove" type="button" style="margin-top:12px;color:#f89d9d">Remove</button></div>`}function openPlayer(title,src,kind='video'){if(playerCleanup){playerCleanup();playerCleanup=null}if(activeHls){activeHls.destroy();activeHls=null}document.querySelector('.below-player').textContent='Playback availability depends on the broadcast source.';$('player-title').textContent=title;$('player').innerHTML=src&&url(src)?(kind==='embed'?`<iframe title="${esc(title)}" src="${esc(url(src))}" sandbox="allow-scripts allow-same-origin allow-presentation" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="border:0;width:100%;height:100%"></iframe>`:`<video controls autoplay playsinline src="${esc(url(src))}"></video>`):`<div class="player-empty"><span class="play" style="margin:0 auto 18px">▶</span><h2>Stream coming soon</h2><p>This broadcast is not available yet.</p></div>`;if(!bannerDismissed){const wrapper=document.createElement('div');wrapper.className='player-sponsor';const a=document.createElement('a');a.className='mini-ad';a.href=url(cfg.playerUrl)||'https://example.com';a.target='_blank';a.rel='noopener noreferrer';a.innerHTML=cfg.playerImage&&imageURL(cfg.playerImage)?`<img src="${esc(imageURL(cfg.playerImage))}" alt="Player sponsor">`:esc(cfg.playerTitle);const dismiss=document.createElement('button');dismiss.type='button';dismiss.className='sponsor-dismiss';dismiss.textContent='×';dismiss.setAttribute('aria-label','Close player banner');dismiss.title='Close banner';dismiss.onclick=event=>{event.preventDefault();event.stopPropagation();bannerDismissed=true;wrapper.remove()};wrapper.append(a,dismiss);$('player').append(wrapper)}const v=$('player').querySelector('video');if(v&&/\.m3u8(?:[?#]|$)/i.test(src)&&window.Hls?.isSupported()){v.removeAttribute('src');activeHls=new Hls();activeHls.loadSource(url(src));activeHls.attachMedia(v);activeHls.on(Hls.Events.MANIFEST_PARSED,()=>v.play().catch(()=>{}))}if(v)v.addEventListener('error',()=>{const panel=document.querySelector('.below-player');let message=panel.querySelector('.stream-message');if(!message){message=document.createElement('p');message.className='stream-message';panel.append(message)}message.textContent='This server could not be loaded. Try another server or check the source URL.';});$('modal').showModal();document.getElementById('configure')?.addEventListener('click',closePlayer)}function closePlayer(){AnawarPlayer.closeMini($('player').querySelector('video'));if(playerCleanup){playerCleanup();playerCleanup=null}if(document.fullscreenElement=== $('modal'))document.exitFullscreen?.().catch(()=>{});currentPlayerIndex=null;bannerDismissed=false;if(activeHls){activeHls.destroy();activeHls=null}$('modal').close();$('player').innerHTML=''}function bind(page){document.querySelectorAll('[data-item]').forEach(b=>b.onclick=()=>{openContent(Number(b.dataset.item))});document.querySelectorAll('[data-filter]').forEach(b=>b.onclick=()=>{filter=b.dataset.filter;render()});$('hero-watch')?.addEventListener('click',()=>$('matches').scrollIntoView({behavior:'smooth',block:'center'}));$('search')?.addEventListener('input',e=>{const cards=[...document.querySelectorAll('#listing .card,#listing .tv-tile')];cards.forEach(c=>c.classList.toggle('hidden',!c.textContent.toLowerCase().includes(e.target.value.toLowerCase())));if($('tv-no-results'))$('tv-no-results').hidden=!cards.length||cards.some(c=>!c.classList.contains('hidden'))});if(page==='settings'){$('appearance').value=localStorage.getItem('anawar-theme')||'dark';$('appearance').onchange=e=>{localStorage.setItem('anawar-theme',e.target.value);ad()}}if(page==='admin'){$('code-editor').value=JSON.stringify(cfg,null,2);$('visual-tab').onclick=()=>toggleCode(false);$('code-tab').onclick=()=>{syncDraft();$('code-editor').value=JSON.stringify(cfg,null,2);toggleCode(true)};$('apply-code').onclick=()=>{try{const next=JSON.parse($('code-editor').value);validateClient(next);cfg={...defaults,...next};render()}catch(e){$('code-status').textContent=e.message}};$('import-json').onchange=async e=>{const f=e.target.files[0];if(f){if(f.size>1000000){$('code-status').textContent='JSON must be under 1 MB.';return}$('code-editor').value=await f.text()}};bindUploads();document.querySelectorAll('.add-category').forEach(b=>b.onclick=()=>{const cat=b.dataset.category;if(cat==='anawar'&&[...document.querySelectorAll('[data-key=category]')].some(e=>e.value==='anawar')){alert('Edit the existing Anawar Hein Live broadcast. Only one is allowed.');return}$('content-fields').insertAdjacentHTML('beforeend',itemFields({title:cat==='anawar'?'Anawar Hein Live':'',category:cat,url:''}));bindRemove();bindUploads();bindCategories()});bindRemove();bindCategories();$('settings-form').onsubmit=publishConfig;$('export').onclick=()=>{syncDraft();const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(cfg,null,2)],{type:'application/json'}));a.download='config.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}}}function bindRemove(){document.querySelectorAll('.parse-embed').forEach(b=>b.onclick=()=>{const row=b.closest('.item-row');const doc=new DOMParser().parseFromString(row.querySelector('.embed-code').value,'text/html');const src=doc.querySelector('iframe')?.getAttribute('src');if(!src||!url(src)){row.querySelector('.upload-status').textContent='Paste an iframe with a valid HTTP or HTTPS src URL.';return}row.querySelector('[data-key=url]').value=url(src);row.querySelector('[data-key=kind]').value='embed';row.querySelector('.upload-status').textContent='Embed URL added. Publish to save.'});document.querySelectorAll('.remove').forEach(b=>b.onclick=()=>b.closest('.item-row').remove())}$('close').onclick=closePlayer;$('modal').addEventListener('cancel',closePlayer);window.addEventListener('hashchange',()=>{closePlayer();render();window.scrollTo(0,0)});boot();
+const defaults = {
+  bannerTitle: "Your brand. Every matchday.",
+  bannerSubtitle: "Connect with football fans.",
+  bannerUrl: "https://example.com",
+  bannerImage: "",
+  playerTitle: "YOUR BRAND HERE",
+  playerUrl: "https://example.com",
+  playerImage: "",
+  theme: "dark",
+  items: []
+};
 
-function toggleCode(show){$('code-panel').classList.toggle('hidden',!show);$('settings-form').classList.toggle('hidden',show);$('code-tab').classList.toggle('active',show);$('visual-tab').classList.toggle('active',!show)}
-function syncDraft(){const f=$('settings-form');if(!f)return;for(const [k,v] of new FormData(f))cfg[k]=v;cfg.items=[...document.querySelectorAll('.item-row')].map(row=>{const item=Object.fromEntries([...row.querySelectorAll('[data-key]')].map(x=>[x.dataset.key,x.value]));for(const input of row.querySelectorAll('[data-schedule]'))item[input.dataset.schedule]=scheduleISO(input.value,item.timeZone);return item})}
-function validateClient(x){if(!x||!Array.isArray(x.items))throw new Error('Configuration must contain an items array.');for(const k of ['bannerTitle','bannerSubtitle','playerTitle','bannerUrl','bannerImage','playerUrl','playerImage'])if(typeof x[k]!=='string')throw new Error('Missing or invalid field: '+k);for(const k of ['bannerUrl','bannerImage','playerUrl','playerImage'])if(x[k]&&!url(x[k]))throw new Error('Invalid URL: '+k);for(const i of x.items){for(const k of ['homeLogo','awayLogo','poster'])if(i[k]&&!url(i[k]))throw new Error('Invalid image URL: '+k);for(const k of ['startAt','endAt'])if(i[k]&&!Number.isFinite(Date.parse(i[k])))throw new Error('Invalid start or end date.');if(i.startAt&&i.endAt&&Date.parse(i.endAt)<=Date.parse(i.startAt))throw new Error('End time must be after start time.');if(!i.title||!['football','anawar','tv','highlights'].includes(i.category)||!url(i.url))throw new Error('Each item needs a title, valid category and source URL.');if(i.kind&&!['video','embed'].includes(i.kind))throw new Error('Source kind must be video or embed.')}}
-async function publishConfig(e){e.preventDefault();const status=$('saved');try{syncDraft();validateClient(cfg);if(portable){localStorage.setItem('anawar-draft',JSON.stringify(cfg));status.innerHTML='<div class="notice">Draft saved on this device. Export config.json and commit it in GitHub to publish.</div>';ad();return}status.textContent='Publishing…';const response=await fetch('/api/config',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({config:cfg,version:configVersion})});const result=await response.json();if(!response.ok)throw new Error(result.error||'Unable to publish.');configVersion=result.version;ad();status.innerHTML='<div class="notice">Published successfully. All visitors will see your changes when they open or refresh the website.</div>'}catch(err){status.textContent=err.message}}
-function bindUploads(){document.querySelectorAll('[data-upload]').forEach(input=>input.onchange=async()=>{const file=input.files[0];if(!file)return;const status=input.nextElementSibling;try{if(file.size>25*1024*1024)throw new Error('Maximum upload is 25 MB. Use a hosted URL for larger videos.');status.textContent='Uploading…';input.disabled=true;const res=await fetch('/api/upload',{method:'POST',headers:{'Content-Type':file.type},body:file});const result=await res.json();if(!res.ok)throw new Error(result.error||'Upload failed.');if(input.dataset.upload==='item'){const row=input.closest('.item-row');row.querySelector('[data-key=url]').value=result.url;row.querySelector('[data-key=kind]').value='video'}else if(['homeLogo','awayLogo','poster'].includes(input.dataset.upload)){input.closest('.item-row').querySelector('[data-key='+input.dataset.upload+']').value=result.url}else document.querySelector('[name='+input.dataset.upload+']').value=result.url;status.textContent='Uploaded. Publish changes to make it visible.'}catch(err){status.textContent=err.message}finally{input.disabled=false}})}
-async function boot(){try{if(window.STATIC_SITE){cfg=applyDemoSchedule(readCommittedContent(defaults));render();return}const res=await fetch('/api/config',{cache:'no-store'});if(!res.ok)throw new Error('Content could not be loaded. Please refresh to retry.');const data=await res.json();cfg=applyDemoSchedule({...defaults,...(data.config||{})});canAdmin=data.canAdmin;configVersion=data.version}catch(err){loadError=err.message}render();if(loadError)$('app').insertAdjacentHTML('afterbegin','<div class="notice">'+esc(loadError)+'</div>')}
-function matchDate(item){if(!item.startAt)return 'Date and time to be confirmed';try{return new Intl.DateTimeFormat('en-GB',{dateStyle:'medium',timeStyle:'short',timeZone:item.timeZone||'Asia/Yangon'}).format(new Date(item.startAt))+' · '+(item.timeZone||'Asia/Yangon')}catch{return 'Date and time to be confirmed'}}
-function localDateTime(iso,zone='Asia/Yangon'){if(!iso)return '';try{const parts=new Intl.DateTimeFormat('en-CA',{timeZone:zone||'Asia/Yangon',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).formatToParts(new Date(iso));const p=Object.fromEntries(parts.map(p=>[p.type,p.value]));return `${p.year}-${p.month}-${p.day}T${p.hour}:${p.minute}`}catch{return ''}}
-function scheduleISO(value,zone){if(!value)return '';const offset=({'Asia/Yangon':'+06:30','Asia/Bangkok':'+07:00','UTC':'+00:00'})[zone];if(!offset)throw new Error('Choose a supported time zone.');const date=new Date(value+offset);if(!Number.isFinite(date.getTime()))throw new Error('Choose a valid date and time.');return date.toISOString()}
-function bindCategories(){document.querySelectorAll('[data-key=category]').forEach(select=>select.onchange=()=>{const row=select.closest('.item-row');row.querySelector('.match-only').hidden=select.value!=='football';row.querySelector('.schedule-only').hidden=!['football','anawar'].includes(select.value);row.querySelector('.poster-only').hidden=!['tv','highlights'].includes(select.value)})}
-setInterval(()=>{document.querySelectorAll('[data-state]').forEach(el=>{const item=cfg.items[el.dataset.state];if(item){const state=matchState(item);el.textContent=state;el.classList.toggle('is-live',state==='LIVE')}})},1000);
+let cfg = { ...defaults };
+let canAdmin = false;
+let configVersion = null;
+let loadError = "";
+let filter = "All matches";
 
-let activeHls=null,playerCleanup=null,bannerDismissed=false,currentPlayerIndex=null;
-function openContent(index,serverIndex=0,resume=null){if(currentPlayerIndex!==index){bannerDismissed=false;currentPlayerIndex=index}const item=cfg.items[index];if(!item)return;const streams=item.streams?.length?item.streams:[{label:'Server 1',url:item.url,kind:item.kind||'video'}];const source=streams[serverIndex]||streams[0];openPlayer((item.demo?'[DEMO] ':'')+item.title,source.url,source.kind);if(item.demo){const video=$('player').querySelector('video');if(video)video.loop=true}const panel=document.querySelector('.below-player');panel.innerHTML='<div class="filters">'+streams.map((s,i)=>`<button class="chip ${i===serverIndex?'active':''}" data-server="${i}">${esc(s.label||'Server '+(i+1))}</button>`).join('')+'</div><p class="stream-message" style="margin-top:12px">'+(item.demo?'Demo animation for testing playback. This is not real match or channel coverage. ':'')+'Choose another server if playback is unavailable.</p>';const video=$('player').querySelector('video');AnawarPlayer.restore(video,resume);playerCleanup=AnawarPlayer.mount({modal:$('modal'),player:$('player'),video,hls:activeHls,streams,serverIndex,source,title:item.title,onSourceChange:(next,state)=>openContent(index,next,state)});panel.querySelectorAll('[data-server]').forEach(b=>b.onclick=()=>openContent(index,Number(b.dataset.server),AnawarPlayer.playbackState(video)))}
+let activePlayer = null;
+let playerCleanup = null;
+let playerRequest = 0;
+let bannerDismissed = false;
+let currentPlayerIndex = null;
+let sdkPromise = null;
+let reconnectTimer = null;
+
+const $ = id => document.getElementById(id);
+
+const pages = [
+  ["football", "◉", "Football Live"],
+  ["anawar", "◈", "Anawar Hein Live"],
+  ["tv", "▣", "Tv Channel"],
+  ["highlights", "▷", "Highlights"],
+  ["settings", "⚙", "Settings"]
+];
+
+function esc(value) {
+  return String(value ?? "").replace(
+    /[&<>"']/g,
+    character => ({
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;"
+    })[character]
+  );
+}
+
+function safeURL(value) {
+  if (typeof value !== "string" || !value.trim()) {
+    return "";
+  }
+
+  try {
+    const address = new URL(value, location.href);
+
+    return ["https:", "http:"].includes(address.protocol)
+      ? address.href
+      : "";
+  } catch {
+    return "";
+  }
+}
+
+function imageURL(value) {
+  if (
+    typeof value === "string" &&
+    /^data:image\/(?:png|jpeg|webp|gif);base64,[A-Za-z0-9+/=]+$/i.test(value)
+  ) {
+    return value;
+  }
+
+  return safeURL(value);
+}
+
+function applyAppearance() {
+  document.body.classList.toggle(
+    "light",
+    (localStorage.getItem("anawar-theme") || "dark") === "light"
+  );
+}
+
+function renderPageBanner() {
+  const banner = $("topad");
+  if (!banner) return;
+
+  banner.href = safeURL(cfg.bannerUrl) || "https://example.com";
+  banner.target = "_blank";
+  banner.rel = "noopener noreferrer";
+
+  const image = imageURL(cfg.bannerImage);
+
+  if (image) {
+    banner.innerHTML =
+      `<img src="${esc(image)}" alt="Sponsor banner">`;
+  } else {
+    banner.innerHTML = `
+      <div>
+        <div class="sponsor">ADVERTISEMENT</div>
+        <strong>${esc(cfg.bannerTitle)}</strong>
+        <p>${esc(cfg.bannerSubtitle)}</p>
+      </div>
+      <span class="cta">Visit sponsor ↗</span>
+    `;
+  }
+}
+
+function heading(title, description) {
+  return `
+    <div class="titlebar">
+      <div>
+        <h1>${esc(title)}</h1>
+        <p class="sub">${esc(description)}</p>
+      </div>
+      <span class="pill">✦ &nbsp; THE HOME OF FOOTBALL</span>
+    </div>
+  `;
+}
+
+function teamLogo(source, name) {
+  const image = imageURL(source);
+
+  return image
+    ? `<img class="team-logo" src="${esc(image)}"
+         alt="${esc(name)} logo">`
+    : `<div class="crest">${
+        esc((name || "?").slice(0, 3).toUpperCase())
+      }</div>`;
+}
+
+function matchStatus(item) {
+  if (typeof matchState === "function") {
+    return matchState(item);
+  }
+
+  const mode = item.statusMode || item.status || "auto";
+
+  if (mode === "cancelled") return "Cancelled";
+  if (mode === "postponed") return "Postponed";
+  if (mode === "ended" || mode === "finished") return "Ended";
+  if (mode === "live") return "LIVE";
+
+  const start = Date.parse(item.startAt || item.kickoff || "");
+
+  if (!Number.isFinite(start)) return "Upcoming";
+
+  const end = item.endAt
+    ? Date.parse(item.endAt)
+    : start + 3 * 60 * 60 * 1000;
+
+  const now = Date.now();
+
+  if (now < start) return "Upcoming";
+  if (now >= end) return "Ended";
+
+  return "LIVE";
+}
+
+function matchDate(item) {
+  const start = item.startAt || item.kickoff;
+
+  if (!start) return "Date and time to be confirmed";
+
+  try {
+    return new Intl.DateTimeFormat("en-GB", {
+      dateStyle: "medium",
+      timeStyle: "short",
+      timeZone: item.timeZone || "Asia/Yangon"
+    }).format(new Date(start)) + " · Myanmar time";
+  } catch {
+    return "Date and time to be confirmed";
+  }
+}
+
+function contentCards(category) {
+  return cfg.items
+    .filter(item => {
+      if (item.category !== category) return false;
+
+      if (
+        ["football", "anawar"].includes(category) &&
+        filter !== "All matches"
+      ) {
+        return item.league === filter;
+      }
+
+      return true;
+    })
+    .sort((a, b) => {
+      return (
+        (Date.parse(a.startAt || a.kickoff) || 0) -
+        (Date.parse(b.startAt || b.kickoff) || 0)
+      );
+    })
+    .map(item => {
+      const index = cfg.items.indexOf(item);
+
+      if (category === "tv") {
+        const image = imageURL(item.poster);
+
+        return `
+          <button class="tv-tile" data-item="${index}">
+            <span class="tv-logo-well">
+              ${
+                image
+                  ? `<img src="${esc(image)}"
+                       alt="${esc(item.title)} logo">`
+                  : `<span class="tv-letter">${
+                      esc((item.title || "").slice(0, 2).toUpperCase())
+                    }</span>`
+              }
+            </span>
+            <strong>${esc(item.title)}</strong>
+            <span class="tv-watch">▶ &nbsp; Watch Live</span>
+          </button>
+        `;
+      }
+
+      if (["football", "anawar"].includes(category)) {
+        const hasScores =
+          item.homeScore !== undefined &&
+          item.homeScore !== "" &&
+          item.awayScore !== undefined &&
+          item.awayScore !== "";
+
+        const status = matchStatus(item);
+
+        return `
+          <button class="card match" data-item="${index}">
+            <div class="league">
+              <span>
+                ◈ &nbsp;
+                ${esc(
+                  item.league ||
+                  (category === "anawar"
+                    ? "Anawar Hein Live"
+                    : "Football Live")
+                )}
+              </span>
+              <span
+                class="watch ${status === "LIVE" ? "is-live" : ""}"
+                data-state="${index}"
+              >${esc(status)}</span>
+            </div>
+
+            <div class="teams">
+              <div class="team">
+                ${teamLogo(item.homeLogo, item.home)}
+                ${esc(item.home || "Home team")}
+              </div>
+
+              <div class="score">
+                ${
+                  hasScores
+                    ? esc(item.homeScore) + " – " + esc(item.awayScore)
+                    : "VS"
+                }
+              </div>
+
+              <div class="team">
+                ${teamLogo(item.awayLogo, item.away)}
+                ${esc(item.away || "Away team")}
+              </div>
+            </div>
+
+            <p class="match-date">${esc(matchDate(item))}</p>
+
+            <div class="matchfoot">
+              <span>${esc(item.title)}</span>
+              <span class="watch">Watch match ↗</span>
+            </div>
+          </button>
+        `;
+      }
+
+      const poster = imageURL(item.poster);
+
+      return `
+        <button class="card channel" data-item="${index}">
+          ${
+            poster
+              ? `<img class="content-poster"
+                   src="${esc(poster)}"
+                   alt="${esc(item.title)}">`
+              : '<span class="play" style="margin:auto">▶</span>'
+          }
+          <b>${esc(item.title)}</b>
+          <small>Watch highlight</small>
+        </button>
+      `;
+    })
+    .join("");
+}
+
+function render() {
+  applyAppearance();
+  renderPageBanner();
+
+  let page = location.hash.slice(1) || "football";
+
+  if (!pages.some(entry => entry[0] === page)) {
+    page = "football";
+  }
+
+  $("nav").innerHTML = pages.map(entry => `
+    <a
+      href="#${entry[0]}"
+      class="${entry[0] === page ? "active" : ""}"
+    >
+      <i>${entry[1]}</i>${entry[2]}
+    </a>
+  `).join("");
+
+  $("crumb").textContent =
+    pages.find(entry => entry[0] === page)[2];
+
+  let html = "";
+
+  if (["football", "anawar"].includes(page)) {
+    const leagues = [...new Set(
+      cfg.items
+        .filter(item => item.category === page && item.league)
+        .map(item => item.league)
+    )];
+
+    if (filter !== "All matches" && !leagues.includes(filter)) {
+      filter = "All matches";
+    }
+
+    const title =
+      page === "anawar" ? "Anawar Hein Live" : "Football Live";
+
+    html = heading(
+      title,
+      "Your matches. Every kick-off, in one place."
+    );
+
+    html += `
+      <section class="hero">
+        <span class="hero-info">
+          ${
+            page === "anawar"
+              ? "ANAWAR HEIN LIVE"
+              : "ANAWAR LIVE • FOOTBALL"
+          }
+        </span>
+
+        <div>
+          <span class="live">
+            <span class="dot"></span>YOUR MATCHDAY, UPGRADED
+          </span>
+
+          <h2>
+            ${
+              page === "anawar"
+                ? "Anawar Hein.<br>Every match, live."
+                : "Big games.<br>Unmissable moments."
+            }
+          </h2>
+
+          <p>Your home for live football.</p>
+
+          <button class="cta" id="hero-watch">
+            ▶ &nbsp; View matches
+          </button>
+        </div>
+      </section>
+
+      <div class="sectionhead">
+        <h2>Match centre</h2>
+
+        <div class="filters">
+          ${
+            ["All matches", ...leagues].map(league => `
+              <button
+                class="chip ${filter === league ? "active" : ""}"
+                data-filter="${esc(league)}"
+              >${esc(league)}</button>
+            `).join("")
+          }
+        </div>
+      </div>
+
+      <div class="grid" id="matches">
+        ${contentCards(page)}
+      </div>
+    `;
+
+    if (!cfg.items.some(item => item.category === page)) {
+      html += `
+        <div class="card empty">
+          <h2>No matches scheduled yet</h2>
+          <p>Upcoming matches will appear here.</p>
+        </div>
+      `;
+    }
+  } else if (page === "tv") {
+    const channels = cfg.items.filter(
+      item => item.category === "tv"
+    );
+
+    html = `
+      <section class="tv-hero">
+        <div>
+          <span class="tv-badge">
+            <span class="dot"></span>Live TV Streaming
+          </span>
+
+          <h1>Your channels.<br><em>One place to watch.</em></h1>
+
+          <p>
+            Explore your favourite TV channels.
+            Choose a channel, select a server and start watching.
+          </p>
+        </div>
+
+        <div class="tv-hero-art" aria-hidden="true">
+          <svg viewBox="0 0 160 160" fill="none">
+            <path
+              d="M56 28 80 47 107 22"
+              stroke="white"
+              stroke-width="7"
+              stroke-linecap="round"
+            />
+            <rect
+              x="22" y="47" width="118" height="88"
+              rx="20" fill="white"
+            />
+            <rect
+              x="34" y="59" width="80" height="62"
+              rx="12" fill="#b72026"
+            />
+            <path d="m64 75 24 15-24 15V75Z" fill="white"/>
+            <circle cx="127" cy="76" r="5" fill="#b72026"/>
+            <circle cx="127" cy="96" r="5" fill="#b72026"/>
+          </svg>
+        </div>
+      </section>
+
+      <div class="sectionhead tv-section">
+        <div>
+          <h2>TV Channels</h2>
+          <p class="sub">
+            Select a channel to start watching its live stream
+          </p>
+        </div>
+
+        <span class="tv-badge">
+          ${channels.length} channels
+        </span>
+      </div>
+
+      <div class="tv-toolbar">
+        <input
+          id="search"
+          class="tv-search"
+          type="search"
+          placeholder="Search channels…"
+          aria-label="Search content"
+        >
+        <span class="hint">All channels</span>
+      </div>
+
+      <div id="listing" class="tv-grid">
+        ${contentCards("tv")}
+      </div>
+
+      <div id="tv-no-results" class="empty" hidden>
+        No channels match your search.
+      </div>
+    `;
+
+    if (!channels.length) {
+      html += `
+        <div class="card empty">
+          <h2>Your channel directory is ready</h2>
+          <p>Channels will appear here once they are published.</p>
+        </div>
+      `;
+    }
+  } else if (page === "highlights") {
+    html = heading(
+      "Highlights",
+      "Relive the goals, the drama and the best moments."
+    );
+
+    html += `
+      <div class="sectionhead">
+        <h2>Latest videos</h2>
+        <input
+          class="search"
+          id="search"
+          placeholder="Search videos…"
+          aria-label="Search content"
+        >
+      </div>
+
+      <div class="grid" id="listing">
+        ${contentCards("highlights")}
+      </div>
+    `;
+
+    if (!cfg.items.some(item => item.category === "highlights")) {
+      html += `
+        <div class="card empty">
+          <h2>No highlights yet</h2>
+          <p>New highlights will appear here.</p>
+        </div>
+      `;
+    }
+  } else if (page === "settings") {
+    html = heading("Settings", "Make Anawar Live your own.");
+
+    html += `
+      <div class="card form">
+        <h2>Appearance</h2>
+        <p class="help">
+          Your display preference is saved on this device.
+        </p>
+
+        <select id="appearance" aria-label="Appearance">
+          <option value="dark">United dark</option>
+          <option value="light">Away kit light</option>
+        </select>
+      </div>
+    `;
+  }
+
+  $("app").innerHTML = html;
+  bindPage(page);
+}
+
+function bindPage(page) {
+  document.querySelectorAll("[data-item]").forEach(button => {
+    button.onclick = () => {
+      openContent(Number(button.dataset.item));
+    };
+  });
+
+  document.querySelectorAll("[data-filter]").forEach(button => {
+    button.onclick = () => {
+      filter = button.dataset.filter;
+      render();
+    };
+  });
+
+  $("hero-watch")?.addEventListener("click", () => {
+    $("matches")?.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+  });
+
+  $("search")?.addEventListener("input", event => {
+    const query = event.target.value.toLowerCase();
+
+    const cards = [
+      ...document.querySelectorAll(
+        "#listing .card, #listing .tv-tile"
+      )
+    ];
+
+    cards.forEach(card => {
+      card.classList.toggle(
+        "hidden",
+        !card.textContent.toLowerCase().includes(query)
+      );
+    });
+
+    if ($("tv-no-results")) {
+      $("tv-no-results").hidden =
+        !cards.length ||
+        cards.some(card => !card.classList.contains("hidden"));
+    }
+  });
+
+  if (page === "settings") {
+    $("appearance").value =
+      localStorage.getItem("anawar-theme") || "dark";
+
+    $("appearance").onchange = event => {
+      localStorage.setItem(
+        "anawar-theme",
+        event.target.value
+      );
+
+      applyAppearance();
+    };
+  }
+}
+
+/* VIDEO.JS */
+
+function loadPlayerSDK() {
+  if (sdkPromise) return sdkPromise;
+
+  sdkPromise = new Promise((resolve, reject) => {
+    if (!$("anawar-videojs-css")) {
+      const css = document.createElement("link");
+      css.id = "anawar-videojs-css";
+      css.rel = "stylesheet";
+      css.href =
+        "https://cdn.jsdelivr.net/npm/video.js@8.23.4/dist/video-js.min.css";
+
+      document.head.append(css);
+    }
+
+    if (window.videojs) {
+      resolve();
+      return;
+    }
+
+    const script = document.createElement("script");
+    script.src =
+      "https://cdn.jsdelivr.net/npm/video.js@8.23.4/dist/video.min.js";
+
+    const timeout = setTimeout(() => {
+      script.remove();
+
+      reject(
+        Error("Player download timed out. Press Retry stream.")
+      );
+    }, 15000);
+
+    script.onload = () => {
+      clearTimeout(timeout);
+
+      if (window.videojs) resolve();
+      else reject(Error("Video.js did not load."));
+    };
+
+    script.onerror = () => {
+      clearTimeout(timeout);
+      script.remove();
+
+      reject(
+        Error("Cannot download Video.js. Check your connection.")
+      );
+    };
+
+    document.head.append(script);
+  }).catch(error => {
+    sdkPromise = null;
+    throw error;
+  });
+
+  return sdkPromise;
+}
+
+function installPlayerStyles() {
+  if ($("anawar-player-fix-styles")) return;
+
+  const style = document.createElement("style");
+  style.id = "anawar-player-fix-styles";
+
+  style.textContent = `
+    #player {
+      position: relative;
+      background: #000;
+    }
+
+    #player > .video-js {
+      width: 100%;
+      height: 100%;
+      min-height: 0;
+      background: #000;
+    }
+
+    #player .video-js .vjs-tech {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    #player .video-js .vjs-big-play-button {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      border-color: #fff;
+      background: #a51b25cc;
+    }
+
+    #player .video-js .vjs-control-bar {
+      z-index: 8;
+      background: #100d12e6;
+    }
+
+    #player .video-js .vjs-icon-placeholder {
+      font-family: VideoJS;
+    }
+
+    #player .video-js .vjs-control-text {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+
+    #player .video-js .vjs-play-progress {
+      background: #da291c;
+    }
+
+    #player .player-sponsor {
+      position: absolute;
+      display: block;
+      visibility: visible;
+      opacity: 1;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 6;
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      pointer-events: none;
+    }
+
+    #player .player-sponsor .mini-ad {
+      position: static;
+      display: block;
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      pointer-events: auto;
+    }
+
+    #player .player-sponsor img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: none;
+      object-fit: contain;
+    }
+
+    #player .sponsor-dismiss {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      z-index: 7;
+      display: grid;
+      place-items: center;
+      width: 28px;
+      height: 28px;
+      margin: 0;
+      padding: 0;
+      border: 1px solid #ffffff80;
+      border-radius: 50%;
+      background: #000b;
+      color: white;
+      font: 700 20px Arial, sans-serif;
+      cursor: pointer;
+      pointer-events: auto;
+    }
+
+    #topad:has(> img) {
+      display: block;
+      padding: 0;
+      min-height: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    #topad:has(> img)::after {
+      display: none;
+    }
+
+    #topad > img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: none;
+      object-fit: contain;
+    }
+  `;
+
+  document.head.append(style);
+}
+
+function setPlayerMessage(text) {
+  const target = document.querySelector(".stream-message");
+  if (target) target.textContent = text;
+}
+
+function playbackState() {
+  const video = $("player").querySelector("video");
+
+  if (!video) return null;
+
+  return {
+    time: Number.isFinite(video.duration)
+      ? video.currentTime
+      : 0,
+    paused: video.paused,
+    volume: video.volume,
+    muted: video.muted
+  };
+}
+
+function restorePlayback(video, state) {
+  if (!video || !state) return;
+
+  video.volume = state.volume;
+  video.muted = state.muted;
+
+  function restore() {
+    if (
+      Number.isFinite(video.duration) &&
+      state.time > 0
+    ) {
+      video.currentTime = Math.min(
+        state.time,
+        Math.max(0, video.duration - 0.1)
+      );
+    }
+
+    if (state.paused) {
+      video.pause();
+    } else {
+      video.play().catch(() => {});
+    }
+  }
+
+  if (video.readyState >= 1) restore();
+  else video.addEventListener("loadedmetadata", restore, {
+    once: true
+  });
+}
+
+function teardownPlayer() {
+  clearTimeout(reconnectTimer);
+  reconnectTimer = null;
+
+  if (playerCleanup) {
+    playerCleanup();
+    playerCleanup = null;
+  }
+
+  const video = $("player").querySelector("video");
+
+  if (video) {
+    if (typeof AnawarPlayer !== "undefined") {
+      AnawarPlayer.closeMini(video);
+    } else {
+      video.pause();
+    }
+  }
+
+  if (activePlayer) {
+    activePlayer.dispose();
+    activePlayer = null;
+  }
+
+  $("player").replaceChildren();
+}
+
+function closePlayer() {
+  ++playerRequest;
+  teardownPlayer();
+
+  const modal = $("modal");
+
+  if (document.fullscreenElement === modal) {
+    document.exitFullscreen().catch(() => {});
+  }
+
+  if (modal.open) modal.close();
+
+  currentPlayerIndex = null;
+  bannerDismissed = false;
+
+  document.querySelector(".below-player").replaceChildren();
+}
+
+/* BANNER SETTINGS ARE READ FROM custom-banners.js */
+
+function addPlayerBanner(container) {
+  if (
+    bannerDismissed ||
+    !container ||
+    container.querySelector(".player-sponsor")
+  ) {
+    return;
+  }
+
+  const image = imageURL(cfg.playerImage || "");
+
+  if (!image && !cfg.playerTitle) return;
+
+  const wrapper = document.createElement("div");
+  wrapper.className = "player-sponsor";
+
+  const link = document.createElement("a");
+  link.className = "mini-ad";
+  link.href = safeURL(cfg.playerUrl) || "https://example.com";
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
+
+  if (image) {
+    const img = document.createElement("img");
+    img.src = image;
+    img.alt = "Player sponsor";
+    link.append(img);
+  } else {
+    link.textContent = cfg.playerTitle;
+  }
+
+  const dismiss = document.createElement("button");
+  dismiss.type = "button";
+  dismiss.className = "sponsor-dismiss";
+  dismiss.textContent = "×";
+  dismiss.setAttribute("aria-label", "Close player banner");
+
+  dismiss.onclick = event => {
+    event.preventDefault();
+    event.stopPropagation();
+
+    bannerDismissed = true;
+    wrapper.remove();
+  };
+
+  wrapper.append(link, dismiss);
+  container.append(wrapper);
+}
+
+function sourceType(source) {
+  if (/\.m3u8(?:[?#]|$)/i.test(source)) {
+    return "application/x-mpegURL";
+  }
+
+  if (/\.mpd(?:[?#]|$)/i.test(source)) {
+    return "application/dash+xml";
+  }
+
+  if (/\.webm(?:[?#]|$)/i.test(source)) {
+    return "video/webm";
+  }
+
+  return "video/mp4";
+}
+
+function mountExtraTools(options) {
+  if (typeof AnawarPlayer === "undefined") {
+    return () => {};
+  }
+
+  return AnawarPlayer.mount(options);
+}
+
+async function openContent(
+  index,
+  serverIndex = 0,
+  resume = null
+) {
+  const item = cfg.items[index];
+  if (!item) return;
+
+  const streams =
+    item.streams && item.streams.length
+      ? item.streams
+      : [
+          {
+            label: "Server 1",
+            url: item.url,
+            kind: item.kind || "video"
+          }
+        ];
+
+  if (!streams[serverIndex]) serverIndex = 0;
+
+  const source = streams[serverIndex];
+  const ticket = ++playerRequest;
+
+  teardownPlayer();
+
+  if (currentPlayerIndex !== index) {
+    bannerDismissed = false;
+  }
+
+  currentPlayerIndex = index;
+
+  const modal = $("modal");
+  const host = $("player");
+  const panel = document.querySelector(".below-player");
+
+  $("player-title").textContent = item.title;
+  panel.replaceChildren();
+
+  const servers = document.createElement("div");
+  servers.className = "filters";
+
+  streams.forEach((stream, position) => {
+    const button = document.createElement("button");
+    button.type = "button";
+
+    button.className =
+      "chip" + (position === serverIndex ? " active" : "");
+
+    button.textContent =
+      stream.label || "Server " + (position + 1);
+
+    button.onclick = () => {
+      openContent(index, position, playbackState());
+    };
+
+    servers.append(button);
+  });
+
+  const retry = document.createElement("button");
+  retry.type = "button";
+  retry.className = "chip";
+  retry.textContent = "Retry stream";
+
+  retry.onclick = () => {
+    openContent(index, serverIndex, playbackState());
+  };
+
+  servers.append(retry);
+
+  const status = document.createElement("p");
+  status.className = "stream-message";
+  status.setAttribute("role", "status");
+  status.style.marginTop = "12px";
+  status.textContent = "Loading player…";
+
+  panel.append(servers, status);
+
+  if (!modal.open) modal.showModal();
+
+  if (!safeURL(source.url)) {
+    setPlayerMessage("Add a valid video URL in your admin.");
+    return;
+  }
+
+  if (source.kind === "embed") {
+    const frame = document.createElement("iframe");
+
+    frame.src = safeURL(source.url);
+    frame.title = item.title;
+
+    frame.setAttribute(
+      "allow",
+      "autoplay; fullscreen; picture-in-picture"
+    );
+
+    frame.setAttribute("allowfullscreen", "");
+
+    frame.setAttribute(
+      "sandbox",
+      "allow-scripts allow-same-origin allow-presentation"
+    );
+
+    frame.style.cssText =
+      "width:100%;height:100%;border:0";
+
+    host.append(frame);
+    addPlayerBanner(host);
+
+    playerCleanup = mountExtraTools({
+      modal,
+      player: host,
+      video: null,
+      hls: null,
+      streams,
+      serverIndex,
+      source,
+      title: item.title,
+      onSourceChange: (next, state) =>
+        openContent(index, next, state)
+    });
+
+    setPlayerMessage(
+      "Use the embedded player controls or choose another server."
+    );
+
+    return;
+  }
+
+  try {
+    await loadPlayerSDK();
+
+    if (ticket !== playerRequest || !modal.open) return;
+
+    const element = document.createElement("video-js");
+    element.className = "video-js vjs-default-skin";
+    host.append(element);
+
+    const safari =
+      window.videojs.browser.IS_SAFARI ||
+      window.videojs.browser.IS_IOS;
+
+    const player = window.videojs(element, {
+      controls: true,
+      autoplay: false,
+      preload: "auto",
+      playsinline: true,
+      fluid: false,
+      fill: true,
+      responsive: true,
+      liveui: true,
+      loop: !!item.demo,
+
+      html5: {
+        vhs: {
+          overrideNative: !safari,
+          enableLowInitialPlaylist: true,
+          maxPlaylistRetries: 3
+        },
+        nativeAudioTracks: !!safari,
+        nativeVideoTracks: !!safari
+      }
+    });
+
+    activePlayer = player;
+
+    const video = player.tech(true).el();
+    video.setAttribute("playsinline", "");
+
+    if (resume) {
+      video.volume = resume.volume;
+      video.muted = resume.muted;
+    }
+
+    /* Attach the banner after Video.js is ready. */
+    function ensureBanner() {
+      if (
+        ticket === playerRequest &&
+        modal.open &&
+        !player.isDisposed()
+      ) {
+        addPlayerBanner(player.el());
+      }
+    }
+
+    player.ready(ensureBanner);
+    player.on("loadedmetadata", ensureBanner);
+    player.on("playing", ensureBanner);
+
+    const removeTools = mountExtraTools({
+      modal,
+      player: host,
+      video,
+      hls: null,
+      streams,
+      serverIndex,
+      source,
+      title: item.title,
+      onSourceChange: (next, state) =>
+        openContent(index, next, state)
+    });
+
+    const quality = $("player-resolution");
+
+    let selectedQuality = "auto";
+    let qualitySignature = "";
+    let disposed = false;
+    let recoveryCount = 0;
+
+    function representations() {
+      try {
+        return player.tech(true).vhs?.representations() || [];
+      } catch {
+        return [];
+      }
+    }
+
+    function refreshQuality() {
+      if (disposed || !quality) return;
+
+      const reps = representations();
+
+      const signature = JSON.stringify([
+        reps.map(rep => [
+          rep.id,
+          rep.height,
+          rep.bandwidth
+        ]),
+        video.videoHeight
+      ]);
+
+      if (
+        signature === qualitySignature &&
+        !quality.value.startsWith("source:")
+      ) {
+        return;
+      }
+
+      qualitySignature = signature;
+      quality.replaceChildren();
+      quality.disabled = false;
+
+      function add(value, text, group = quality) {
+        const option = document.createElement("option");
+        option.value = value;
+        option.textContent = text;
+        group.append(option);
+      }
+
+      if (reps.length > 1) {
+        add("auto", "Auto (adaptive)");
+
+        reps.forEach((rep, position) => {
+          add(
+            "quality:" + position,
+            rep.height
+              ? rep.height + "p"
+              : Math.round(rep.bandwidth / 1000) + " kbps"
+          );
+        });
+      } else {
+        add(
+          "auto",
+          safari && /\.m3u8(?:[?#]|$)/i.test(source.url)
+            ? "Auto (Safari)"
+            : video.videoHeight
+              ? video.videoHeight + "p (source)"
+              : "Auto / source quality"
+        );
+      }
+
+      if (streams.length > 1) {
+        const group = document.createElement("optgroup");
+        group.label = "Stream servers";
+
+        streams.forEach((stream, position) => {
+          add(
+            "server:" + position,
+            stream.label || "Server " + (position + 1),
+            group
+          );
+        });
+
+        quality.append(group);
+      }
+
+      quality.value = [...quality.options].some(
+        option => option.value === selectedQuality
+      )
+        ? selectedQuality
+        : "auto";
+
+      quality.disabled =
+        reps.length <= 1 && streams.length <= 1;
+    }
+
+    if (quality) {
+      quality.onchange = () => {
+        if (quality.value.startsWith("server:")) {
+          openContent(
+            index,
+            Number(quality.value.slice(7)),
+            playbackState()
+          );
+          return;
+        }
+
+        selectedQuality = quality.value;
+        const reps = representations();
+
+        if (selectedQuality === "auto") {
+          reps.forEach(rep => rep.enabled(true));
+        } else {
+          const selected = Number(
+            selectedQuality.slice(8)
+          );
+
+          reps.forEach((rep, position) => {
+            rep.enabled(position === selected);
+          });
+        }
+
+        setPlayerMessage(
+          selectedQuality === "auto"
+            ? "Adaptive quality enabled."
+            : "Selected " +
+              quality.selectedOptions[0].textContent +
+              "."
+        );
+      };
+    }
+
+    video.addEventListener(
+      "loadedmetadata",
+      refreshQuality
+    );
+
+    video.addEventListener("resize", refreshQuality);
+    player.on("loadedmetadata", refreshQuality);
+
+    const qualityTimer = setInterval(
+      refreshQuality,
+      2000
+    );
+
+    playerCleanup = () => {
+      disposed = true;
+      clearInterval(qualityTimer);
+
+      video.removeEventListener(
+        "loadedmetadata",
+        refreshQuality
+      );
+
+      video.removeEventListener(
+        "resize",
+        refreshQuality
+      );
+
+      removeTools();
+    };
+
+    refreshQuality();
+
+    const mediaSource = {
+      src: safeURL(source.url),
+      type: sourceType(source.url)
+    };
+
+    function play() {
+      const attempt = player.play();
+
+      if (attempt && attempt.catch) {
+        attempt.catch(() => {
+          if (ticket === playerRequest) {
+            setPlayerMessage(
+              "Press the play button to start."
+            );
+          }
+        });
+      }
+    }
+
+    player.one("loadedmetadata", () => {
+      if (resume) restorePlayback(video, resume);
+      else play();
+    });
+
+    player.on("playing", () => {
+      clearTimeout(reconnectTimer);
+
+      setPlayerMessage(
+        "Video.js playback · Choose another server if needed."
+      );
+    });
+
+    player.on("waiting", () => {
+      setPlayerMessage("Buffering…");
+    });
+
+    player.on("error", () => {
+      if (ticket !== playerRequest) return;
+
+      const error = player.error();
+
+      if (error?.code === 2 && recoveryCount < 2) {
+        recoveryCount++;
+
+        setPlayerMessage(
+          "Connection interrupted. Reconnecting (" +
+          recoveryCount +
+          "/2)…"
+        );
+
+        reconnectTimer = setTimeout(() => {
+          if (ticket !== playerRequest) return;
+
+          const state = playbackState();
+
+          player.error(null);
+          player.src(mediaSource);
+
+          player.one("loadedmetadata", () => {
+            restorePlayback(video, state);
+          });
+
+          if (!state?.paused) play();
+        }, 1500 * recoveryCount);
+      } else {
+        setPlayerMessage(
+          error?.code === 3
+            ? "This stream could not be decoded. Try another server."
+            : "Stream unavailable. The link may be expired or blocked by the source. Try another server."
+        );
+      }
+    });
+
+    player.src(mediaSource);
+
+    if (!resume || !resume.paused) play();
+  } catch (error) {
+    if (ticket === playerRequest) {
+      setPlayerMessage(
+        error.message ||
+        "Unable to start this player. Try another server."
+      );
+    }
+  }
+}
+
+/* CONTENT LOADING */
+
+async function boot() {
+  installPlayerStyles();
+
+  try {
+    if (window.STATIC_SITE) {
+      cfg = {
+        ...defaults,
+        ...readCommittedContent(defaults)
+      };
+    } else {
+      const response = await fetch("/api/config", {
+        cache: "no-store"
+      });
+
+      if (!response.ok) {
+        throw Error(
+          "Content could not be loaded. Please refresh."
+        );
+      }
+
+      const data = await response.json();
+
+      cfg = {
+        ...defaults,
+        ...(data.config || {})
+      };
+
+      canAdmin = !!data.canAdmin;
+      configVersion = data.version;
+    }
+
+    if (!Array.isArray(cfg.items)) cfg.items = [];
+
+    if (typeof applyDemoSchedule === "function") {
+      cfg = applyDemoSchedule(cfg);
+    }
+  } catch (error) {
+    loadError = error.message;
+  }
+
+  render();
+
+  if (loadError) {
+    $("app").insertAdjacentHTML(
+      "afterbegin",
+      `<div class="notice">${esc(loadError)}</div>`
+    );
+  }
+}
+
+/* PAGE EVENTS */
+
+$("close").onclick = closePlayer;
+
+$("modal").addEventListener("cancel", event => {
+  event.preventDefault();
+  closePlayer();
+});
+
+$("modal").addEventListener("close", () => {
+  if (
+    activePlayer ||
+    $("player").childNodes.length
+  ) {
+    closePlayer();
+  }
+});
+
+window.addEventListener("hashchange", () => {
+  closePlayer();
+  render();
+  window.scrollTo(0, 0);
+});
+
+setInterval(() => {
+  document.querySelectorAll("[data-state]").forEach(element => {
+    const item = cfg.items[Number(element.dataset.state)];
+    if (!item) return;
+
+    const state = matchStatus(item);
+
+    element.textContent = state;
+    element.classList.toggle(
+      "is-live",
+      state === "LIVE"
+    );
+  });
+}, 1000);
+
+boot();
