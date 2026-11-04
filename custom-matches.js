@@ -44,11 +44,21 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-02.m3u8",
+          "url": "https://live05.miekgo.app/live/08552895.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://live05.miekgo.app/live/14830711.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-3",
+          "url": "https://playback.livetl002.com/live/6a5b13ceb36a14387baeddaa.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-02.m3u8",
+      "url": "https://live05.miekgo.app/live/08552895.m3u8",
       "kind": "video"
     },
     {
@@ -69,11 +79,21 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-03.m3u8",
+          "url": "https://live05.miekgo.app/live/33982309.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "FHD",
+          "url": "https://playback.livetl002.com/live/69aa9525f5ec459ae275b43f.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "FHD-2",
+          "url": "https://playback.livetl002.com/live/69aa9525f5ec459ae275b43f.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-03.m3u8",
+      "url": "https://live05.miekgo.app/live/33982309.m3u8",
       "kind": "video"
     },
     {
