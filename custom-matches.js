@@ -114,11 +114,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-04.m3u8",
+          "url": "https://live05.miekgo.app/live/87547578.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-04.m3u8",
+      "url": "https://live05.miekgo.app/live/87547578.m3u8",
       "kind": "video"
     },
     {
@@ -139,11 +139,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-05.m3u8",
+          "url": "https://live05.miekgo.app/live/33860426.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-05.m3u8",
+      "url": "https://live05.miekgo.app/live/33860426.m3u8",
       "kind": "video"
     },
     {
@@ -164,11 +164,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-06.m3u8",
+          "url": "https://live05.miekgo.app/live/97885009.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-06.m3u8",
+      "url": "https://live05.miekgo.app/live/97885009.m3u8",
       "kind": "video"
     },
     {
@@ -189,11 +189,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-07.m3u8",
+          "url": "https://live05.miekgo.app/live/16226575.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-07.m3u8",
+      "url": "https://live05.miekgo.app/live/16226575.m3u8",
       "kind": "video"
     },
     {
@@ -214,11 +214,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-08.m3u8",
+          "url": "https://live05.miekgo.app/live/02456966.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-08.m3u8",
+      "url": "https://live05.miekgo.app/live/02456966.m3u8",
       "kind": "video"
     },
     {
@@ -239,11 +239,16 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-09.m3u8",
+          "url": "https://live05.miekgo.app/live/08552895.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://live05.miekgo.app/live/18812304.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-09.m3u8",
+      "url": "https://live05.miekgo.app/live/08552895.m3u8",
       "kind": "video"
     },
     {
@@ -264,11 +269,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-10.m3u8",
+          "url": "https://live05.miekgo.app/live/07808742.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-10.m3u8",
+      "url": "https://live05.miekgo.app/live/07808742.m3u8",
       "kind": "video"
     }
   ]
