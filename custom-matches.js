@@ -294,11 +294,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-08.m3u8",
+          "url": "https://live05.miekgo.app/live/78905744.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-08.m3u8",
+      "url": "https://live05.miekgo.app/live/78905744.m3u8",
       "kind": "video"
     },
     {
@@ -319,11 +319,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-09.m3u8",
+          "url": "https://live05.miekgo.app/live/08552895.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-09.m3u8",
+      "url": "https://live05.miekgo.app/live/08552895.m3u8",
       "kind": "video"
     },
     {
@@ -344,11 +344,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-10.m3u8",
+          "url": "https://live05.miekgo.app/live/18812304.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-10.m3u8",
+      "url": "https://live05.miekgo.app/live/18812304.m3u8",
       "kind": "video"
     },
     {
@@ -369,11 +369,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-11.m3u8",
+          "url": "https://live05.miekgo.app/live/33860426.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-11.m3u8",
+      "url": "https://live05.miekgo.app/live/33860426.m3u8",
       "kind": "video"
     },
     {
@@ -394,11 +394,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-12.m3u8",
+          "url": "https://live05.miekgo.app/live/16226575.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-12.m3u8",
+      "url": "https://live05.miekgo.app/live/16226575.m3u8",
       "kind": "video"
     },
     {
@@ -419,11 +419,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-13.m3u8",
+          "url": "https://live05.miekgo.app/live/07808742.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-13.m3u8",
+      "url": "https://live05.miekgo.app/live/07808742.m3u8",
       "kind": "video"
     },
     {
@@ -444,11 +444,86 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-14.m3u8",
+          "url": "https://live05.miekgo.app/live/02456966.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-14.m3u8",
+      "url": "https://live05.miekgo.app/live/02456966.m3u8",
+      "kind": "video"
+    },
+    {
+      "id": "europe-20261105-19",
+      "category": "football",
+      "title": "Sturm Graz vs Celje",
+      "home": "Sturm Graz",
+      "away": "Celje",
+      "league": "UEFA Europa League",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3746.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3362.png",
+      "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-05T20:00:00.000Z",
+      "endAt": "",
+      "statusMode": "auto",
+      "homeScore": "",
+      "awayScore": "",
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://live05.miekgo.app/live/16226575.m3u8",
+          "kind": "video"
+        }
+      ],
+      "url": "https://live05.miekgo.app/live/16226575.m3u8",
+      "kind": "video"
+    },
+    {
+      "id": "europe-20261105-20",
+      "category": "football",
+      "title": "Celta Vigo vs Union SG",
+      "home": "Celta Vigo",
+      "away": "Union SG",
+      "league": "UEFA Europa League",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/5807.png",
+      "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-05T20:00:00.000Z",
+      "endAt": "",
+      "statusMode": "auto",
+      "homeScore": "",
+      "awayScore": "",
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://live05.miekgo.app/live/87547578.m3u8",
+          "kind": "video"
+        }
+      ],
+      "url": "https://live05.miekgo.app/live/87547578.m3u8",
+      "kind": "video"
+    },
+    {
+      "id": "europe-20261105-21",
+      "category": "football",
+      "title": "Copenhagen vs Iberia Tbilisi",
+      "home": "Copenhagen",
+      "away": "Iberia Tbilisi",
+      "league": "UEFA Conference League",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/909.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/20025.png",
+      "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-05T20:00:00.000Z",
+      "endAt": "",
+      "statusMode": "auto",
+      "homeScore": "",
+      "awayScore": "",
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://live05.miekgo.app/live/99121525.m3u8",
+          "kind": "video"
+        }
+      ],
+      "url": "https://live05.miekgo.app/live/99121525.m3u8",
       "kind": "video"
     }
   ]
