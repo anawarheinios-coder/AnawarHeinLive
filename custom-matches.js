@@ -355,20 +355,26 @@ window.ANAWAR_CONTENT = {
       "league": "EPL",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-07T17:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/manchester-city.m3u8",
+          "url": "https://live05.wecile.app/live/97885009.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://live05.wecile.app/live/78905744.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/manchester-city.m3u8",
+      "url": "https://live05.wecile.app/live/97885009.m3u8",
       "kind": "video"
     },
     {
@@ -380,20 +386,21 @@ window.ANAWAR_CONTENT = {
       "league": "Bundesliga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-07T17:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/stuttgart.m3u8",
+          "url": "https://live05.wecile.app/live/18812304.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/stuttgart.m3u8",
+      "url": "https://live05.wecile.app/live/18812304.m3u8",
       "kind": "video"
     },
     {
@@ -405,20 +412,21 @@ window.ANAWAR_CONTENT = {
       "league": "LaLiga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-07T17:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/osasuna.m3u8",
+          "url": "https://live05.wecile.app/live/07808742.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/osasuna.m3u8",
+      "url": "https://live05.wecile.app/live/07808742.m3u8",
       "kind": "video"
     },
     {
