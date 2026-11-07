@@ -2,116 +2,16 @@
 window.ANAWAR_CONTENT = {
   "items": [
     {
-      "id": "morning-20261107-01",
+      "id": "top5-20261107-01",
       "category": "football",
-      "title": "Willem II vs PEC Zwolle",
-      "home": "Willem II",
-      "away": "PEC Zwolle",
-      "league": "Eredivisie",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/156.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2565.png",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-06T19:00:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/replace-stream-01.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/replace-stream-01.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "morning-20261107-02",
-      "category": "football",
-      "title": "Hamburger SV vs Borussia Mönchengladbach",
-      "home": "Hamburger SV",
-      "away": "Borussia Mönchengladbach",
-      "league": "Bundesliga",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-06T19:30:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/replace-stream-02.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/replace-stream-02.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "morning-20261107-03",
-      "category": "football",
-      "title": "Venezia vs Udinese",
-      "home": "Venezia",
-      "away": "Udinese",
-      "league": "Serie A",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/17530.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/118.png",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-06T19:45:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/replace-stream-03.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/replace-stream-03.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "morning-20261107-04",
-      "category": "football",
-      "title": "Toulouse vs Strasbourg",
-      "home": "Toulouse",
-      "away": "Strasbourg",
-      "league": "Ligue 1",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/180.png",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-06T19:45:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/replace-stream-04.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/replace-stream-04.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "morning-20261107-05",
-      "category": "football",
-      "title": "Everton vs Coventry City",
-      "home": "Everton",
-      "away": "Coventry City",
+      "title": "Leeds United vs Tottenham Hotspur",
+      "home": "Leeds United",
+      "away": "Tottenham Hotspur",
       "league": "EPL",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png",
       "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-06T20:00:00.000Z",
+      "startAt": "2026-11-07T12:30:00.000Z",
       "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
@@ -119,61 +19,16 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/replace-stream-05.m3u8",
+          "url": "https://live05.wecile.app/live/33982309.m3u8",
           "kind": "video"
-        }
-      ],
-      "url": "https://example.com/replace-stream-05.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "morning-20261107-06",
-      "category": "football",
-      "title": "Sevilla vs Alavés",
-      "home": "Sevilla",
-      "away": "Alavés",
-      "league": "LaLiga",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/96.png",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-06T20:00:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
+        },
         {
-          "label": "HD",
-          "url": "https://example.com/replace-stream-06.m3u8",
+          "label": "HD-2",
+          "url": "https://live05.wecile.app/live/78905744.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/replace-stream-06.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "morning-20261107-07",
-      "category": "football",
-      "title": "Derby County vs Bolton Wanderers",
-      "home": "Derby County",
-      "away": "Bolton Wanderers",
-      "league": "English Championship",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/374.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/358.png",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-06T20:00:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/replace-stream-07.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/replace-stream-07.m3u8",
+      "url": "https://live05.wecile.app/live/33982309.m3u8",
       "kind": "video"
     }
   ]
