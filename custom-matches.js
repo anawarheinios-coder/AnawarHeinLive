@@ -74,11 +74,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/cagliari.m3u8",
+          "url": "https://live05.wecile.app/live/75915087.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/cagliari.m3u8",
+      "url": "https://live05.wecile.app/live/75915087.m3u8",
       "kind": "video"
     },
     {
@@ -99,11 +99,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/torino.m3u8",
+          "url": "https://live05.wecile.app/live/33860426.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/torino.m3u8",
+      "url": "https://live05.wecile.app/live/33860426.m3u8",
       "kind": "video"
     },
     {
@@ -124,11 +124,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/dortmund.m3u8",
+          "url": "https://live05.wecile.app/live/16226575.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/dortmund.m3u8",
+      "url": "https://live05.wecile.app/live/16226575.m3u8",
       "kind": "video"
     },
     {
@@ -149,11 +149,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/bayern.m3u8",
+          "url": "https://live05.wecile.app/live/97885009.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/bayern.m3u8",
+      "url": "https://live05.wecile.app/live/97885009.m3u8",
       "kind": "video"
     },
     {
@@ -174,11 +174,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/frankfurt.m3u8",
+          "url": "https://live05.wecile.app/live/07808742.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/frankfurt.m3u8",
+      "url": "https://live05.wecile.app/live/07808742.m3u8",
       "kind": "video"
     },
     {
@@ -199,11 +199,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/leipzig.m3u8",
+          "url": "https://live05.wecile.app/live/82054853.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/leipzig.m3u8",
+      "url": "https://live05.wecile.app/live/82054853.m3u8",
       "kind": "video"
     },
     {
