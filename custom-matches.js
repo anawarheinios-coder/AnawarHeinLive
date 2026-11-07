@@ -38,8 +38,8 @@ window.ANAWAR_CONTENT = {
       "home": "Málaga",
       "away": "Racing Santander",
       "league": "LaLiga",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/242.png",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
       "timeZone": "Asia/Yangon",
       "startAt": "2026-11-07T13:00:00.000Z",
       "endAt": "",
@@ -49,11 +49,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/malaga.m3u8",
+          "url": "https://live05.wecile.app/live/49572724.m3u8?_t=1794056102329",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/malaga.m3u8",
+      "url": "https://live05.wecile.app/live/49572724.m3u8?_t=1794056102329",
       "kind": "video"
     },
     {
@@ -64,7 +64,7 @@ window.ANAWAR_CONTENT = {
       "away": "Frosinone",
       "league": "Serie A",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png",
-      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3174.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4057.png",
       "timeZone": "Asia/Yangon",
       "startAt": "2026-11-07T14:00:00.000Z",
       "endAt": "",
@@ -114,7 +114,7 @@ window.ANAWAR_CONTENT = {
       "away": "Elversberg",
       "league": "Bundesliga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png",
-      "awayLogo": "",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/10388.png",
       "timeZone": "Asia/Yangon",
       "startAt": "2026-11-07T14:30:00.000Z",
       "endAt": "",
@@ -288,7 +288,7 @@ window.ANAWAR_CONTENT = {
       "home": "Parma",
       "away": "Bologna",
       "league": "Serie A",
-      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/153.png",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png",
       "timeZone": "Asia/Yangon",
       "startAt": "2026-11-07T17:00:00.000Z",
@@ -389,7 +389,7 @@ window.ANAWAR_CONTENT = {
       "away": "Paris FC",
       "league": "Ligue 1",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png",
-      "awayLogo": "",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
       "timeZone": "Asia/Yangon",
       "startAt": "2026-11-07T18:00:00.000Z",
       "endAt": "",
