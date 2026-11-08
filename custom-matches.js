@@ -508,20 +508,21 @@ window.ANAWAR_CONTENT = {
       "league": "LaLiga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-08T17:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/celta.m3u8",
+          "url": "https://live05.wecile.app/live/99121525.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/celta.m3u8",
+      "url": "https://live05.wecile.app/live/99121525.m3u8",
       "kind": "video"
     },
     {
@@ -533,20 +534,21 @@ window.ANAWAR_CONTENT = {
       "league": "LaLiga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-08T17:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/villarreal.m3u8",
+          "url": "https://live05.wecile.app/live/16226575.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/villarreal.m3u8",
+      "url": "https://live05.wecile.app/live/16226575.m3u8",
       "kind": "video"
     },
     {
