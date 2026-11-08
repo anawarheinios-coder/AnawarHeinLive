@@ -67,20 +67,21 @@ window.ANAWAR_CONTENT = {
       "league": "EPL",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-08T14:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/brighton.m3u8",
+          "url": "https://live05.wecile.app/live/02456966.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/brighton.m3u8",
+      "url": "https://live05.wecile.app/live/02456966.m3u8",
       "kind": "video"
     },
     {
@@ -92,20 +93,26 @@ window.ANAWAR_CONTENT = {
       "league": "EPL",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-08T14:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/liverpool.m3u8",
+          "url": "https://playback.livetl002.com/live/69aa9525f5ec459ae275b43f.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://playback.livetl002.com/live/6a5b13ceb36a14387baeddaa.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/liverpool.m3u8",
+      "url": "https://playback.livetl002.com/live/69aa9525f5ec459ae275b43f.m3u8",
       "kind": "video"
     },
     {
@@ -117,20 +124,21 @@ window.ANAWAR_CONTENT = {
       "league": "EPL",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-08T14:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/bournemouth.m3u8",
+          "url": "https://live05.wecile.app/live/87547578.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/bournemouth.m3u8",
+      "url": "https://live05.wecile.app/live/87547578.m3u8",
       "kind": "video"
     },
     {
@@ -142,20 +150,26 @@ window.ANAWAR_CONTENT = {
       "league": "EPL",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-08T14:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/chelsea.m3u8",
+          "url": "https://live05.wecile.app/live/78905744.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://playback.livetl002.com/live/6a0c7c4b1ae4d6db02433c48.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/chelsea.m3u8",
+      "url": "https://live05.wecile.app/live/78905744.m3u8",
       "kind": "video"
     },
     {
@@ -167,20 +181,21 @@ window.ANAWAR_CONTENT = {
       "league": "Serie A",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-08T14:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/milan.m3u8",
+          "url": "https://live05.wecile.app/live/97885009.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/milan.m3u8",
+      "url": "https://live05.wecile.app/live/97885009.m3u8",
       "kind": "video"
     },
     {
@@ -192,20 +207,21 @@ window.ANAWAR_CONTENT = {
       "league": "Serie A",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4007.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-08T14:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/atalanta.m3u8",
+          "url": "https://live05.wecile.app/live/33860426.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/atalanta.m3u8",
+      "url": "https://live05.wecile.app/live/33860426.m3u8",
       "kind": "video"
     },
     {
@@ -217,20 +233,21 @@ window.ANAWAR_CONTENT = {
       "league": "Ligue 1",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-08T14:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/rennes.m3u8",
+          "url": "https://live05.wecile.app/live/33982309.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/rennes.m3u8",
+      "url": "https://live05.wecile.app/live/33982309.m3u8",
       "kind": "video"
     },
     {
