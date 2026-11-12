@@ -61,20 +61,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Nations League · A1",
       "homeLogo": "https://flagcdn.com/w320/it.png",
       "awayLogo": "https://flagcdn.com/w320/fr.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-12T19:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/italy.m3u8",
+          "url": "https://live05.wecile.app/live/08552895.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/italy.m3u8",
+      "url": "https://live05.wecile.app/live/08552895.m3u8",
       "kind": "video"
     },
     {
@@ -86,20 +87,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Nations League · A3",
       "homeLogo": "https://flagcdn.com/w320/cz.png",
       "awayLogo": "https://flagcdn.com/w320/es.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-12T19:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/spain.m3u8",
+          "url": "https://live05.wecile.app/live/07428422.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/spain.m3u8",
+      "url": "https://live05.wecile.app/live/07428422.m3u8",
       "kind": "video"
     },
     {
@@ -111,20 +113,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Nations League · A3",
       "homeLogo": "https://flagcdn.com/w320/gb-eng.png",
       "awayLogo": "https://flagcdn.com/w320/hr.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-12T19:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/england.m3u8",
+          "url": "https://live05.wecile.app/live/33982309.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/england.m3u8",
+      "url": "https://live05.wecile.app/live/33982309.m3u8",
       "kind": "video"
     },
     {
@@ -136,20 +139,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Nations League · C1",
       "homeLogo": "https://flagcdn.com/w320/al.png",
       "awayLogo": "https://flagcdn.com/w320/fi.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-12T19:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/albania.m3u8",
+          "url": "https://live05.wecile.app/live/97885009.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/albania.m3u8",
+      "url": "https://live05.wecile.app/live/97885009.m3u8",
       "kind": "video"
     },
     {
@@ -161,20 +165,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Nations League · C1",
       "homeLogo": "https://flagcdn.com/w320/sm.png",
       "awayLogo": "https://flagcdn.com/w320/by.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-12T19:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/san-marino.m3u8",
+          "url": "https://live05.wecile.app/live/16226575.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/san-marino.m3u8",
+      "url": "https://live05.wecile.app/live/16226575.m3u8",
       "kind": "video"
     },
     {
@@ -186,20 +191,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Nations League · C2",
       "homeLogo": "https://flagcdn.com/w320/me.png",
       "awayLogo": "https://flagcdn.com/w320/lv.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-12T19:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/montenegro.m3u8",
+          "url": "https://live05.wecile.app/live/33860426.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/montenegro.m3u8",
+      "url": "https://live05.wecile.app/live/33860426.m3u8",
       "kind": "video"
     },
     {
