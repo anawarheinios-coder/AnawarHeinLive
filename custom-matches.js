@@ -62,20 +62,26 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Nations League · A4",
       "homeLogo": "https://flagcdn.com/w320/pt.png",
       "awayLogo": "https://flagcdn.com/w320/dk.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-14T19:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/portugal.m3u8",
+          "url": "https://live05.wecile.app/live/08552895.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://live05.wecile.app/live/08552895.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/portugal.m3u8",
+      "url": "https://live05.wecile.app/live/08552895.m3u8",
       "kind": "video"
     },
     {
@@ -87,20 +93,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Nations League · B2",
       "homeLogo": "https://flagcdn.com/w320/gb-nir.png",
       "awayLogo": "https://flagcdn.com/w320/ua.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-14T19:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/ukraine.m3u8",
+          "url": "https://live05.wecile.app/live/02456966.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/ukraine.m3u8",
+      "url": "https://live05.wecile.app/live/02456966.m3u8",
       "kind": "video"
     },
     {
@@ -112,20 +119,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Nations League · B3",
       "homeLogo": "https://flagcdn.com/w320/at.png",
       "awayLogo": "https://flagcdn.com/w320/ie.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-14T19:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/austria.m3u8",
+          "url": "https://live05.wecile.app/live/75748097.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/austria.m3u8",
+      "url": "https://live05.wecile.app/live/75748097.m3u8",
       "kind": "video"
     },
     {
@@ -137,20 +145,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Nations League · B4",
       "homeLogo": "https://flagcdn.com/w320/ro.png",
       "awayLogo": "https://flagcdn.com/w320/pl.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-14T19:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/poland.m3u8",
+          "url": "https://live05.wecile.app/live/33860426.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/poland.m3u8",
+      "url": "https://live05.wecile.app/live/33860426.m3u8",
       "kind": "video"
     },
     {
@@ -162,20 +171,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Nations League · B4",
       "homeLogo": "https://flagcdn.com/w320/se.png",
       "awayLogo": "https://flagcdn.com/w320/ba.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-14T19:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/sweden.m3u8",
+          "url": "https://live05.wecile.app/live/07428422.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/sweden.m3u8",
+      "url": "https://live05.wecile.app/live/07428422.m3u8",
       "kind": "video"
     },
     {
