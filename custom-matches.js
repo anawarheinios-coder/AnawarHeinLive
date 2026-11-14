@@ -2,67 +2,16 @@
 window.ANAWAR_CONTENT = {
   "items": [
     {
-      "id": "unl-20261112-01",
+      "id": "unl-20261114-02",
       "category": "football",
-      "title": "Türkiye vs Belgium",
-      "home": "Türkiye",
-      "away": "Belgium",
-      "league": "UEFA Nations League · A1",
-      "homeLogo": "https://flagcdn.com/w320/tr.png",
-      "awayLogo": "https://flagcdn.com/w320/be.png",
+      "title": "Norway vs Wales",
+      "home": "Norway",
+      "away": "Wales",
+      "league": "UEFA Nations League · A4",
+      "homeLogo": "https://flagcdn.com/w320/no.png",
+      "awayLogo": "https://flagcdn.com/w320/gb-wls.png",
       "poster": "",
-      "startAt": "2026-11-12T17:00:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/33982309.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/33982309.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "unl-20261112-02",
-      "category": "football",
-      "title": "Armenia vs Cyprus",
-      "home": "Armenia",
-      "away": "Cyprus",
-      "league": "UEFA Nations League · C2",
-      "homeLogo": "https://flagcdn.com/w320/am.png",
-      "awayLogo": "https://flagcdn.com/w320/cy.png",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-12T17:00:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/armenia.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/armenia.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "unl-20261112-03",
-      "category": "football",
-      "title": "Italy vs France",
-      "home": "Italy",
-      "away": "France",
-      "league": "UEFA Nations League · A1",
-      "homeLogo": "https://flagcdn.com/w320/it.png",
-      "awayLogo": "https://flagcdn.com/w320/fr.png",
-      "poster": "",
-      "startAt": "2026-11-12T19:45:00.000Z",
+      "startAt": "2026-11-14T17:00:00.000Z",
       "endAt": "",
       "timeZone": "Asia/Yangon",
       "statusMode": "auto",
@@ -79,42 +28,16 @@ window.ANAWAR_CONTENT = {
       "kind": "video"
     },
     {
-      "id": "unl-20261112-04",
+      "id": "unl-20261114-03",
       "category": "football",
-      "title": "Czechia vs Spain",
-      "home": "Czechia",
-      "away": "Spain",
-      "league": "UEFA Nations League · A3",
-      "homeLogo": "https://flagcdn.com/w320/cz.png",
-      "awayLogo": "https://flagcdn.com/w320/es.png",
+      "title": "Georgia vs Hungary",
+      "home": "Georgia",
+      "away": "Hungary",
+      "league": "UEFA Nations League · B2",
+      "homeLogo": "https://flagcdn.com/w320/ge.png",
+      "awayLogo": "https://flagcdn.com/w320/hu.png",
       "poster": "",
-      "startAt": "2026-11-12T19:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/07428422.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/07428422.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "unl-20261112-05",
-      "category": "football",
-      "title": "England vs Croatia",
-      "home": "England",
-      "away": "Croatia",
-      "league": "UEFA Nations League · A3",
-      "homeLogo": "https://flagcdn.com/w320/gb-eng.png",
-      "awayLogo": "https://flagcdn.com/w320/hr.png",
-      "poster": "",
-      "startAt": "2026-11-12T19:45:00.000Z",
+      "startAt": "2026-11-14T17:00:00.000Z",
       "endAt": "",
       "timeZone": "Asia/Yangon",
       "statusMode": "auto",
@@ -131,94 +54,166 @@ window.ANAWAR_CONTENT = {
       "kind": "video"
     },
     {
-      "id": "unl-20261112-06",
+      "id": "unl-20261114-04",
       "category": "football",
-      "title": "Albania vs Finland",
-      "home": "Albania",
-      "away": "Finland",
-      "league": "UEFA Nations League · C1",
-      "homeLogo": "https://flagcdn.com/w320/al.png",
-      "awayLogo": "https://flagcdn.com/w320/fi.png",
-      "poster": "",
-      "startAt": "2026-11-12T19:45:00.000Z",
-      "endAt": "",
+      "title": "Portugal vs Denmark",
+      "home": "Portugal",
+      "away": "Denmark",
+      "league": "UEFA Nations League · A4",
+      "homeLogo": "https://flagcdn.com/w320/pt.png",
+      "awayLogo": "https://flagcdn.com/w320/dk.png",
       "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-14T19:45:00.000Z",
+      "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://live05.wecile.app/live/97885009.m3u8",
+          "url": "https://example.com/portugal.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://live05.wecile.app/live/97885009.m3u8",
+      "url": "https://example.com/portugal.m3u8",
       "kind": "video"
     },
     {
-      "id": "unl-20261112-07",
+      "id": "unl-20261114-05",
       "category": "football",
-      "title": "San Marino vs Belarus",
-      "home": "San Marino",
-      "away": "Belarus",
-      "league": "UEFA Nations League · C1",
-      "homeLogo": "https://flagcdn.com/w320/sm.png",
-      "awayLogo": "https://flagcdn.com/w320/by.png",
-      "poster": "",
-      "startAt": "2026-11-12T19:45:00.000Z",
-      "endAt": "",
+      "title": "Northern Ireland vs Ukraine",
+      "home": "Northern Ireland",
+      "away": "Ukraine",
+      "league": "UEFA Nations League · B2",
+      "homeLogo": "https://flagcdn.com/w320/gb-nir.png",
+      "awayLogo": "https://flagcdn.com/w320/ua.png",
       "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-14T19:45:00.000Z",
+      "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://live05.wecile.app/live/16226575.m3u8",
+          "url": "https://example.com/ukraine.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://live05.wecile.app/live/16226575.m3u8",
+      "url": "https://example.com/ukraine.m3u8",
       "kind": "video"
     },
     {
-      "id": "unl-20261112-08",
+      "id": "unl-20261114-06",
       "category": "football",
-      "title": "Montenegro vs Latvia",
-      "home": "Montenegro",
-      "away": "Latvia",
+      "title": "Austria vs Republic of Ireland",
+      "home": "Austria",
+      "away": "Republic of Ireland",
+      "league": "UEFA Nations League · B3",
+      "homeLogo": "https://flagcdn.com/w320/at.png",
+      "awayLogo": "https://flagcdn.com/w320/ie.png",
+      "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-14T19:45:00.000Z",
+      "endAt": "",
+      "statusMode": "auto",
+      "homeScore": "",
+      "awayScore": "",
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/austria.m3u8",
+          "kind": "video"
+        }
+      ],
+      "url": "https://example.com/austria.m3u8",
+      "kind": "video"
+    },
+    {
+      "id": "unl-20261114-07",
+      "category": "football",
+      "title": "Romania vs Poland",
+      "home": "Romania",
+      "away": "Poland",
+      "league": "UEFA Nations League · B4",
+      "homeLogo": "https://flagcdn.com/w320/ro.png",
+      "awayLogo": "https://flagcdn.com/w320/pl.png",
+      "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-14T19:45:00.000Z",
+      "endAt": "",
+      "statusMode": "auto",
+      "homeScore": "",
+      "awayScore": "",
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/poland.m3u8",
+          "kind": "video"
+        }
+      ],
+      "url": "https://example.com/poland.m3u8",
+      "kind": "video"
+    },
+    {
+      "id": "unl-20261114-08",
+      "category": "football",
+      "title": "Sweden vs Bosnia and Herzegovina",
+      "home": "Sweden",
+      "away": "Bosnia and Herzegovina",
+      "league": "UEFA Nations League · B4",
+      "homeLogo": "https://flagcdn.com/w320/se.png",
+      "awayLogo": "https://flagcdn.com/w320/ba.png",
+      "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-14T19:45:00.000Z",
+      "endAt": "",
+      "statusMode": "auto",
+      "homeScore": "",
+      "awayScore": "",
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/sweden.m3u8",
+          "kind": "video"
+        }
+      ],
+      "url": "https://example.com/sweden.m3u8",
+      "kind": "video"
+    },
+    {
+      "id": "unl-20261115-01",
+      "category": "football",
+      "title": "Cyprus vs Montenegro",
+      "home": "Cyprus",
+      "away": "Montenegro",
       "league": "UEFA Nations League · C2",
-      "homeLogo": "https://flagcdn.com/w320/me.png",
-      "awayLogo": "https://flagcdn.com/w320/lv.png",
-      "poster": "",
-      "startAt": "2026-11-12T19:45:00.000Z",
-      "endAt": "",
+      "homeLogo": "https://flagcdn.com/w320/cy.png",
+      "awayLogo": "https://flagcdn.com/w320/me.png",
       "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-15T14:00:00.000Z",
+      "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://live05.wecile.app/live/33860426.m3u8",
+          "url": "https://example.com/cyprus.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://live05.wecile.app/live/33860426.m3u8",
+      "url": "https://example.com/cyprus.m3u8",
       "kind": "video"
     },
     {
-      "id": "unl-20261113-01",
+      "id": "unl-20261115-02",
       "category": "football",
-      "title": "Moldova vs Kazakhstan",
-      "home": "Moldova",
-      "away": "Kazakhstan",
-      "league": "UEFA Nations League · C3",
-      "homeLogo": "https://flagcdn.com/w320/md.png",
-      "awayLogo": "https://flagcdn.com/w320/kz.png",
+      "title": "Latvia vs Armenia",
+      "home": "Latvia",
+      "away": "Armenia",
+      "league": "UEFA Nations League · C2",
+      "homeLogo": "https://flagcdn.com/w320/lv.png",
+      "awayLogo": "https://flagcdn.com/w320/am.png",
       "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-13T17:00:00.000Z",
+      "startAt": "2026-11-15T14:00:00.000Z",
       "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
@@ -226,24 +221,24 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/moldova.m3u8",
+          "url": "https://example.com/latvia.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/moldova.m3u8",
+      "url": "https://example.com/latvia.m3u8",
       "kind": "video"
     },
     {
-      "id": "unl-20261113-02",
+      "id": "unl-20261115-03",
       "category": "football",
-      "title": "Netherlands vs Greece",
-      "home": "Netherlands",
-      "away": "Greece",
-      "league": "UEFA Nations League · A2",
-      "homeLogo": "https://flagcdn.com/w320/nl.png",
-      "awayLogo": "https://flagcdn.com/w320/gr.png",
+      "title": "Belarus vs Albania",
+      "home": "Belarus",
+      "away": "Albania",
+      "league": "UEFA Nations League · C1",
+      "homeLogo": "https://flagcdn.com/w320/by.png",
+      "awayLogo": "https://flagcdn.com/w320/al.png",
       "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-13T19:45:00.000Z",
+      "startAt": "2026-11-15T17:00:00.000Z",
       "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
@@ -251,24 +246,24 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/netherlands.m3u8",
+          "url": "https://example.com/belarus.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/netherlands.m3u8",
+      "url": "https://example.com/belarus.m3u8",
       "kind": "video"
     },
     {
-      "id": "unl-20261113-03",
+      "id": "unl-20261115-04",
       "category": "football",
-      "title": "Serbia vs Germany",
-      "home": "Serbia",
-      "away": "Germany",
-      "league": "UEFA Nations League · A2",
-      "homeLogo": "https://flagcdn.com/w320/rs.png",
-      "awayLogo": "https://flagcdn.com/w320/de.png",
+      "title": "Finland vs San Marino",
+      "home": "Finland",
+      "away": "San Marino",
+      "league": "UEFA Nations League · C1",
+      "homeLogo": "https://flagcdn.com/w320/fi.png",
+      "awayLogo": "https://flagcdn.com/w320/sm.png",
       "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-13T19:45:00.000Z",
+      "startAt": "2026-11-15T17:00:00.000Z",
       "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
@@ -276,24 +271,24 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/germany.m3u8",
+          "url": "https://example.com/finland.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/germany.m3u8",
+      "url": "https://example.com/finland.m3u8",
       "kind": "video"
     },
     {
-      "id": "unl-20261113-04",
+      "id": "unl-20261115-05",
       "category": "football",
-      "title": "Scotland vs North Macedonia",
-      "home": "Scotland",
-      "away": "North Macedonia",
-      "league": "UEFA Nations League · B1",
-      "homeLogo": "https://flagcdn.com/w320/gb-sct.png",
-      "awayLogo": "https://flagcdn.com/w320/mk.png",
+      "title": "Belgium vs Italy",
+      "home": "Belgium",
+      "away": "Italy",
+      "league": "UEFA Nations League · A1",
+      "homeLogo": "https://flagcdn.com/w320/be.png",
+      "awayLogo": "https://flagcdn.com/w320/it.png",
       "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-13T19:45:00.000Z",
+      "startAt": "2026-11-15T19:45:00.000Z",
       "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
@@ -301,24 +296,24 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/scotland.m3u8",
+          "url": "https://example.com/belgium.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/scotland.m3u8",
+      "url": "https://example.com/belgium.m3u8",
       "kind": "video"
     },
     {
-      "id": "unl-20261113-05",
+      "id": "unl-20261115-06",
       "category": "football",
-      "title": "Slovenia vs Switzerland",
-      "home": "Slovenia",
-      "away": "Switzerland",
-      "league": "UEFA Nations League · B1",
-      "homeLogo": "https://flagcdn.com/w320/si.png",
-      "awayLogo": "https://flagcdn.com/w320/ch.png",
+      "title": "France vs Türkiye",
+      "home": "France",
+      "away": "Türkiye",
+      "league": "UEFA Nations League · A1",
+      "homeLogo": "https://flagcdn.com/w320/fr.png",
+      "awayLogo": "https://flagcdn.com/w320/tr.png",
       "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-13T19:45:00.000Z",
+      "startAt": "2026-11-15T19:45:00.000Z",
       "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
@@ -326,24 +321,24 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/switzerland.m3u8",
+          "url": "https://example.com/france.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/switzerland.m3u8",
+      "url": "https://example.com/france.m3u8",
       "kind": "video"
     },
     {
-      "id": "unl-20261113-06",
+      "id": "unl-20261115-07",
       "category": "football",
-      "title": "Slovakia vs Faroe Islands",
-      "home": "Slovakia",
-      "away": "Faroe Islands",
-      "league": "UEFA Nations League · C3",
-      "homeLogo": "https://flagcdn.com/w320/sk.png",
-      "awayLogo": "https://flagcdn.com/w320/fo.png",
+      "title": "Croatia vs Czechia",
+      "home": "Croatia",
+      "away": "Czechia",
+      "league": "UEFA Nations League · A3",
+      "homeLogo": "https://flagcdn.com/w320/hr.png",
+      "awayLogo": "https://flagcdn.com/w320/cz.png",
       "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-13T19:45:00.000Z",
+      "startAt": "2026-11-15T19:45:00.000Z",
       "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
@@ -351,24 +346,24 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/slovakia.m3u8",
+          "url": "https://example.com/croatia.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/slovakia.m3u8",
+      "url": "https://example.com/croatia.m3u8",
       "kind": "video"
     },
     {
-      "id": "unl-20261113-07",
+      "id": "unl-20261115-08",
       "category": "football",
-      "title": "Bulgaria vs Iceland",
-      "home": "Bulgaria",
-      "away": "Iceland",
-      "league": "UEFA Nations League · C4",
-      "homeLogo": "https://flagcdn.com/w320/bg.png",
-      "awayLogo": "https://flagcdn.com/w320/is.png",
+      "title": "Spain vs England",
+      "home": "Spain",
+      "away": "England",
+      "league": "UEFA Nations League · A3",
+      "homeLogo": "https://flagcdn.com/w320/es.png",
+      "awayLogo": "https://flagcdn.com/w320/gb-eng.png",
       "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-13T19:45:00.000Z",
+      "startAt": "2026-11-15T19:45:00.000Z",
       "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
@@ -376,86 +371,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/bulgaria.m3u8",
+          "url": "https://example.com/spain.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/bulgaria.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "unl-20261113-08",
-      "category": "football",
-      "title": "Luxembourg vs Estonia",
-      "home": "Luxembourg",
-      "away": "Estonia",
-      "league": "UEFA Nations League · C4",
-      "homeLogo": "https://flagcdn.com/w320/lu.png",
-      "awayLogo": "https://flagcdn.com/w320/ee.png",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-13T19:45:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/luxembourg.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/luxembourg.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "unl-20261113-09",
-      "category": "football",
-      "title": "Andorra vs Gibraltar",
-      "home": "Andorra",
-      "away": "Gibraltar",
-      "league": "UEFA Nations League · D1",
-      "homeLogo": "https://flagcdn.com/w320/ad.png",
-      "awayLogo": "https://flagcdn.com/w320/gi.png",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-13T19:45:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/andorra.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/andorra.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "unl-20261113-10",
-      "category": "football",
-      "title": "Liechtenstein vs Azerbaijan",
-      "home": "Liechtenstein",
-      "away": "Azerbaijan",
-      "league": "UEFA Nations League · D2",
-      "homeLogo": "https://flagcdn.com/w320/li.png",
-      "awayLogo": "https://flagcdn.com/w320/az.png",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-13T19:45:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/azerbaijan.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/azerbaijan.m3u8",
+      "url": "https://example.com/spain.m3u8",
       "kind": "video"
     }
   ]
