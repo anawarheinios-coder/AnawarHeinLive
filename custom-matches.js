@@ -60,20 +60,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Nations League · C1",
       "homeLogo": "https://flagcdn.com/w320/by.png",
       "awayLogo": "https://flagcdn.com/w320/al.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-15T17:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/belarus.m3u8",
+          "url": "https://live05.wecile.app/live/75915087.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/belarus.m3u8",
+      "url": "https://live05.wecile.app/live/75915087.m3u8",
       "kind": "video"
     },
     {
@@ -85,20 +86,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Nations League · C1",
       "homeLogo": "https://flagcdn.com/w320/fi.png",
       "awayLogo": "https://flagcdn.com/w320/sm.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-15T17:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/finland.m3u8",
+          "url": "https://live05.wecile.app/live/14830711.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/finland.m3u8",
+      "url": "https://live05.wecile.app/live/14830711.m3u8",
       "kind": "video"
     },
     {
