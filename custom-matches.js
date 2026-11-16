@@ -135,20 +135,31 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Nations League · A2",
       "homeLogo": "https://flagcdn.com/w320/de.png",
       "awayLogo": "https://flagcdn.com/w320/nl.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-16T19:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/germany.m3u8",
+          "url": "https://live05.wecile.app/live/08552895.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://live05.wecile.app/live/78905744.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-3",
+          "url": "https://live05.wecile.app/live/07428422.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/germany.m3u8",
+      "url": "https://live05.wecile.app/live/08552895.m3u8",
       "kind": "video"
     },
     {
@@ -160,20 +171,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Nations League · A2",
       "homeLogo": "https://flagcdn.com/w320/gr.png",
       "awayLogo": "https://flagcdn.com/w320/rs.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-16T19:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/greece.m3u8",
+          "url": "https://live05.wecile.app/live/97885009.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/greece.m3u8",
+      "url": "https://live05.wecile.app/live/97885009.m3u8",
       "kind": "video"
     },
     {
@@ -185,20 +197,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Nations League · B1",
       "homeLogo": "https://flagcdn.com/w320/mk.png",
       "awayLogo": "https://flagcdn.com/w320/si.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-16T19:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/north-macedonia.m3u8",
+          "url": "https://live05.wecile.app/live/07808742.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/north-macedonia.m3u8",
+      "url": "https://live05.wecile.app/live/07808742.m3u8",
       "kind": "video"
     },
     {
@@ -210,20 +223,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Nations League · B1",
       "homeLogo": "https://flagcdn.com/w320/ch.png",
       "awayLogo": "https://flagcdn.com/w320/gb-sct.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-16T19:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/switzerland.m3u8",
+          "url": "https://live05.wecile.app/live/02456966.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/switzerland.m3u8",
+      "url": "https://live05.wecile.app/live/02456966.m3u8",
       "kind": "video"
     },
     {
@@ -235,20 +249,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Nations League · D1",
       "homeLogo": "https://flagcdn.com/w320/gi.png",
       "awayLogo": "https://flagcdn.com/w320/mt.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-16T19:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/gibraltar.m3u8",
+          "url": "https://live05.wecile.app/live/16226575.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/gibraltar.m3u8",
+      "url": "https://live05.wecile.app/live/16226575.m3u8",
       "kind": "video"
     }
   ]
