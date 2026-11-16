@@ -2,227 +2,6 @@
 window.ANAWAR_CONTENT = {
   "items": [
     {
-      "id": "unl-20261115-01",
-      "category": "football",
-      "title": "Cyprus vs Montenegro",
-      "home": "Cyprus",
-      "away": "Montenegro",
-      "league": "UEFA Nations League · C2",
-      "homeLogo": "https://flagcdn.com/w320/cy.png",
-      "awayLogo": "https://flagcdn.com/w320/me.png",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-15T14:00:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/cyprus.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/cyprus.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "unl-20261115-02",
-      "category": "football",
-      "title": "Latvia vs Armenia",
-      "home": "Latvia",
-      "away": "Armenia",
-      "league": "UEFA Nations League · C2",
-      "homeLogo": "https://flagcdn.com/w320/lv.png",
-      "awayLogo": "https://flagcdn.com/w320/am.png",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-15T14:00:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/latvia.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/latvia.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "unl-20261115-03",
-      "category": "football",
-      "title": "Belarus vs Albania",
-      "home": "Belarus",
-      "away": "Albania",
-      "league": "UEFA Nations League · C1",
-      "homeLogo": "https://flagcdn.com/w320/by.png",
-      "awayLogo": "https://flagcdn.com/w320/al.png",
-      "poster": "",
-      "startAt": "2026-11-15T17:00:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/75915087.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/75915087.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "unl-20261115-04",
-      "category": "football",
-      "title": "Finland vs San Marino",
-      "home": "Finland",
-      "away": "San Marino",
-      "league": "UEFA Nations League · C1",
-      "homeLogo": "https://flagcdn.com/w320/fi.png",
-      "awayLogo": "https://flagcdn.com/w320/sm.png",
-      "poster": "",
-      "startAt": "2026-11-15T17:00:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/14830711.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/14830711.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "unl-20261115-05",
-      "category": "football",
-      "title": "Belgium vs Italy",
-      "home": "Belgium",
-      "away": "Italy",
-      "league": "UEFA Nations League · A1",
-      "homeLogo": "https://flagcdn.com/w320/be.png",
-      "awayLogo": "https://flagcdn.com/w320/it.png",
-      "poster": "",
-      "startAt": "2026-11-15T19:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/02456966.m3u8",
-          "kind": "video"
-        },
-        {
-          "label": "HD-2",
-          "url": "https://live05.wecile.app/live/18812304.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/02456966.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "unl-20261115-06",
-      "category": "football",
-      "title": "France vs Türkiye",
-      "home": "France",
-      "away": "Türkiye",
-      "league": "UEFA Nations League · A1",
-      "homeLogo": "https://flagcdn.com/w320/fr.png",
-      "awayLogo": "https://flagcdn.com/w320/tr.png",
-      "poster": "",
-      "startAt": "2026-11-15T19:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/33982309.m3u8",
-          "kind": "video"
-        },
-        {
-          "label": "HD-2",
-          "url": "https://live05.wecile.app/live/75748097.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/33982309.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "unl-20261115-07",
-      "category": "football",
-      "title": "Croatia vs Czechia",
-      "home": "Croatia",
-      "away": "Czechia",
-      "league": "UEFA Nations League · A3",
-      "homeLogo": "https://flagcdn.com/w320/hr.png",
-      "awayLogo": "https://flagcdn.com/w320/cz.png",
-      "poster": "",
-      "startAt": "2026-11-15T19:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/33860426.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/33860426.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "unl-20261115-08",
-      "category": "football",
-      "title": "Spain vs England",
-      "home": "Spain",
-      "away": "England",
-      "league": "UEFA Nations League · A3",
-      "homeLogo": "https://flagcdn.com/w320/es.png",
-      "awayLogo": "https://flagcdn.com/w320/gb-eng.png",
-      "poster": "",
-      "startAt": "2026-11-15T19:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/08552895.m3u8",
-          "kind": "video"
-        },
-        {
-          "label": "HD-2",
-          "url": "https://live05.wecile.app/live/07428422.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/08552895.m3u8",
-      "kind": "video"
-    },
-    {
       "id": "unl-20261116-01",
       "category": "football",
       "title": "Faroe Islands vs Moldova",
@@ -240,11 +19,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/faroe-islands.m3u8",
+          "url": "https://live05.wecile.app/live/87547578.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/faroe-islands.m3u8",
+      "url": "https://live05.wecile.app/live/87547578.m3u8",
       "kind": "video"
     },
     {
@@ -265,11 +44,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/kazakhstan.m3u8",
+          "url": "https://live05.wecile.app/live/08552895.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/kazakhstan.m3u8",
+      "url": "https://live05.wecile.app/live/08552895.m3u8",
       "kind": "video"
     },
     {
