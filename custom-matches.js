@@ -2,41 +2,16 @@
 window.ANAWAR_CONTENT = {
   "items": [
     {
-      "id": "unl-20261116-01",
+      "id": "unl-20261117-01",
       "category": "football",
-      "title": "Faroe Islands vs Moldova",
-      "home": "Faroe Islands",
-      "away": "Moldova",
-      "league": "UEFA Nations League · C3",
-      "homeLogo": "https://flagcdn.com/w320/fo.png",
-      "awayLogo": "https://flagcdn.com/w320/md.png",
+      "title": "Denmark vs Norway",
+      "home": "Denmark",
+      "away": "Norway",
+      "league": "UEFA Nations League · A4",
+      "homeLogo": "https://flagcdn.com/w320/dk.png",
+      "awayLogo": "https://flagcdn.com/w320/no.png",
       "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-16T15:00:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/87547578.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/87547578.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "unl-20261116-02",
-      "category": "football",
-      "title": "Kazakhstan vs Slovakia",
-      "home": "Kazakhstan",
-      "away": "Slovakia",
-      "league": "UEFA Nations League · C3",
-      "homeLogo": "https://flagcdn.com/w320/kz.png",
-      "awayLogo": "https://flagcdn.com/w320/sk.png",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-16T15:00:00.000Z",
+      "startAt": "2026-11-17T19:45:00.000Z",
       "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
@@ -52,16 +27,16 @@ window.ANAWAR_CONTENT = {
       "kind": "video"
     },
     {
-      "id": "unl-20261116-03",
+      "id": "unl-20261117-02",
       "category": "football",
-      "title": "Estonia vs Bulgaria",
-      "home": "Estonia",
-      "away": "Bulgaria",
-      "league": "UEFA Nations League · C4",
-      "homeLogo": "https://flagcdn.com/w320/ee.png",
-      "awayLogo": "https://flagcdn.com/w320/bg.png",
+      "title": "Wales vs Portugal",
+      "home": "Wales",
+      "away": "Portugal",
+      "league": "UEFA Nations League · A4",
+      "homeLogo": "https://flagcdn.com/w320/gb-wls.png",
+      "awayLogo": "https://flagcdn.com/w320/pt.png",
       "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-16T17:00:00.000Z",
+      "startAt": "2026-11-17T19:45:00.000Z",
       "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
@@ -77,16 +52,16 @@ window.ANAWAR_CONTENT = {
       "kind": "video"
     },
     {
-      "id": "unl-20261116-04",
+      "id": "unl-20261117-03",
       "category": "football",
-      "title": "Iceland vs Luxembourg",
-      "home": "Iceland",
-      "away": "Luxembourg",
-      "league": "UEFA Nations League · C4",
-      "homeLogo": "https://flagcdn.com/w320/is.png",
-      "awayLogo": "https://flagcdn.com/w320/lu.png",
+      "title": "Hungary vs Northern Ireland",
+      "home": "Hungary",
+      "away": "Northern Ireland",
+      "league": "UEFA Nations League · B2",
+      "homeLogo": "https://flagcdn.com/w320/hu.png",
+      "awayLogo": "https://flagcdn.com/w320/gb-nir.png",
       "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-16T17:00:00.000Z",
+      "startAt": "2026-11-17T19:45:00.000Z",
       "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
@@ -94,87 +69,100 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://live05.wecile.app/live/33982309.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/33982309.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "unl-20261116-05",
-      "category": "football",
-      "title": "Lithuania vs Liechtenstein",
-      "home": "Lithuania",
-      "away": "Liechtenstein",
-      "league": "UEFA Nations League · D2",
-      "homeLogo": "https://flagcdn.com/w320/lt.png",
-      "awayLogo": "https://flagcdn.com/w320/li.png",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-16T17:00:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/75915087.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/75915087.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "unl-20261116-06",
-      "category": "football",
-      "title": "Germany vs Netherlands",
-      "home": "Germany",
-      "away": "Netherlands",
-      "league": "UEFA Nations League · A2",
-      "homeLogo": "https://flagcdn.com/w320/de.png",
-      "awayLogo": "https://flagcdn.com/w320/nl.png",
-      "poster": "",
-      "startAt": "2026-11-16T19:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/08552895.m3u8",
-          "kind": "video"
-        },
-        {
-          "label": "HD-2",
           "url": "https://live05.wecile.app/live/78905744.m3u8",
           "kind": "video"
-        },
-        {
-          "label": "HD-3",
-          "url": "https://live05.wecile.app/live/07428422.m3u8",
-          "kind": "video"
         }
       ],
-      "url": "https://live05.wecile.app/live/08552895.m3u8",
+      "url": "https://live05.wecile.app/live/78905744.m3u8",
       "kind": "video"
     },
     {
-      "id": "unl-20261116-07",
+      "id": "unl-20261117-04",
       "category": "football",
-      "title": "Greece vs Serbia",
-      "home": "Greece",
-      "away": "Serbia",
-      "league": "UEFA Nations League · A2",
-      "homeLogo": "https://flagcdn.com/w320/gr.png",
-      "awayLogo": "https://flagcdn.com/w320/rs.png",
-      "poster": "",
-      "startAt": "2026-11-16T19:45:00.000Z",
-      "endAt": "",
+      "title": "Ukraine vs Georgia",
+      "home": "Ukraine",
+      "away": "Georgia",
+      "league": "UEFA Nations League · B2",
+      "homeLogo": "https://flagcdn.com/w320/ua.png",
+      "awayLogo": "https://flagcdn.com/w320/ge.png",
       "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-17T19:45:00.000Z",
+      "endAt": "",
+      "statusMode": "auto",
+      "homeScore": "",
+      "awayScore": "",
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://live05.wecile.app/live/33860426.m3u8",
+          "kind": "video"
+        }
+      ],
+      "url": "https://live05.wecile.app/live/33860426.m3u8",
+      "kind": "video"
+    },
+    {
+      "id": "unl-20261117-05",
+      "category": "football",
+      "title": "Israel vs Austria",
+      "home": "Israel",
+      "away": "Austria",
+      "league": "UEFA Nations League · B3",
+      "homeLogo": "https://flagcdn.com/w320/il.png",
+      "awayLogo": "https://flagcdn.com/w320/at.png",
+      "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-17T19:45:00.000Z",
+      "endAt": "",
+      "statusMode": "auto",
+      "homeScore": "",
+      "awayScore": "",
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://live05.wecile.app/live/78905744.m3u8",
+          "kind": "video"
+        }
+      ],
+      "url": "https://live05.wecile.app/live/78905744.m3u8",
+      "kind": "video"
+    },
+    {
+      "id": "unl-20261117-06",
+      "category": "football",
+      "title": "Republic of Ireland vs Kosovo",
+      "home": "Republic of Ireland",
+      "away": "Kosovo",
+      "league": "UEFA Nations League · B3",
+      "homeLogo": "https://flagcdn.com/w320/ie.png",
+      "awayLogo": "https://flagcdn.com/w320/xk.png",
+      "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-17T19:45:00.000Z",
+      "endAt": "",
+      "statusMode": "auto",
+      "homeScore": "",
+      "awayScore": "",
+      "streams": [
+        {
+          "label": "HD",
+          "url": "https://example.com/ireland.m3u8",
+          "kind": "video"
+        }
+      ],
+      "url": "https://example.com/ireland.m3u8",
+      "kind": "video"
+    },
+    {
+      "id": "unl-20261117-07",
+      "category": "football",
+      "title": "Bosnia and Herzegovina vs Romania",
+      "home": "Bosnia and Herzegovina",
+      "away": "Romania",
+      "league": "UEFA Nations League · B4",
+      "homeLogo": "https://flagcdn.com/w320/ba.png",
+      "awayLogo": "https://flagcdn.com/w320/ro.png",
+      "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-17T19:45:00.000Z",
+      "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
@@ -189,81 +177,28 @@ window.ANAWAR_CONTENT = {
       "kind": "video"
     },
     {
-      "id": "unl-20261116-08",
+      "id": "unl-20261117-08",
       "category": "football",
-      "title": "North Macedonia vs Slovenia",
-      "home": "North Macedonia",
-      "away": "Slovenia",
-      "league": "UEFA Nations League · B1",
-      "homeLogo": "https://flagcdn.com/w320/mk.png",
-      "awayLogo": "https://flagcdn.com/w320/si.png",
-      "poster": "",
-      "startAt": "2026-11-16T19:45:00.000Z",
-      "endAt": "",
+      "title": "Poland vs Sweden",
+      "home": "Poland",
+      "away": "Sweden",
+      "league": "UEFA Nations League · B4",
+      "homeLogo": "https://flagcdn.com/w320/pl.png",
+      "awayLogo": "https://flagcdn.com/w320/se.png",
       "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-17T19:45:00.000Z",
+      "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://live05.wecile.app/live/07808742.m3u8",
+          "url": "https://live05.wecile.app/live/33982309.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://live05.wecile.app/live/07808742.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "unl-20261116-09",
-      "category": "football",
-      "title": "Switzerland vs Scotland",
-      "home": "Switzerland",
-      "away": "Scotland",
-      "league": "UEFA Nations League · B1",
-      "homeLogo": "https://flagcdn.com/w320/ch.png",
-      "awayLogo": "https://flagcdn.com/w320/gb-sct.png",
-      "poster": "",
-      "startAt": "2026-11-16T19:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/02456966.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/02456966.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "unl-20261116-10",
-      "category": "football",
-      "title": "Gibraltar vs Malta",
-      "home": "Gibraltar",
-      "away": "Malta",
-      "league": "UEFA Nations League · D1",
-      "homeLogo": "https://flagcdn.com/w320/gi.png",
-      "awayLogo": "https://flagcdn.com/w320/mt.png",
-      "poster": "",
-      "startAt": "2026-11-16T19:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/16226575.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/16226575.m3u8",
+      "url": "https://live05.wecile.app/live/33982309.m3u8",
       "kind": "video"
     }
   ]
