@@ -387,20 +387,21 @@ window.ANAWAR_CONTENT = {
       "league": "LaLiga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/101.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-21T15:15:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/valencia.m3u8",
+          "url": "https://live05.wecile.app/live/97885009.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/valencia.m3u8",
+      "url": "https://live05.wecile.app/live/97885009.m3u8",
       "kind": "video"
     },
     {
@@ -412,20 +413,21 @@ window.ANAWAR_CONTENT = {
       "league": "Ligue 1",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-21T16:15:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/psg.m3u8",
+          "url": "https://live05.wecile.app/live/88508431.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/psg.m3u8",
+      "url": "https://live05.wecile.app/live/88508431.m3u8",
       "kind": "video"
     },
     {
@@ -437,20 +439,21 @@ window.ANAWAR_CONTENT = {
       "league": "Serie A",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-21T17:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/roma.m3u8",
+          "url": "https://live05.wecile.app/live/33860426.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/roma.m3u8",
+      "url": "https://live05.wecile.app/live/33860426.m3u8",
       "kind": "video"
     },
     {
@@ -462,20 +465,26 @@ window.ANAWAR_CONTENT = {
       "league": "EPL",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/359.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-21T17:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/arsenal.m3u8",
+          "url": "https://live05.wecile.app/live/08552895.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://live05.wecile.app/live/33982309.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/arsenal.m3u8",
+      "url": "https://live05.wecile.app/live/08552895.m3u8",
       "kind": "video"
     },
     {
@@ -512,20 +521,21 @@ window.ANAWAR_CONTENT = {
       "league": "LaLiga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/244.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-21T17:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/sevilla.m3u8",
+          "url": "https://live05.wecile.app/live/78905744.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/sevilla.m3u8",
+      "url": "https://live05.wecile.app/live/78905744.m3u8",
       "kind": "video"
     },
     {
