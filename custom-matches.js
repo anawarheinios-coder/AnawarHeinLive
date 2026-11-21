@@ -122,20 +122,21 @@ window.ANAWAR_CONTENT = {
       "league": "Bundesliga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/131.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/3307.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-21T14:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/leverkusen.m3u8",
+          "url": "https://live05.wecile.app/live/02456966.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/leverkusen.m3u8",
+      "url": "https://live05.wecile.app/live/02456966.m3u8",
       "kind": "video"
     },
     {
@@ -147,20 +148,21 @@ window.ANAWAR_CONTENT = {
       "league": "Bundesliga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/124.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-21T14:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/dortmund.m3u8",
+          "url": "https://live05.wecile.app/live/16226575.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/dortmund.m3u8",
+      "url": "https://live05.wecile.app/live/16226575.m3u8",
       "kind": "video"
     },
     {
@@ -172,20 +174,21 @@ window.ANAWAR_CONTENT = {
       "league": "Bundesliga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/125.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/7911.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-21T14:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/frankfurt.m3u8",
+          "url": "https://live05.wecile.app/live/14707124.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/frankfurt.m3u8",
+      "url": "https://live05.wecile.app/live/14707124.m3u8",
       "kind": "video"
     },
     {
@@ -197,20 +200,21 @@ window.ANAWAR_CONTENT = {
       "league": "Bundesliga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/10388.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/126.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-21T14:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/freiburg.m3u8",
+          "url": "https://live05.wecile.app/live/82054853.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/freiburg.m3u8",
+      "url": "https://live05.wecile.app/live/82054853.m3u8",
       "kind": "video"
     },
     {
@@ -222,20 +226,21 @@ window.ANAWAR_CONTENT = {
       "league": "Bundesliga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/598.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-21T14:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/leipzig.m3u8",
+          "url": "https://live05.wecile.app/live/18812304.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/leipzig.m3u8",
+      "url": "https://live05.wecile.app/live/18812304.m3u8",
       "kind": "video"
     },
     {
