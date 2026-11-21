@@ -252,20 +252,21 @@ window.ANAWAR_CONTENT = {
       "league": "EPL",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-21T15:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/bournemouth.m3u8",
+          "url": "https://live05.wecile.app/live/78905744.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/bournemouth.m3u8",
+      "url": "https://live05.wecile.app/live/78905744.m3u8",
       "kind": "video"
     },
     {
@@ -277,20 +278,21 @@ window.ANAWAR_CONTENT = {
       "league": "EPL",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-21T15:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/aston-villa.m3u8",
+          "url": "https://live05.wecile.app/live/33982309.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/aston-villa.m3u8",
+      "url": "https://live05.wecile.app/live/33982309.m3u8",
       "kind": "video"
     },
     {
@@ -302,20 +304,26 @@ window.ANAWAR_CONTENT = {
       "league": "EPL",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-21T15:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/chelsea.m3u8",
+          "url": "https://live05.wecile.app/live/08552895.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://live05.wecile.app/live/07428422.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/chelsea.m3u8",
+      "url": "https://live05.wecile.app/live/08552895.m3u8",
       "kind": "video"
     },
     {
@@ -327,20 +335,21 @@ window.ANAWAR_CONTENT = {
       "league": "EPL",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/388.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-21T15:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/crystal-palace.m3u8",
+          "url": "https://live05.wecile.app/live/75748097.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/crystal-palace.m3u8",
+      "url": "https://live05.wecile.app/live/75748097.m3u8",
       "kind": "video"
     },
     {
@@ -352,20 +361,21 @@ window.ANAWAR_CONTENT = {
       "league": "EPL",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-21T15:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/tottenham.m3u8",
+          "url": "https://live05.wecile.app/live/14830711.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/tottenham.m3u8",
+      "url": "https://live05.wecile.app/live/14830711.m3u8",
       "kind": "video"
     },
     {
