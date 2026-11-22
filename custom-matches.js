@@ -382,20 +382,21 @@ window.ANAWAR_CONTENT = {
       "league": "Serie A",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-22T19:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/atalanta-inter.m3u8",
+          "url": "https://live05.wecile.app/live/07428422.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/atalanta-inter.m3u8",
+      "url": "https://live05.wecile.app/live/07428422.m3u8",
       "kind": "video"
     },
     {
@@ -407,20 +408,21 @@ window.ANAWAR_CONTENT = {
       "league": "Ligue 1",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/176.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-22T19:45:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/marseille.m3u8",
+          "url": "https://live05.wecile.app/live/08552895.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/marseille.m3u8",
+      "url": "https://live05.wecile.app/live/08552895.m3u8",
       "kind": "video"
     },
     {
@@ -432,20 +434,21 @@ window.ANAWAR_CONTENT = {
       "league": "LaLiga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-22T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/atletico-madrid.m3u8",
+          "url": "https://live05.wecile.app/live/02456966.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/atletico-madrid.m3u8",
+      "url": "https://live05.wecile.app/live/02456966.m3u8",
       "kind": "video"
     }
   ]
