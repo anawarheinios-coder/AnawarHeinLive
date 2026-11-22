@@ -248,20 +248,41 @@ window.ANAWAR_CONTENT = {
       "league": "EPL",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-22T16:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/liverpool-man-united.m3u8",
+          "url": "https://live05.wecile.app/live/08552895.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://live05.wecile.app/live/33982309.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-3",
+          "url": "https://playback.livetl002.com/live/6a9776215126529dede9bf51.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "FHD",
+          "url": "https://playback.livetl002.com/live/69aa9525f5ec459ae275b43f.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "FHD-2",
+          "url": "https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=2598730b47e90f97e4c6bc92448a6ba7&txTime=6b036391#skip",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/liverpool-man-united.m3u8",
+      "url": "https://live05.wecile.app/live/08552895.m3u8",
       "kind": "video"
     },
     {
@@ -273,20 +294,21 @@ window.ANAWAR_CONTENT = {
       "league": "Bundesliga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/127.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-22T16:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/werder-hamburg.m3u8",
+          "url": "https://live05.wecile.app/live/87547578.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/werder-hamburg.m3u8",
+      "url": "https://live05.wecile.app/live/87547578.m3u8",
       "kind": "video"
     },
     {
