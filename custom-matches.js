@@ -330,20 +330,21 @@ window.ANAWAR_CONTENT = {
       "league": "Serie A",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/4057.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-22T17:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/ac-milan.m3u8",
+          "url": "https://live05.wecile.app/live/78905744.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/ac-milan.m3u8",
+      "url": "https://live05.wecile.app/live/78905744.m3u8",
       "kind": "video"
     },
     {
@@ -355,20 +356,21 @@ window.ANAWAR_CONTENT = {
       "league": "LaLiga",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-22T17:30:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/osasuna.m3u8",
+          "url": "https://live05.wecile.app/live/75915087.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/osasuna.m3u8",
+      "url": "https://live05.wecile.app/live/75915087.m3u8",
       "kind": "video"
     },
     {
