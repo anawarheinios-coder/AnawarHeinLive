@@ -280,6 +280,16 @@ window.ANAWAR_CONTENT = {
           "label": "FHD-2",
           "url": "https://pull.niur.live/live/stream-9912122_lhd.m3u8?txSecret=2598730b47e90f97e4c6bc92448a6ba7&txTime=6b036391#skip",
           "kind": "video"
+        },
+        {
+          "label": "CH",
+          "url": "https://hwyypull.ncctrials.com/live/stream-597728_lsd.m3u8?auth_key=1795366269-0-0-41fbc60e3cc90c27a27b0b9d888cc64e",
+          "kind": "video"
+        },
+        {
+          "label": "SD",
+          "url": "https://pull.niur.live/live/stream-9912122_lsd.m3u8?txSecret=4656f81b235193950247385236b78e0d&txTime=6b036391#skip",
+          "kind": "video"
         }
       ],
       "url": "https://live05.wecile.app/live/08552895.m3u8",
