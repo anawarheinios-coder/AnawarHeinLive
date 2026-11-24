@@ -94,11 +94,21 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/arsenal-dortmund.m3u8",
+          "url": "https://live05.wecile.app/live/08552895.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://live05.wecile.app/live/78905744.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-3",
+          "url": "https://live05.wecile.app/live/14707124.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/arsenal-dortmund.m3u8",
+      "url": "https://live05.wecile.app/live/08552895.m3u8",
       "kind": "video"
     },
     {
@@ -119,11 +129,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/como-aek-athens.m3u8",
+          "url": "https://live05.wecile.app/live/16226575.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/como-aek-athens.m3u8",
+      "url": "https://live05.wecile.app/live/16226575.m3u8",
       "kind": "video"
     },
     {
@@ -144,11 +154,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/feyenoord-porto.m3u8",
+          "url": "https://live05.wecile.app/live/87547578.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/feyenoord-porto.m3u8",
+      "url": "https://live05.wecile.app/live/87547578.m3u8",
       "kind": "video"
     },
     {
@@ -169,11 +179,16 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/manchester-city-napoli.m3u8",
+          "url": "https://live05.wecile.app/live/14830711.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://live05.wecile.app/live/07428422.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/manchester-city-napoli.m3u8",
+      "url": "https://live05.wecile.app/live/14830711.m3u8",
       "kind": "video"
     },
     {
@@ -219,11 +234,16 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/real-madrid-psv.m3u8",
+          "url": "https://live05.wecile.app/live/33982309.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://live05.wecile.app/live/02456966.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/real-madrid-psv.m3u8",
+      "url": "https://live05.wecile.app/live/33982309.m3u8",
       "kind": "video"
     },
     {
@@ -244,11 +264,11 @@ window.ANAWAR_CONTENT = {
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/slovan-bratislava-real-betis.m3u8",
+          "url": "https://live05.wecile.app/live/07808742.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/slovan-bratislava-real-betis.m3u8",
+      "url": "https://live05.wecile.app/live/07808742.m3u8",
       "kind": "video"
     }
   ]
