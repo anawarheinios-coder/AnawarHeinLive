@@ -200,20 +200,26 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Champions League",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/11420.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-24T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/rb-leipzig-lens.m3u8",
+          "url": "https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1795554114-0-0-b02205e8976435a8430e0a77a6bd770b",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://pull.niues.live/live/stream-621843_lhd.m3u8?auth_key=1795554176-0-0-84b4f62be3adb50d7f5d52dd015f73bf",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/rb-leipzig-lens.m3u8",
+      "url": "https://pull.niues.live/live/stream-536185_lhd.m3u8?auth_key=1795554114-0-0-b02205e8976435a8430e0a77a6bd770b",
       "kind": "video"
     },
     {
