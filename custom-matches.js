@@ -65,20 +65,26 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Champions League",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2882.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-25T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/atletico-madrid-viking.m3u8",
+          "url": "https://pull.niur.live/live/stream-9912114_lhd.m3u8?txSecret=2a01a729bda0f3cfa77755f37de6ed9c&txTime=6b07909c",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://pull.niur.live/live/stream-9912119_lhd.m3u8?txSecret=cd742e659da2899928512a001eb327dc&txTime=6b0790b6",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/atletico-madrid-viking.m3u8",
+      "url": "https://pull.niur.live/live/stream-9912114_lhd.m3u8?txSecret=2a01a729bda0f3cfa77755f37de6ed9c&txTime=6b07909c",
       "kind": "video"
     },
     {
@@ -115,20 +121,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Champions League",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/134.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-25T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/inter-stuttgart.m3u8",
+          "url": "https://live05.wecile.app/live/78905744.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/inter-stuttgart.m3u8",
+      "url": "https://live05.wecile.app/live/78905744.m3u8",
       "kind": "video"
     },
     {
@@ -140,20 +147,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Champions League",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/493.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/436.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-25T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/shakhtar-fenerbahce.m3u8",
+          "url": "https://live05.wecile.app/live/07808742.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/shakhtar-fenerbahce.m3u8",
+      "url": "https://live05.wecile.app/live/07808742.m3u8",
       "kind": "video"
     },
     {
@@ -165,20 +173,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Champions League",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/132.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-25T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/lille-bayern-munich.m3u8",
+          "url": "https://live05.wecile.app/live/16226575.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/lille-bayern-munich.m3u8",
+      "url": "https://live05.wecile.app/live/16226575.m3u8",
       "kind": "video"
     },
     {
@@ -190,20 +199,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Champions League",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-25T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/psg-roma.m3u8",
+          "url": "https://live05.wecile.app/live/88508431.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/psg-roma.m3u8",
+      "url": "https://live05.wecile.app/live/88508431.m3u8",
       "kind": "video"
     },
     {
@@ -215,20 +225,26 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Champions League",
       "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png",
       "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-25T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/sporting-cp-manchester-united.m3u8",
+          "url": "https://live05.wecile.app/live/02456966.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://live05.wecile.app/live/33982309.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/sporting-cp-manchester-united.m3u8",
+      "url": "https://live05.wecile.app/live/02456966.m3u8",
       "kind": "video"
     }
   ]
