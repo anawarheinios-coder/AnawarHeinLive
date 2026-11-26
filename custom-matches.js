@@ -473,20 +473,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Europa League",
       "homeLogo": "",
       "awayLogo": "",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-26T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/sparta-az.m3u8",
+          "url": "https://live05.wecile.app/live/16226575.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/sparta-az.m3u8",
+      "url": "https://live05.wecile.app/live/16226575.m3u8",
       "kind": "video"
     },
     {
@@ -498,20 +499,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Europa League",
       "homeLogo": "",
       "awayLogo": "",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-26T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/palace-sociedad.m3u8",
+          "url": "https://live05.wecile.app/live/33982309.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/palace-sociedad.m3u8",
+      "url": "https://live05.wecile.app/live/33982309.m3u8",
       "kind": "video"
     },
     {
@@ -523,20 +525,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Europa League",
       "homeLogo": "",
       "awayLogo": "",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-26T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/ferencvaros-celje.m3u8",
+          "url": "https://live05.wecile.app/live/99121525.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/ferencvaros-celje.m3u8",
+      "url": "https://live05.wecile.app/live/99121525.m3u8",
       "kind": "video"
     },
     {
@@ -548,20 +551,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Europa League",
       "homeLogo": "",
       "awayLogo": "",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-26T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/juventus-omonia.m3u8",
+          "url": "https://live05.wecile.app/live/02456966.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/juventus-omonia.m3u8",
+      "url": "https://live05.wecile.app/live/02456966.m3u8",
       "kind": "video"
     },
     {
@@ -573,20 +577,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Europa League",
       "homeLogo": "",
       "awayLogo": "",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-26T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/nijmegen-rennes.m3u8",
+          "url": "https://live05.wecile.app/live/07808742.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/nijmegen-rennes.m3u8",
+      "url": "https://live05.wecile.app/live/07808742.m3u8",
       "kind": "video"
     },
     {
@@ -623,20 +628,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Europa League",
       "homeLogo": "",
       "awayLogo": "",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-26T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/lyon-lillestrom.m3u8",
+          "url": "https://live05.wecile.app/live/07428422.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/lyon-lillestrom.m3u8",
+      "url": "https://live05.wecile.app/live/07428422.m3u8",
       "kind": "video"
     },
     {
@@ -648,20 +654,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Europa League",
       "homeLogo": "",
       "awayLogo": "",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-26T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/torreense-celtic.m3u8",
+          "url": "https://live05.wecile.app/live/97885009.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/torreense-celtic.m3u8",
+      "url": "https://live05.wecile.app/live/97885009.m3u8",
       "kind": "video"
     },
     {
@@ -673,20 +680,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Europa League",
       "homeLogo": "",
       "awayLogo": "",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-26T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/sunderland-jagiellonia.m3u8",
+          "url": "https://live05.wecile.app/live/08552895.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/sunderland-jagiellonia.m3u8",
+      "url": "https://live05.wecile.app/live/08552895.m3u8",
       "kind": "video"
     },
     {
@@ -698,20 +706,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Europa League",
       "homeLogo": "",
       "awayLogo": "",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-26T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/hoffenheim-sturm-graz.m3u8",
+          "url": "https://live05.wecile.app/live/78905744.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/hoffenheim-sturm-graz.m3u8",
+      "url": "https://live05.wecile.app/live/78905744.m3u8",
       "kind": "video"
     },
     {
@@ -748,20 +757,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Conference League",
       "homeLogo": "",
       "awayLogo": "",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-26T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/borac-atalanta.m3u8",
+          "url": "https://live05.wecile.app/live/18812304.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/borac-atalanta.m3u8",
+      "url": "https://live05.wecile.app/live/18812304.m3u8",
       "kind": "video"
     },
     {
@@ -823,20 +833,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Conference League",
       "homeLogo": "",
       "awayLogo": "",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-26T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/gent-crvena-zvezda.m3u8",
+          "url": "https://live05.wecile.app/live/14707124.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/gent-crvena-zvezda.m3u8",
+      "url": "https://live05.wecile.app/live/14707124.m3u8",
       "kind": "video"
     },
     {
@@ -873,20 +884,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Conference League",
       "homeLogo": "",
       "awayLogo": "",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-26T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/braga-kups.m3u8",
+          "url": "https://live05.wecile.app/live/87547578.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/braga-kups.m3u8",
+      "url": "https://live05.wecile.app/live/87547578.m3u8",
       "kind": "video"
     },
     {
@@ -898,20 +910,21 @@ window.ANAWAR_CONTENT = {
       "league": "UEFA Conference League",
       "homeLogo": "",
       "awayLogo": "",
-      "timeZone": "Asia/Yangon",
+      "poster": "",
       "startAt": "2026-11-26T20:00:00.000Z",
       "endAt": "",
+      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://example.com/freiburg-twente.m3u8",
+          "url": "https://live05.wecile.app/live/88508431.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://example.com/freiburg-twente.m3u8",
+      "url": "https://live05.wecile.app/live/88508431.m3u8",
       "kind": "video"
     }
   ]
