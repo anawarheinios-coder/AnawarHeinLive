@@ -2,585 +2,17 @@
 window.ANAWAR_CONTENT = {
   "items": [
     {
-      "id": "uecl-20261126-01",
+      "id": "morning-20261128-01",
       "category": "football",
-      "title": "Kairat Almaty vs Mjällby",
-      "home": "Kairat Almaty",
-      "away": "Mjällby",
-      "league": "UEFA Conference League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T15:30:00.000Z",
-      "endAt": "",
+      "title": "Werder Bremen vs Borussia Mönchengladbach",
+      "home": "Werder Bremen",
+      "away": "Borussia Mönchengladbach",
+      "league": "Bundesliga",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/137.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/268.png",
       "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/75915087.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/75915087.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uel-20261127-01",
-      "category": "football",
-      "title": "Beşiktaş vs Hapoel Beer-Sheva",
-      "home": "Beşiktaş",
-      "away": "Hapoel Beer-Sheva",
-      "league": "UEFA Europa League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T17:45:00.000Z",
+      "startAt": "2026-11-27T19:30:00.000Z",
       "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/75748097.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/75748097.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uel-20261127-02",
-      "category": "football",
-      "title": "Salzburg vs Ararat-Armenia",
-      "home": "Salzburg",
-      "away": "Ararat-Armenia",
-      "league": "UEFA Europa League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T17:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/87547578.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/87547578.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uel-20261127-03",
-      "category": "football",
-      "title": "Viktoria Plzeň vs Benfica",
-      "home": "Viktoria Plzeň",
-      "away": "Benfica",
-      "league": "UEFA Europa League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T17:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/75915087.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/75915087.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uel-20261127-04",
-      "category": "football",
-      "title": "Dinamo Zagreb vs Bayer Leverkusen",
-      "home": "Dinamo Zagreb",
-      "away": "Bayer Leverkusen",
-      "league": "UEFA Europa League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T17:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/07428422.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/07428422.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uel-20261127-05",
-      "category": "football",
-      "title": "Olympiacos vs AC Milan",
-      "home": "Olympiacos",
-      "away": "AC Milan",
-      "league": "UEFA Europa League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T17:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/33982309.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/33982309.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uel-20261127-06",
-      "category": "football",
-      "title": "Marseille vs Levski Sofia",
-      "home": "Marseille",
-      "away": "Levski Sofia",
-      "league": "UEFA Europa League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T17:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/78905744.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/78905744.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uel-20261127-07",
-      "category": "football",
-      "title": "Union Saint-Gilloise vs Lech Poznań",
-      "home": "Union Saint-Gilloise",
-      "away": "Lech Poznań",
-      "league": "UEFA Europa League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T17:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/18812304.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/18812304.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uel-20261127-08",
-      "category": "football",
-      "title": "Celta Vigo vs Bournemouth",
-      "home": "Celta Vigo",
-      "away": "Bournemouth",
-      "league": "UEFA Europa League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T17:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/02456966.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/02456966.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uecl-20261127-02",
-      "category": "football",
-      "title": "Ajax vs Thun",
-      "home": "Ajax",
-      "away": "Thun",
-      "league": "UEFA Conference League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T17:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/99121525.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/99121525.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uecl-20261127-03",
-      "category": "football",
-      "title": "Brighton vs Universitatea Craiova",
-      "home": "Brighton",
-      "away": "Universitatea Craiova",
-      "league": "UEFA Conference League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T17:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/08552895.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/08552895.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uecl-20261127-04",
-      "category": "football",
-      "title": "Iberia Tbilisi vs Getafe",
-      "home": "Iberia Tbilisi",
-      "away": "Getafe",
-      "league": "UEFA Conference League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T17:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/97885009.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/97885009.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uecl-20261127-05",
-      "category": "football",
-      "title": "Jablonec vs Lugano",
-      "home": "Jablonec",
-      "away": "Lugano",
-      "league": "UEFA Conference League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-26T17:45:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/jablonec-lugano.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/jablonec-lugano.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uecl-20261127-06",
-      "category": "football",
-      "title": "Kauno Žalgiris vs Riga",
-      "home": "Kauno Žalgiris",
-      "away": "Riga",
-      "league": "UEFA Conference League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-26T17:45:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/kauno-zalgiris-riga.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/kauno-zalgiris-riga.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uecl-20261127-07",
-      "category": "football",
-      "title": "Hearts vs Monaco",
-      "home": "Hearts",
-      "away": "Monaco",
-      "league": "UEFA Conference League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T17:45:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/16226575.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/16226575.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uecl-20261127-08",
-      "category": "football",
-      "title": "Egnatia vs Lincoln Red Imps",
-      "home": "Egnatia",
-      "away": "Lincoln Red Imps",
-      "league": "UEFA Conference League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-26T17:45:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/egnatia-lincoln.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/egnatia-lincoln.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uecl-20261127-09",
-      "category": "football",
-      "title": "Pafos vs Midtjylland",
-      "home": "Pafos",
-      "away": "Midtjylland",
-      "league": "UEFA Conference League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-26T17:45:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/pafos-midtjylland.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/pafos-midtjylland.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uecl-20261127-10",
-      "category": "football",
-      "title": "Brann vs Aarhus",
-      "home": "Brann",
-      "away": "Aarhus",
-      "league": "UEFA Conference League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-26T17:45:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/brann-aarhus.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/brann-aarhus.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uel-20261127-09",
-      "category": "football",
-      "title": "Sparta Praha vs AZ Alkmaar",
-      "home": "Sparta Praha",
-      "away": "AZ Alkmaar",
-      "league": "UEFA Europa League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T20:00:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/16226575.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/16226575.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uel-20261127-10",
-      "category": "football",
-      "title": "Crystal Palace vs Real Sociedad",
-      "home": "Crystal Palace",
-      "away": "Real Sociedad",
-      "league": "UEFA Europa League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T20:00:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/33982309.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/33982309.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uel-20261127-11",
-      "category": "football",
-      "title": "Ferencváros vs Celje",
-      "home": "Ferencváros",
-      "away": "Celje",
-      "league": "UEFA Europa League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T20:00:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/99121525.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/99121525.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uel-20261127-12",
-      "category": "football",
-      "title": "Juventus vs Omonia",
-      "home": "Juventus",
-      "away": "Omonia",
-      "league": "UEFA Europa League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T20:00:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/02456966.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/02456966.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uel-20261127-13",
-      "category": "football",
-      "title": "N.E.C. Nijmegen vs Rennes",
-      "home": "N.E.C. Nijmegen",
-      "away": "Rennes",
-      "league": "UEFA Europa League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T20:00:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
@@ -595,43 +27,17 @@ window.ANAWAR_CONTENT = {
       "kind": "video"
     },
     {
-      "id": "uel-20261127-14",
+      "id": "morning-20261128-02",
       "category": "football",
-      "title": "OFI Crete vs Anderlecht",
-      "home": "OFI Crete",
-      "away": "Anderlecht",
-      "league": "UEFA Europa League",
-      "homeLogo": "",
-      "awayLogo": "",
+      "title": "Venezia vs Bologna",
+      "home": "Venezia",
+      "away": "Bologna",
+      "league": "Serie A",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1750.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png",
       "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-26T20:00:00.000Z",
+      "startAt": "2026-11-27T19:45:00.000Z",
       "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/ofi-anderlecht.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/ofi-anderlecht.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uel-20261127-15",
-      "category": "football",
-      "title": "Lyon vs Lillestrøm",
-      "home": "Lyon",
-      "away": "Lillestrøm",
-      "league": "UEFA Europa League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T20:00:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
@@ -646,44 +52,42 @@ window.ANAWAR_CONTENT = {
       "kind": "video"
     },
     {
-      "id": "uel-20261127-16",
+      "id": "morning-20261128-03",
       "category": "football",
-      "title": "Torreense vs Celtic",
-      "home": "Torreense",
-      "away": "Celtic",
-      "league": "UEFA Europa League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T20:00:00.000Z",
-      "endAt": "",
+      "title": "Brest vs Paris FC",
+      "home": "Brest",
+      "away": "Paris FC",
+      "league": "Ligue 1",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png",
       "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-27T19:45:00.000Z",
+      "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
       "streams": [
         {
           "label": "HD",
-          "url": "https://live05.wecile.app/live/97885009.m3u8",
+          "url": "https://live05.wecile.app/live/16226575.m3u8",
           "kind": "video"
         }
       ],
-      "url": "https://live05.wecile.app/live/97885009.m3u8",
+      "url": "https://live05.wecile.app/live/16226575.m3u8",
       "kind": "video"
     },
     {
-      "id": "uel-20261127-17",
+      "id": "morning-20261128-04",
       "category": "football",
-      "title": "Sunderland vs Jagiellonia",
-      "home": "Sunderland",
-      "away": "Jagiellonia",
-      "league": "UEFA Europa League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T20:00:00.000Z",
-      "endAt": "",
+      "title": "Nottingham Forest vs Chelsea",
+      "home": "Nottingham Forest",
+      "away": "Chelsea",
+      "league": "Premier League",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png",
       "timeZone": "Asia/Yangon",
+      "startAt": "2026-11-27T20:00:00.000Z",
+      "endAt": "",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
@@ -692,228 +96,33 @@ window.ANAWAR_CONTENT = {
           "label": "HD",
           "url": "https://live05.wecile.app/live/08552895.m3u8",
           "kind": "video"
+        },
+        {
+          "label": "HD-2",
+          "url": "https://live05.wecile.app/live/33982309.m3u8",
+          "kind": "video"
+        },
+        {
+          "label": "HD-3",
+          "url": "https://live05.wecile.app/live/02456966.m3u8",
+          "kind": "video"
         }
       ],
       "url": "https://live05.wecile.app/live/08552895.m3u8",
       "kind": "video"
     },
     {
-      "id": "uel-20261127-18",
+      "id": "morning-20261128-05",
       "category": "football",
-      "title": "Hoffenheim vs Sturm Graz",
-      "home": "Hoffenheim",
-      "away": "Sturm Graz",
-      "league": "UEFA Europa League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T20:00:00.000Z",
-      "endAt": "",
+      "title": "Levante vs Racing Santander",
+      "home": "Levante",
+      "away": "Racing Santander",
+      "league": "LaLiga",
+      "homeLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png",
+      "awayLogo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png",
       "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/78905744.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/78905744.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uecl-20261127-11",
-      "category": "football",
-      "title": "Nordsjælland vs Panathinaikos",
-      "home": "Nordsjælland",
-      "away": "Panathinaikos",
-      "league": "UEFA Conference League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-26T20:00:00.000Z",
+      "startAt": "2026-11-27T20:00:00.000Z",
       "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/nordsjaelland-panathinaikos.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/nordsjaelland-panathinaikos.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uecl-20261127-12",
-      "category": "football",
-      "title": "Borac Banja Luka vs Atalanta",
-      "home": "Borac Banja Luka",
-      "away": "Atalanta",
-      "league": "UEFA Conference League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T20:00:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/18812304.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/18812304.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uecl-20261127-13",
-      "category": "football",
-      "title": "Hajduk Split vs Sint-Truidense",
-      "home": "Hajduk Split",
-      "away": "Sint-Truidense",
-      "league": "UEFA Conference League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-26T20:00:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/hajduk-sint-truidense.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/hajduk-sint-truidense.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uecl-20261127-14",
-      "category": "football",
-      "title": "Inter Escaldes vs FC Copenhagen",
-      "home": "Inter Escaldes",
-      "away": "FC Copenhagen",
-      "league": "UEFA Conference League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-26T20:00:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/inter-escaldes-copenhagen.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/inter-escaldes-copenhagen.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uecl-20261127-15",
-      "category": "football",
-      "title": "Gent vs Crvena Zvezda",
-      "home": "Gent",
-      "away": "Crvena Zvezda",
-      "league": "UEFA Conference League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T20:00:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/14707124.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/14707124.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uecl-20261127-16",
-      "category": "football",
-      "title": "CSKA Sofia vs Trabzonspor",
-      "home": "CSKA Sofia",
-      "away": "Trabzonspor",
-      "league": "UEFA Conference League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "timeZone": "Asia/Yangon",
-      "startAt": "2026-11-26T20:00:00.000Z",
-      "endAt": "",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://example.com/cska-sofia-trabzonspor.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://example.com/cska-sofia-trabzonspor.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uecl-20261127-17",
-      "category": "football",
-      "title": "Braga vs KuPS Kuopio",
-      "home": "Braga",
-      "away": "KuPS Kuopio",
-      "league": "UEFA Conference League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T20:00:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
-      "statusMode": "auto",
-      "homeScore": "",
-      "awayScore": "",
-      "streams": [
-        {
-          "label": "HD",
-          "url": "https://live05.wecile.app/live/87547578.m3u8",
-          "kind": "video"
-        }
-      ],
-      "url": "https://live05.wecile.app/live/87547578.m3u8",
-      "kind": "video"
-    },
-    {
-      "id": "uecl-20261127-18",
-      "category": "football",
-      "title": "Freiburg vs Twente",
-      "home": "Freiburg",
-      "away": "Twente",
-      "league": "UEFA Conference League",
-      "homeLogo": "",
-      "awayLogo": "",
-      "poster": "",
-      "startAt": "2026-11-26T20:00:00.000Z",
-      "endAt": "",
-      "timeZone": "Asia/Yangon",
       "statusMode": "auto",
       "homeScore": "",
       "awayScore": "",
