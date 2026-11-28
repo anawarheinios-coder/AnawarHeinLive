@@ -1,131 +1,48 @@
-// Clearly labeled demo content. Replace with your own using the matching admin page.
-window.ANAWAR_TV_CONTENT = {
-  "items": [
     {
-      "id": "demo-tv-sports",
+      "id": "bein-sports-1",
       "category": "tv",
-      "title": "Demo Sports TV",
-      "url": "./assets/demo/demo-hd.mp4",
+      "title": "beIN SPORTS 1",
+      "url": "http://27.124.71.27/beIN_Sports_1/index.m3u8",
       "kind": "video",
       "streams": [
         {
-          "label": "HD Demo",
-          "url": "./assets/demo/demo-hd.mp4",
-          "kind": "video"
-        },
-        {
-          "label": "SD Demo",
-          "url": "./assets/demo/demo-sd.mp4",
+          "label": "HD",
+          "url": "http://27.124.71.27/beIN_Sports_1/index.m3u8",
           "kind": "video"
         }
       ],
-      "demo": true,
-      "poster": "./assets/demo/tv-sports.svg"
+      "demo": false,
+      "poster": "https://commons.wikimedia.org/wiki/Special:FilePath/BeIN_Sport_1_logo_in_Indonesia.png"
     },
     {
-      "id": "demo-tv-news",
+      "id": "bein-sports-2",
       "category": "tv",
-      "title": "Demo News TV",
-      "url": "./assets/demo/demo-hd.mp4",
+      "title": "beIN SPORTS 2",
+      "url": "http://27.124.71.27/beIN_Sports_2/index.m3u8",
       "kind": "video",
       "streams": [
         {
-          "label": "HD Demo",
-          "url": "./assets/demo/demo-hd.mp4",
-          "kind": "video"
-        },
-        {
-          "label": "SD Demo",
-          "url": "./assets/demo/demo-sd.mp4",
+          "label": "HD",
+          "url": "http://27.124.71.27/beIN_Sports_2/index.m3u8",
           "kind": "video"
         }
       ],
-      "demo": true,
-      "poster": "./assets/demo/tv-news.svg"
+      "demo": false,
+      "poster": "https://commons.wikimedia.org/wiki/Special:FilePath/BeIN_Sport_2_Indonesia.png"
     },
     {
-      "id": "demo-tv-football",
+      "id": "bein-sports-3",
       "category": "tv",
-      "title": "Demo Football TV",
-      "url": "./assets/demo/demo-hd.mp4",
+      "title": "beIN SPORTS 3",
+      "url": "http://27.124.71.27/beIN_Sports_3/index.m3u8",
       "kind": "video",
       "streams": [
         {
-          "label": "HD Demo",
-          "url": "./assets/demo/demo-hd.mp4",
-          "kind": "video"
-        },
-        {
-          "label": "SD Demo",
-          "url": "./assets/demo/demo-sd.mp4",
+          "label": "HD",
+          "url": "http://27.124.71.27/beIN_Sports_3/index.m3u8",
           "kind": "video"
         }
       ],
-      "demo": true,
-      "poster": "./assets/demo/tv-football.svg"
+      "demo": false,
+      "poster": "https://commons.wikimedia.org/wiki/Special:FilePath/BeIN_Sports_3_HD.png"
     },
-    {
-      "id": "demo-tv-movies",
-      "category": "tv",
-      "title": "Demo Movies TV",
-      "url": "./assets/demo/demo-hd.mp4",
-      "kind": "video",
-      "streams": [
-        {
-          "label": "HD Demo",
-          "url": "./assets/demo/demo-hd.mp4",
-          "kind": "video"
-        },
-        {
-          "label": "SD Demo",
-          "url": "./assets/demo/demo-sd.mp4",
-          "kind": "video"
-        }
-      ],
-      "demo": true,
-      "poster": "./assets/demo/tv-movies.svg"
-    },
-    {
-      "id": "demo-tv-music",
-      "category": "tv",
-      "title": "Demo Music TV",
-      "url": "./assets/demo/demo-hd.mp4",
-      "kind": "video",
-      "streams": [
-        {
-          "label": "HD Demo",
-          "url": "./assets/demo/demo-hd.mp4",
-          "kind": "video"
-        },
-        {
-          "label": "SD Demo",
-          "url": "./assets/demo/demo-sd.mp4",
-          "kind": "video"
-        }
-      ],
-      "demo": true,
-      "poster": "./assets/demo/tv-music.svg"
-    },
-    {
-      "id": "demo-tv-kids",
-      "category": "tv",
-      "title": "Demo Kids TV",
-      "url": "./assets/demo/demo-hd.mp4",
-      "kind": "video",
-      "streams": [
-        {
-          "label": "HD Demo",
-          "url": "./assets/demo/demo-hd.mp4",
-          "kind": "video"
-        },
-        {
-          "label": "SD Demo",
-          "url": "./assets/demo/demo-sd.mp4",
-          "kind": "video"
-        }
-      ],
-      "demo": true,
-      "poster": "./assets/demo/tv-kids.svg"
-    }
-  ]
-};
